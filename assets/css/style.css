@@ -4,7 +4,7 @@
 	- Version: 1.0
 	- Website: https://qtecsolution.com/
 ================================= */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 html {
   box-sizing: border-box;
@@ -107,7 +107,7 @@ video {
   font-family: inherit;
 }
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -123,7 +123,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Nunito", sans-serif;
   text-wrap: balance;
 }
 img {
@@ -185,7 +185,7 @@ select {
 .display-4,
 .display-5,
 .display-6 {
-  font-family: "Inter", sans-serif;
+  font-family: "Nunito", sans-serif;
   text-wrap: balance;
 }
 
@@ -397,6 +397,168 @@ input[type=search]::-webkit-search-results-decoration:focus {
 .tooltip-inner {
   font-size: 0.75rem;
 }
+footer {
+  background-color: hsl(46, 87%, 91%);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 62rem) {
+  footer {
+    padding-top: 80px;
+  }
+}
+footer .footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+@media screen and (min-width: 62rem) {
+  footer .footer-col {
+    align-items: flex-start;
+  }
+}
+footer .footer-col .title {
+  color: hsl(147, 83%, 27%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  /* 120% */
+  text-transform: capitalize;
+}
+footer .payments {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+}
+footer .payments img {
+  min-width: 3.125rem;
+  display: block;
+  -webkit-transition: all 350ms ease-in-out;
+  -moz-transition: all 350ms ease-in-out;
+  -ms-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+}
+footer .payments img:not([disabled]):hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+@media screen and (min-width: 62rem) {
+  footer .payments {
+    justify-content: flex-start;
+  }
+}
+footer .qr {
+  margin-top: 2.5rem;
+}
+footer .footerlist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+@media screen and (min-width: 62rem) {
+  footer .footerlist {
+    align-items: flex-start;
+  }
+}
+footer .footerlist-link {
+  color: hsl(40, 4%, 15%);
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+  opacity: 0.6;
+  position: relative;
+}
+footer .footerlist-link::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: hsl(147, 83%, 27%);
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+}
+footer .footerlist-link:hover {
+  opacity: 1;
+}
+footer .footerlist-link:hover::after {
+  width: 100%;
+}
+footer .sociallist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  justify-content: center;
+}
+footer .sociallist .socilalist-link {
+  display: inline-block;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: hsl(147, 83%, 27%);
+  color: hsl(0, 0%, 100%);
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3125rem;
+}
+footer .copywrite {
+  border-top: 1px solid #4C4B4B;
+  padding-top: 1.875rem;
+  margin-top: 1.875rem;
+  text-align: center;
+}
+@media screen and (min-width: 62rem) {
+  footer .copywrite {
+    text-align: left;
+  }
+}
+footer .copywrite-text {
+  color: hsl(147, 83%, 27%);
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .copyright-menu {
+  display: flex;
+  gap: 1.5625rem;
+}
+footer .copyright-menu a {
+  color: #292826;
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration-line: underline;
+}
+footer .copyright-menu a:not([disabled]):hover {
+  color: hsl(147, 83%, 27%);
+}
+
 .preloader {
   background: hsl(0, 0%, 0%);
   width: 100%;

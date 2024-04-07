@@ -1,4 +1,142 @@
 @use "../../global" as *;
 @use "../../partials" as *;
+footer {
+    background-color: $secondary-light;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @include breakpoint(tab992) {
+        padding-top: 80px;
+    }
+    .footer-col {
+        @include flex-column;
+        gap: size(12);
+        align-items: center; 
+        @include breakpoint(tab992) {
+                align-items: flex-start;
+            }
+        .title {
+            color: $primary;
+            font-family: $montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+            /* 120% */
+            text-transform: capitalize;
+        }
+    }
+    .payments {
+        display: flex;
+        flex-wrap: wrap;
+        gap: size(10);
+        align-items: center;
+        justify-content: center;
+        img {
+            min-width: size(50);
+            display: block;
+            @include transitionsall;
+            @include hover {
+                filter: grayscale(100%);
+                transform: scale(1.1);
+            }
+        }
+        @include breakpoint(tab992) {
+            justify-content: flex-start;
+        }
+       
+    } 
+    .qr {
+        margin-top: size(40);
+    } 
+    .footerlist {
+        @include list-vertical;
+        gap: size(8);
+        align-items: center;
+        @include breakpoint(tab992) {
+                align-items: flex-start;
+            }
+        &-item {
+
+        }
+        &-link {
+            color: $footer-link;
+            font-family: $nonito;
+            font-size: size(16);
+            font-style: normal;
+            font-weight: 600;
+            line-height: size(24);
+            opacity: 0.6;
+            position: relative;
+            &::after {
+                position: absolute;
+                content: '';
+                height: 2px;
+                width: 0;
+                background-color: $primary;
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%);
+                transition: all .3s ease-in-out;
+                
+            } 
+            &:hover {
+                opacity: 1;
+            }
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+    .sociallist {
+        @include list-horizontal;
+        gap: size(20);
+        justify-content: center;
+        .socilalist-link {
+            display: inline-block;
+            display: inline-block;
+                @include square(32);
+                @include setBgColor($primary, $white);
+                @include circle;
+                @include flex-center;
+                padding: size(5);
+                .icon-wrapper {
+                
+                }
+        }
+    } 
+    .copywrite {
+        border-top: 1px solid #4C4B4B;
+        padding-top: size(30);
+        margin-top: size(30);
+        text-align: center;
+        @include breakpoint(tab992) {
+            text-align: left;
+        } 
+        &-text {
+            color: $primary;
+            font-family: $nonito;
+            font-size: size(16);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    } 
+    .copyright-menu {
+        @include flex;
+        gap: size(25);
+        a {
+            color: #292826;
+            font-family: Nunito;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+            text-decoration-line: underline;
+            @include hover {
+                color: $primary;
+            }
+        }
+    }
+}
 
 
