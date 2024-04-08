@@ -235,6 +235,44 @@ button:focus,
   outline: none;
 }
 
+.chefcard {
+  background-color: hsla(48, 90%, 88%, 0.32);
+  padding-bottom: 1.25rem;
+}
+.chefcard .content {
+  padding-top: 1.25rem;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+.chefcard .title {
+  color: #0C8040;
+  font-family: Eczar;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  /* 133.333% */
+  letter-spacing: 0.24px;
+}
+.chefcard .designation {
+  color: #646466;
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.chefcard .des {
+  color: #646464;
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 1.25rem;
+}
+
 input,
 select,
 textarea {
@@ -773,6 +811,20 @@ table tr td {
     width: 8.75rem;
     height: 2.875rem;
     padding: 0.625rem 1rem;
+  }
+}
+
+.ourchefs {
+  padding: 2.5rem 0rem;
+}
+@media screen and (min-width: 36rem) {
+  .ourchefs {
+    padding: 3.75rem 0rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .ourchefs {
+    padding: 5.625rem 0rem;
   }
 }
 

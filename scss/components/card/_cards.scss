@@ -1,3 +1,45 @@
 @use "../../global" as *;
 @use "../../partials" as *;
+.chefcard {
+    background-color: $testimonial-bg;
+    padding-bottom: size(20);
+    .chefthumb {
+        img {
+
+        }
+    } 
+    .content {
+        padding-top: size(20);
+        padding-right: size(20);
+        padding-left: size(20);
+        padding-bottom: size(20);
+    }
+    .title {
+        color: #0C8040;
+        font-family: Eczar;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
+        /* 133.333% */
+        letter-spacing: 0.24px;
+    }
+    .designation {
+        color: #646466;
+        font-family: Nunito;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .des {
+    color: #646464;
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: size(20);
+    }
+}
 

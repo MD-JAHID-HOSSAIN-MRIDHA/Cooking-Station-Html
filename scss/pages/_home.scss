@@ -2,5 +2,11 @@
 @use "../partials" as *;
 
 .ourchefs {
-    
+    padding: size(40) size(0);
+    @include breakpoint(mobile576) {
+         padding: size(60) size(0);
+    }
+    @include breakpoint(tab992) {
+        padding: size(90) size(0);
+    }
 }
