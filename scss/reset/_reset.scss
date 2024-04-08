@@ -110,7 +110,7 @@ video {
 }
 
 body {
-  font-family: $nonito;
+  font-family: $nunito;
   font-size: size(16);
   font-style: normal;
   font-weight: 400;
@@ -126,7 +126,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: $nonito;
+  font-family: $nunito;
   text-wrap: balance;
 
   &::selection {
@@ -189,7 +189,7 @@ select {
 .display-5,
 .display-6 {
   // color: $textdefault;
-  font-family: $nonito;
+  font-family: $nunito;
   text-wrap: balance;
 }
 

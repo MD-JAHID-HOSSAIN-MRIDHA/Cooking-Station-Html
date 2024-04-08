@@ -42,7 +42,7 @@
   font: {
     family: $name;
     size: calculateRem($size);
-    weight: weight($weight);
+    weight: $weight;
     style: style($style);
   }
 

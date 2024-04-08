@@ -15,6 +15,11 @@ button,
     box-shadow: none;
     outline: none;
   }
+  @include radius(6);
+  background-color: $primary;
+  @include font($nunito, 18, 600, normal, 24);
+  padding: 11px 18px;
+  color: white;
 }
 
 // .btn-submit {
