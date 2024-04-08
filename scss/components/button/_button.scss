@@ -15,6 +15,14 @@ button,
     box-shadow: none;
     outline: none;
   }
+}
+.login_btn {
+  @include font($nunito, 16, 600, normal, 24);
+  letter-spacing: 0.24px;
+  color: $primary;
+  padding-right: 18px;
+}
+.cs_btn {
   @include radius(6);
   background-color: $primary;
   @include font($nunito, 18, 600, normal, 24);
@@ -22,41 +30,41 @@ button,
   color: white;
 }
 
-// .btn-submit {
-//   background: $blue-green-500;
-//   @include border(solid, 2, $blue-green-500);
-//   @include radius(8);
-//   @include flex-center;
-//   gap: size(8);
-//   width: size(180);
-//   height: size(56);
-//   padding: size(16);
+.btn-submit {
+  background: $primary;
+  @include border(solid, 2, $primary);
+  @include radius(8);
+  @include flex-center;
+  gap: size(8);
+  width: size(180);
+  height: size(56);
+  padding: size(16);
 
-//   .text {
-//     color: $white;
-//     font-size: size(16);
-//     font-weight: 500;
-//   }
+  .text {
+    color: $white;
+    font-size: size(16);
+    font-weight: 500;
+  }
 
-//   .icon {
-//     @include square(18);
-//     @include flex-center;
-//     overflow: hidden;
-//   }
+  .icon {
+    @include square(18);
+    @include flex-center;
+    overflow: hidden;
+  }
 
-//   @include hover {
-//     background: $white;
+  @include hover {
+    background: $white;
 
-//     .text {
-//       color: $blue-green-500;
-//     }
+    .text {
+      color: $primary;
+    }
 
-//     .icon {
-//       svg {
-//         path {
-//           stroke: $blue-green-500;
-//         }
-//       }
-//     }
-//   }
-// }
+    .icon {
+      svg {
+        path {
+          stroke: $primary;
+        }
+      }
+    }
+  }
+}
