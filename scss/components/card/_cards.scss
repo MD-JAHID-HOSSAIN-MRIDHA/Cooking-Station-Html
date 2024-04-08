@@ -15,14 +15,10 @@
         padding-bottom: size(20);
     }
     .title {
-        color: #0C8040;
-        font-family: Eczar;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 32px;
-        /* 133.333% */
-        letter-spacing: 0.24px;
+        color: $primary
+        letter-spacing:0.24px;
+        text-align: center;
+        @include font($eczar,24,semibold,normal,32);
     }
     .designation {
         color: #646466;
@@ -31,6 +27,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        text-align: center;
     }
     .des {
     color: #646464;

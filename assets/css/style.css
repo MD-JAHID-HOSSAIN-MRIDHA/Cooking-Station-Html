@@ -254,6 +254,7 @@ button:focus,
   line-height: 32px;
   /* 133.333% */
   letter-spacing: 0.24px;
+  text-align: center;
 }
 .chefcard .designation {
   color: #646466;
@@ -262,6 +263,7 @@ button:focus,
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-align: center;
 }
 .chefcard .des {
   color: #646464;
