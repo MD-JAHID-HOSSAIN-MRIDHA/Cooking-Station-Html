@@ -124,6 +124,10 @@ footer {
     .copyright-menu {
         @include flex;
         gap: size(25);
+        justify-content: center;
+        @include breakpoint(tab992) {
+            justify-content: flex-end;
+        }
         a {
             color: #292826;
             font-family: Nunito;

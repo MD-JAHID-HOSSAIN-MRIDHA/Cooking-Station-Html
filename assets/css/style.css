@@ -545,6 +545,12 @@ footer .copywrite-text {
 footer .copyright-menu {
   display: flex;
   gap: 1.5625rem;
+  justify-content: center;
+}
+@media screen and (min-width: 62rem) {
+  footer .copyright-menu {
+    justify-content: flex-end;
+  }
 }
 footer .copyright-menu a {
   color: #292826;
