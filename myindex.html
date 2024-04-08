@@ -10,15 +10,22 @@
       href="assets/images/favicon.ico"
       type="image/x-icon"
     />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <!-- ================== HEADER PART START================== -->
     <header>
-      <nav class="navbar navbar-expand-lg p-0 bg-white">
+      <nav class="navbar navbar-expand-lg p-0 bg-white z-3">
         <div class="container">
           <!-- logo -->
           <a href="/"
@@ -77,28 +84,47 @@
       </nav>
 
       <!-- ========== HERO SECTION START ========= -->
-      <div class="container hero">
-        <div class="d-md-flex flex-md-row-reverse justify-content-between align-items-center w-100 gap-3">
+      <div class="container hero bg-white">
+        <div
+          class="d-lg-flex flex-md-row-reverse justify-content-between align-items-center w-100 gap-5"
+        >
+          <!-- hero slider -->
+          <div class="flex-1 overflow-hidden pt-6">
+            <div class="swiper hero-swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="/assets/images/chefs/chef_hero.jpg" alt="" />
+                </div>
 
-          <div class="flex-1">
-            <img src="/assets/images/chefs/chef_hero.jpg" alt="" />
+                <div class="swiper-slide">
+                  <img src="/assets/images/chefs/chef_hero.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
           </div>
 
-          <div class="hero_content flex-1">
+          <div class="hero_content flex-1 pt-3">
             <div>
-              <h1 class="section_title">
-                Enjoy Our Healthy and <br> Delicious Dish
+              <h1 class="section_title text-center text-lg-start">
+                Enjoy Our Healthy and Delicious Dish
               </h1>
-              <p class="section_body py-3">
+              <p class="section_body py-3 text-justify">
                 Cooking Station is prominent to provide On Demand Home Cook Food
                 Delivery For Bachelor, Officials, Family's and also as per
                 needed for Events.
               </p>
             </div>
-
-            <div>
-              <button>Subscription</button>
-              <button>Live</button>
+            <div class="hero_action_btn text-center text-lg-start">
+              <button class="cs_btn">Subscription</button>
+              <button class="live_btn"><span></span></button>
             </div>
           </div>
         </div>
@@ -398,6 +424,27 @@
       </div>
     </footer>
     <!-- =================== Footer PART END=================== -->
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".hero-swiper", {
+        // Optional parameters
+
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets",
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        pag,
+      });
+    </script>
     <!-- BOOTSTRAP JS -->
     <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- TOOLTIP JS -->

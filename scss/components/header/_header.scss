@@ -49,12 +49,37 @@
 }
 
 .hero {
-  // padding-top: 100px;
-  height: 75svh;
+  padding-top: 20px;
+  height: 100svh;
   @include flex-center;
   justify-content: space-between;
+  align-items: start;
+  @include breakpoint(mobile768) {
+    & {
+      align-items: center;
+      height: 70svh;
+    }
+  }
 }
 
-.hero_content {
-  // max-width: 536px;
+// .hero_content {
+//   max-width: 536px;
+//   text-align: start;
+//   @include breakpoint(mobile576) {
+//     .hero_content {
+//       text-align: center;
+//     }
+//   }
+// }
+.hero-swiper {
+  width: 100%;
+  img {
+    @include radius(26);
+    width: 100%;
+    max-height: 348px;
+  }
 }
+// .hero_action_btn {
+//   // margin-left: 33px;
+//   text-align: center;
+// }
