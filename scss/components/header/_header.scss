@@ -1,3 +1,16 @@
 @use "../../global" as *;
 @use "../../partials" as *;
 
+// .active {
+//   color: $primary !important;
+//   position: relative;
+//   &::after {
+//     content: "";
+//     width: 100%;
+//     height: 1px;
+//     background-color: $primary;
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//   }
+// }

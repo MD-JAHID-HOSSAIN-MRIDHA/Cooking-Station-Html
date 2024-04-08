@@ -11,7 +11,6 @@ button,
   margin: 0;
   padding: 0;
   @include transitionsall;
-
   &:focus {
     box-shadow: none;
     outline: none;
@@ -56,4 +55,3 @@ button,
 //     }
 //   }
 // }
-
