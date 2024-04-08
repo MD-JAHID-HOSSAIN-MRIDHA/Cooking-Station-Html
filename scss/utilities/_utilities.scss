@@ -5,27 +5,27 @@
   @include font($eczar, 40, 500, normal, 52);
   color: $primary;
 }
-
 .section_body {
   @include font($nunito, 18, 500, normal, 26);
   color: $section_para;
 }
-.section-top  {
+.section-top {
   @include flex-column;
   gap: size(2);
   align-items: center;
   text-align: center;
   .title {
-    @include font($eczar,30,semibold,normal,45);
+    @include font($eczar, 30, semibold, normal, 45);
     @include breakpoint(mobile576) {
-    @include font($eczar, 40, semibold, normal, 52);
+      @include font($eczar, 40, semibold, normal, 52);
     }
     color: $primary;
   }
   .des {
     color: $section-top-des;
     @include font($nunito, 18, medium, normal, 24);
-
   }
-
+}
+.flex-1 {
+  flex: 1;
 }

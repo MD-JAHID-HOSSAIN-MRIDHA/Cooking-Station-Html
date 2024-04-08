@@ -14,3 +14,47 @@
 //     left: 0;
 //   }
 // }
+
+.nav-link {
+  color: #808082 !important;
+  position: relative;
+  padding: 3px 0 !important;
+  margin: 4px 10px;
+  transition: 0.3s;
+  display: inline-block !important;
+  &::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: $primary;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover {
+    color: $primary !important;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.active {
+  color: $primary !important;
+  &::after {
+    width: 100% !important;
+  }
+}
+
+.hero {
+  // padding-top: 100px;
+  height: 75svh;
+  @include flex-center;
+  justify-content: space-between;
+}
+
+.hero_content {
+  // max-width: 536px;
+}
