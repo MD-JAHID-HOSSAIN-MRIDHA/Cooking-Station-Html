@@ -1,20 +1,6 @@
 @use "../../global" as *;
 @use "../../partials" as *;
 
-// .active {
-//   color: $primary !important;
-//   position: relative;
-//   &::after {
-//     content: "";
-//     width: 100%;
-//     height: 1px;
-//     background-color: $primary;
-//     position: absolute;
-//     bottom: 0;
-//     left: 0;
-//   }
-// }
-
 .nav-link {
   color: #808082 !important;
   position: relative;
@@ -54,7 +40,7 @@
   @include flex-center;
   justify-content: space-between;
   align-items: start;
-  @include breakpoint(mobile768) {
+  @include breakpoint(tab992) {
     & {
       align-items: center;
       height: 70svh;
@@ -62,15 +48,6 @@
   }
 }
 
-// .hero_content {
-//   max-width: 536px;
-//   text-align: start;
-//   @include breakpoint(mobile576) {
-//     .hero_content {
-//       text-align: center;
-//     }
-//   }
-// }
 .hero-swiper {
   width: 100%;
   img {
@@ -79,7 +56,60 @@
     max-height: 348px;
   }
 }
-// .hero_action_btn {
-//   // margin-left: 33px;
-//   text-align: center;
-// }
+.hero_action_btn {
+  text-align: center;
+}
+.login_btn {
+  @include font($nunito, 16, 600, normal, 24);
+  letter-spacing: 0.24px;
+  color: $primary;
+  padding-right: 18px;
+}
+.live_btn {
+  @include circle;
+  border: 2px solid $primary;
+  width: 60px;
+  aspect-ratio: 1/1;
+  position: relative;
+  margin-left: 25px;
+  &::after {
+    content: "Live kitchen";
+    display: inline-block;
+    color: $primary;
+    position: absolute;
+    left: 80%;
+    width: max-content;
+    background-color: white;
+    @include font($inter, 12, 400, normal, 20);
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%);
+    background-color: $primary;
+    width: 10px;
+    aspect-ratio: 1;
+    @include circle;
+    animation: blinking 2s ease-in-out infinite;
+  }
+}
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: $yellow-light;
+  width: 24px;
+  height: 63px;
+}
