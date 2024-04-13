@@ -3,18 +3,19 @@
 
 .featured_sec {
   margin-top: size(40);
+  position: relative;
   @include breakpoint(tab992) {
     margin-top: size(100);
   }
 }
 
-.featured_container {
-  margin-top: size(120);
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 27px;
+.featured-swiper {
+  margin-top: size(110);
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
 }
-
 .featured_card {
   background-color: $green-light;
   @include radius(48);
@@ -22,6 +23,7 @@
   max-width: 300px;
   height: 296px;
   padding-right: 33px;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,4 +41,22 @@
   width: size(198);
   aspect-ratio: 1/1;
   transform: translateY(-3rem);
+}
+
+.featured-swiper-next,
+.featured-swiper-prev {
+  @include circle;
+  border: 2px solid $primary;
+  width: size(50);
+  height: size(50);
+  color: black;
+  position: absolute;
+  top: 70%;
+  z-index: 1000;
+}
+.featured-swiper-next {
+  right: -1%;
+}
+.featured-swiper-prev {
+  left: -1%;
 }

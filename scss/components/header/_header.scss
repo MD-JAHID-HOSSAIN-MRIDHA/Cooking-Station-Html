@@ -50,6 +50,8 @@
 
 .hero-swiper {
   width: 100%;
+  @include radius(26);
+  overflow: hidden;
   img {
     @include radius(26);
     width: 100%;
@@ -107,8 +109,8 @@
     opacity: 0;
   }
 }
-.swiper-button-prev,
-.swiper-button-next {
+.swiper-hero-prev,
+.swiper-hero-next {
   background-color: $yellow-light;
   width: 24px;
   height: 63px;
