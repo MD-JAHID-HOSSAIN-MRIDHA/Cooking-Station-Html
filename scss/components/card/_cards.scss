@@ -132,16 +132,3 @@
     }
   }
 }
-
-.eventimg {
-  border-radius: 390px 390px 0px 0px;
-  overflow: hidden;
-  height: 100%;
-  min-height: size(600);
-  @include breakpoint(tab992) {
-    min-height: auto;
-  }
-  img {
-    @include wh100;
-  }
-}
