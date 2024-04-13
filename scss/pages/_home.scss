@@ -19,6 +19,8 @@
     color: $white;
     @include flex-column;
     text-align: center;
+    align-items: center;
+    gap: size(28);
   }
 }
 .event {
