@@ -1,0 +1,67 @@
+@use "../global" as *;
+@use "../partials" as *;
+
+.about_sec {
+  margin-top: size(20);
+  @include flex-column;
+  @include flex-center;
+  text-align: center;
+  @include breakpoint(tab992) {
+    @include flex-center-vert;
+    @include flex-row;
+    margin-top: size(90);
+    text-align: start;
+  }
+  .title {
+    @include font($eczar, 30, semibold, normal, 45);
+    @include breakpoint(mobile576) {
+      @include font($eczar, 40, semibold, normal, 52);
+    }
+    color: $primary;
+    margin-bottom: size(24);
+  }
+  .des {
+    color: $section-top-des;
+    @include font($nunito, 18, medium, normal, 24);
+    margin-bottom: size(18);
+  }
+}
+
+.about_sec > * {
+  flex: 1;
+}
+
+.watch_btn {
+  @include flex-center;
+  gap: 19px;
+  margin-top: size(50);
+  margin-left: auto;
+  padding-right: size(24);
+
+  & > img {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: -20px;
+      left: -20px;
+      width: 20px;
+      height: 20px;
+      border: 20px solid $yellow-light;
+    }
+  }
+
+  // &::after {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%);
+  //   width: 10px;
+  //   height: 10px;
+  //   border-left: 10px solid transparent;
+  //   border-right: 10px solid transparent;
+  // }
+}
