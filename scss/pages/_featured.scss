@@ -1,0 +1,42 @@
+@use "../global" as *;
+@use "../partials" as *;
+
+.featured_sec {
+  margin-top: size(40);
+  @include breakpoint(tab992) {
+    margin-top: size(100);
+  }
+}
+
+.featured_container {
+  margin-top: size(120);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 27px;
+}
+
+.featured_card {
+  background-color: $green-light;
+  @include radius(48);
+  padding-left: 33px;
+  max-width: 300px;
+  height: 296px;
+  padding-right: 33px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // gap: size(35);
+  box-shadow: 0px 4px 8px 0px rgba(11, 110, 105, 0.25);
+  padding-bottom: size(10);
+  .title {
+    @include font($eczar, 28, 600, normal, 52);
+    transform: translateY(-2rem);
+    color: $primary;
+  }
+}
+
+.featured_dish {
+  width: size(198);
+  aspect-ratio: 1/1;
+  transform: translateY(-3rem);
+}

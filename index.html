@@ -17,11 +17,154 @@
 </head>
 
 <body>
-    <!-- ================== HEADER PART START================== -->
-    <header>
+  <!-- ================== HEADER PART START================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg p-0 bg-white z-3">
+      <div class="container">
+        <!-- logo -->
+        <a href="/"
+          ><img
+            class="logo"
+            src="./assets/images/Logo.svg"
+            alt="Cooking station"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    </header>
-    <!-- =================== HEADER PART END=================== -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- nav items -->
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Join as chef</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+
+          <div
+            class="d-flex justify-content-center align-items-center gap-3"
+            role="search"
+          >
+            <a href="/login" class="login_btn">Login</a>
+
+            <a href="/pakages" class="cs_btn">Book Your Plan </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- =================== HEADER PART END=================== -->
+
+  <!-- ========== HERO SECTION START ========= -->
+  <section class="container hero bg-white">
+    <div
+      class="d-lg-flex flex-md-row-reverse justify-content-between align-items-center w-100 gap-5"
+    >
+      <!-- hero slider -->
+      <div class="flex-1 overflow-hidden pt-6">
+        <div class="swiper hero-swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="/assets/images/chefs/chef_hero.jpg" alt="" />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="/assets/images/chefs/chef_hero.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="swiper-pagination cursor-pointer"></div>
+
+          <div class="swiper-button-prev text-white">
+            <!-- <i class="fa-solid fa-chevron-left"></i> -->
+            <img src="/assets/images/icons/left_arrow.svg" alt="" />
+          </div>
+          <div class="swiper-button-next">
+            <i class="fa-solid fa-chevron-right text-black"></i>
+            <!-- <img src="/assets/images/icons/right_arrow.svg" alt=""> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="hero_content flex-1 pt-3">
+        <div>
+          <h1 class="section_title text-center text-lg-start">
+            Enjoy Our Healthy and Delicious Dish
+          </h1>
+          <p class="section_body py-3 text-justify">
+            Cooking Station is prominent to provide On Demand Home Cook Food
+            Delivery For Bachelor, Officials, Family's and also as per needed
+            for Events.
+          </p>
+        </div>
+        <div class="hero_action_btn text-center text-lg-start">
+          <button class="cs_btn">Subscription</button>
+          <button class="live_btn"><span></span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ========== HERO SECTION END ========= -->
+
+  <!-- ========= ABOUT SECTION START HERE======== -->
+  <section>
+    <div class="container about_sec">
+      <figure class="">
+        <img src="/assets/images/chefs/chef_about.jpg" alt="" />
+      </figure>
+
+      <div class=" ">
+        <h3 class="title">About Cooking Station</h3>
+        <p class="des">
+          Cooking Station prominent to provide home made food for Bachelor,
+          Official and Family's.
+        </p>
+        <p class="des">
+          Every dish we create is a product of love and dedication. Our
+          skilled chefs use the finest ingredients, combining traditional
+          recipes with a modern twist to ensure each bite is a delightful
+          experience.
+        </p>
+        <button class="cs_btn">Read More</button>
+        <div>
+          <div>
+            <button class="watch_btn">
+              <img src="/assets/images/icons/watch_video.svg" alt="" /><span
+                >Watch Video</span
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ========= ABOUT SECTION ENDS HERE======== -->
 
 
     <!-- =================== TESTIMONIAL PART START=================== -->
