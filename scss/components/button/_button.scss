@@ -67,13 +67,15 @@ button,
   }
 }
 
-.jounus-btn {
+.joinus-btn {
   background: $white;
   padding: size(8) size(58);
   @include radius(6);
   color: $primary;
   @include font($nunito, 18, semibold, normal, 24);
+  position: relative;
+
   @include hover {
-    background: darken($white, 10%);
+    background: darken($white, 30%);
   }
 }

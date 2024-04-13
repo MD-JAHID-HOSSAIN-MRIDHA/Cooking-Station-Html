@@ -1,5 +1,48 @@
 @use "../global" as *;
 @use "../partials" as *;
+.testimonial {
+  padding: size(40) size(0);
+  @include breakpoint(mobile576) {
+    padding: size(60) size(0);
+  }
+  @include breakpoint(tab992) {
+    padding: size(90) size(0);
+  }
+
+  .single-testimonial {
+    @include flex-column;
+    gap: size(20);
+    align-items: flex-start;
+    padding: size(50) size(0);
+    padding-bottom: size(0);
+    .profile-info {
+      @include flex;
+      gap: size(20);
+      .testimonial-thumb {
+        @include square(60);
+        overflow: hidden;
+        @include radius(60);
+      }
+
+      img {
+        @include wh100;
+      }
+    }
+    .text {
+      color: rgba(4, 4, 21, 0.6);
+      @include font($nunito, 20, medium, normal, 34);
+    }
+    .name {
+      color: rgba(4, 4, 21, 0.8);
+      @include font($nunito, 24, semibold, normal, 34);
+    }
+    .designation {
+      color: rgba(92, 92, 93, 0.8);
+      @include font($nunito, 16, semibold, normal, 22);
+      margin-bottom: size(30);
+    }
+  }
+}
 .joinus {
   background: linear-gradient(
       101deg,
@@ -24,6 +67,13 @@
   }
 }
 .event {
+  padding: size(40) size(0);
+  @include breakpoint(mobile576) {
+    padding: size(60) size(0);
+  }
+  @include breakpoint(tab992) {
+    padding: size(90) size(0);
+  }
   .eventimg {
     border-radius: 390px 390px 0px 0px;
     overflow: hidden;
@@ -50,21 +100,21 @@
 .swiper {
   width: 100%;
   height: 100%;
-  span.swiper-pagination-bullet {
-    transition: all 0.3s ease;
-  }
+}
+span.swiper-pagination-bullet {
+  transition: all 0.3s ease;
+}
 
-  span.swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: $primary;
-    opacity: 1;
-    width: size(40);
-    height: size(11);
-    @include radius(20);
-  }
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: $primary;
+  opacity: 1;
+  width: size(40);
+  height: size(11);
+  @include radius(20);
+}
 
-  .swiper-pagination-bullet {
-    background-color: #fbd85d;
-    opacity: 1;
-    @include square(11);
-  }
+.swiper-pagination-bullet {
+  background-color: #fbd85d;
+  opacity: 1;
+  @include square(11);
 }
