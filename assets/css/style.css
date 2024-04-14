@@ -1216,21 +1216,21 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   justify-content: center;
   gap: 19px;
   margin-top: 3.125rem;
-  margin-left: auto;
+  margin-left: 17rem;
   padding-right: 1.5rem;
-}
-.watch_btn > img {
   position: relative;
 }
-.watch_btn > img::after {
+.watch_btn::after {
   content: "";
   position: absolute;
   display: block;
-  top: -20px;
-  left: -20px;
-  width: 20px;
-  height: 20px;
-  border: 20px solid #fae392;
+  top: -12px;
+  left: -31px;
+  width: 79px;
+  height: 73px;
+  border: 2px solid #fae392;
+  z-index: -1;
+  border-radius: 0.5rem;
 }
 
 .featured_sec {
@@ -1245,6 +1245,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .featured-swiper {
   margin-top: 6.875rem;
+  padding-bottom: 0.625rem;
 }
 .featured-swiper .swiper-slide {
   display: flex;
@@ -1273,6 +1274,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   line-height: 1.8571428571;
   transform: translateY(-2rem);
   color: hsl(147, 83%, 27%);
+  text-align: center;
 }
 
 .featured_dish {
@@ -1285,20 +1287,53 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .featured-swiper-prev {
   border-radius: 100%;
   border: 2px solid hsl(147, 83%, 27%);
-  width: 3.125rem;
-  height: 3.125rem;
+  width: 2.5rem;
+  height: 2.5rem;
   color: black;
   position: absolute;
-  top: 70%;
+  top: 60%;
   z-index: 1000;
+}
+@media screen and (min-width: 36rem) {
+  .featured-swiper-next,
+  .featured-swiper-prev {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
 }
 
 .featured-swiper-next {
-  right: -1%;
+  right: 1%;
+}
+@media screen and (min-width: 48rem) {
+  .featured-swiper-next {
+    right: -2%;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .featured-swiper-next {
+    right: -4%;
+  }
 }
 
 .featured-swiper-prev {
-  left: -1%;
+  left: 1%;
+}
+@media screen and (min-width: 48rem) {
+  .featured-swiper-prev {
+    left: -2%;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .featured-swiper-prev {
+    left: -4%;
+  }
+}
+
+.featured_dish_action {
+  text-align: center;
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
 }
 
 .section_title {
