@@ -443,6 +443,10 @@ button:focus,
   width: 100%;
 }
 
+.offcanvas {
+  min-height: 0 !important;
+}
+
 .active {
   color: hsl(147, 83%, 27%) !important;
 }
@@ -451,18 +455,16 @@ button:focus,
 }
 
 .hero {
-  padding-top: 20px;
-  height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: space-between;
   align-items: start;
+  margin-top: 7.5rem;
 }
 @media screen and (min-width: 62rem) {
   .hero {
     align-items: center;
-    height: 70svh;
   }
 }
 

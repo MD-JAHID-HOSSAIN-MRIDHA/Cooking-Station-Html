@@ -27,6 +27,10 @@
   }
 }
 
+.offcanvas {
+  min-height: 0 !important;
+}
+
 .active {
   color: $primary !important;
   &::after {
@@ -35,15 +39,13 @@
 }
 
 .hero {
-  padding-top: 20px;
-  height: 100svh;
   @include flex-center;
   justify-content: space-between;
   align-items: start;
+  margin-top: size(120);
   @include breakpoint(tab992) {
     & {
       align-items: center;
-      height: 70svh;
     }
   }
 }
