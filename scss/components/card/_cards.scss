@@ -126,6 +126,14 @@
     -webkit-text-stroke-color: #fff;
     @include font($nunito, 18, semibold, normal, 24);
     margin-top: size(30);
+    &.reverse {
+      background-color: $primary;
+      color: $white; 
+      @include hover {
+        color: $primary;
+        background-color: $white;
+      }
+    }
     &:hover {
       background-color: $primary;
       color: $white;
@@ -211,5 +219,56 @@
     @include radius(8);
     @include transitionsall;
     @include font($montserrat, 18, semibold, normal, 20);
+  }
+}
+
+.singlechoose {
+  padding-block: size(20);
+  @include flex;
+  align-items: flex-start;
+  gap: size(30);
+  @include transitionsall;
+  @include hover {
+    transform: translateX(10px);
+    .chooseusthumb {
+      img {
+        transform: scale(0.9);
+      }
+    }
+  }
+
+  .circle {
+    @include border(solid, 1, $primary);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    @include square(73);
+    @include flex-center;
+    flex-shrink: 0;
+  }
+  .chooseusthumb {
+    @include square(45);
+    img {
+      @include transitionsall;
+      @include wh100;
+    }
+  }
+  .right {
+    @include border-single(bottom, solid, 2, #d8d0c7);
+    padding-bottom: size(22);
+    @include flex-column;
+    gap: size(5);
+    .title {
+      color: #303030;
+      font-family: Eczar;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 40px;
+      text-transform: capitalize;
+      @include font($eczar, 28, medium, normal, 40);
+    }
+    .des {
+      color: rgba(75, 66, 62, 0.7);
+      @include font($nunito, 18, medium, normal, 26);
+    }
   }
 }

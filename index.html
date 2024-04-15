@@ -13,288 +13,227 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-     <!-- font awosome cdn -->
-     <link
-     rel="stylesheet"
-     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-     crossorigin="anonymous"
-     referrerpolicy="no-referrer"
-   />
-
+    <!-- font awosome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-     <!-- ================== HEADER PART START================== -->
+    <!-- ================== HEADER PART START================== -->
 
-     <header>
+    <header>
         <nav class="navbar navbar-expand-lg bg-white p-0 z-3 fixed-top">
-          <div class="container">
-            <a href="/"
-              ><img
-                class="logo"
-                src="assets/images/Logo.svg"
-                alt="Cooking station"
-            /></a>
-            <div
-            class="d-flex d-lg-none justify-content-center align-items-center gap-3"
-            role="search"
-          >
-            <!-- <a href="/login" class="login_btn">Login</a> -->
-  
-            <a href="/pakages" class="btn-success btn btn-sm">Book Your Plan </a>
-          </div>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="offcanvas flex-1 offcanvas-end"
-              tabindex="-1"
-              id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel"
-            >
-              <div class="offcanvas-header">
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                >
-                <i class="fa-solid fa-xmark fs-4"></i>
-              </button>
-              </div>
-              <div class="offcanvas-body">
-                <div class="d-flex justify-content-between w-100">
-                  <ul class="navbar-nav mx-auto mb-2 mt-lg-2">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="/"
-                        >Home</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">About us</a>
-                    </li>
-  
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Packages</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Join as chef</a>
-                    </li>
-  
-                    <li class="nav-item">
-                      <a class="nav-link" href="/contactUs">Contact Us</a>
-                    </li>
-                  </ul>
-  
-                  <div
-                    class="d-lg-flex d-none justify-content-center align-items-center gap-3"
-                    role="search"
-                  >
-                    <a href="/login" class="login_btn">Login</a>
-  
-                    <a href="/pakages" class="cs_btn">Book Your Plan </a>
-                  </div>
+            <div class="container">
+                <a href="/"><img class="logo" src="assets/images/Logo.svg" alt="Cooking station" /></a>
+                <div class="d-flex d-lg-none justify-content-center align-items-center gap-3" role="search">
+                    <!-- <a href="/login" class="login_btn">Login</a> -->
+
+                    <a href="/pakages" class="btn-success btn btn-sm">Book Your Plan </a>
                 </div>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </header>
-      <!-- =================== HEADER PART END=================== -->
-  
-      <!-- ========== HERO SECTION START ========= -->
-      <section class="container hero bg-white">
-        <div
-          class="d-lg-flex flex-md-row-reverse justify-content-between align-items-center w-100 gap-5"
-        >
-          <!-- hero slider -->
-          <div class="flex-1 overflow-hidden pt-6">
-            <div class="swiper hero-swiper">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <img src="/assets/images/chefs/chef_hero.jpg" alt="" />
-                </div>
-  
-                <div class="swiper-slide">
-                  <img src="/assets/images/chefs/chef_hero.jpg" alt="" />
-                </div>
-              </div>
-  
-              <div class="swiper-pagination cursor-pointer"></div>
-  
-              <div class="swiper-button-prev swiper-hero-prev text-white">
-                <!-- <i class="fa-solid fa-chevron-left"></i> -->
-                <img src="/assets/images/icons/left_arrow.svg" alt="" />
-              </div>
-              <div class="swiper-button-next swiper-hero-next">
-                <i class="fa-solid fa-chevron-right text-black"></i>
-                <!-- <img src="/assets/images/icons/right_arrow.svg" alt=""> -->
-              </div>
-            </div>
-          </div>
-  
-          <div class="hero_content flex-1 pt-3">
-            <div>
-              <h1 class="banner_title text-center text-lg-start">
-                Enjoy Our Healthy and Delicious Dish
-              </h1>
-              <p class="banner_body py-3 text-justify">
-                Cooking Station is prominent to provide On Demand Home Cook Food
-                Delivery For Bachelor, Officials, Family's and also as per needed
-                for Events.
-              </p>
-            </div>
-            <div class="hero_action_btn text-center text-lg-start">
-              <button class="cs_btn">Subscription</button>
-              <button class="live_btn"><span></span></button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ========== HERO SECTION END ========= -->
-  
-      <!-- ========= ABOUT SECTION START HERE======== -->
-      <section>
-        <div class="container about_sec">
-          <figure class="">
-            <img src="/assets/images/chefs/chef_about.jpg" alt="" />
-          </figure>
-  
-          <div class=" ">
-            <h3 class="title">About Cooking Station</h3>
-            <p class="des">
-              Cooking Station prominent to provide home made food for Bachelor,
-              Official and Family's.
-            </p>
-            <p class="des">
-              Every dish we create is a product of love and dedication. Our
-              skilled chefs use the finest ingredients, combining traditional
-              recipes with a modern twist to ensure each bite is a delightful
-              experience.
-            </p>
-            <button class="cs_btn">Read More</button>
-            <div class="watch_btn_container">
-                <button class="watch_btn">
-                  <img src="/assets/images/icons/watch_video.svg" alt="" /><span
-                    >Watch Video</span
-                  >
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="offcanvas flex-1 offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="fa-solid fa-xmark fs-4"></i>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="d-flex justify-content-between w-100">
+                            <ul class="navbar-nav mx-auto mb-2 mt-lg-2">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About us</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Packages</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Join as chef</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/contactUs">Contact Us</a>
+                                </li>
+                            </ul>
+
+                            <div class="d-lg-flex d-none justify-content-center align-items-center gap-3" role="search">
+                                <a href="/login" class="login_btn">Login</a>
+
+                                <a href="/pakages" class="cs_btn">Book Your Plan </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </nav>
+    </header>
+    <!-- =================== HEADER PART END=================== -->
+
+    <!-- ========== HERO SECTION START ========= -->
+    <section class="container hero bg-white">
+        <div class="d-lg-flex flex-md-row-reverse justify-content-between align-items-center w-100 gap-5">
+            <!-- hero slider -->
+            <div class="flex-1 overflow-hidden pt-6">
+                <div class="swiper hero-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="/assets/images/chefs/chef_hero.jpg" alt="" />
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="/assets/images/chefs/chef_hero.jpg" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination cursor-pointer"></div>
+
+                    <div class="swiper-button-prev swiper-hero-prev text-white">
+                        <!-- <i class="fa-solid fa-chevron-left"></i> -->
+                        <img src="/assets/images/icons/left_arrow.svg" alt="" />
+                    </div>
+                    <div class="swiper-button-next swiper-hero-next">
+                        <i class="fa-solid fa-chevron-right text-black"></i>
+                        <!-- <img src="/assets/images/icons/right_arrow.svg" alt=""> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero_content flex-1 pt-3">
+                <div>
+                    <h1 class="banner_title text-center text-lg-start">
+                        Enjoy Our Healthy and Delicious Dish
+                    </h1>
+                    <p class="banner_body py-3 text-justify">
+                        Cooking Station is prominent to provide On Demand Home Cook Food
+                        Delivery For Bachelor, Officials, Family's and also as per needed
+                        for Events.
+                    </p>
+                </div>
+                <div class="hero_action_btn text-center text-lg-start">
+                    <button class="cs_btn">Subscription</button>
+                    <button class="live_btn"><span></span></button>
+                </div>
+            </div>
         </div>
-      </section>
-      <!-- ========= ABOUT SECTION ENDS HERE======== -->
-  
-      <!-- ========= FEATURED START HERE======== -->
-      <section>
+    </section>
+    <!-- ========== HERO SECTION END ========= -->
+
+    <!-- ========= ABOUT SECTION START HERE======== -->
+    <section>
+        <div class="container about_sec">
+            <figure class="">
+                <img src="/assets/images/chefs/chef_about.jpg" alt="" />
+            </figure>
+
+            <div class=" ">
+                <h3 class="title">About Cooking Station</h3>
+                <p class="des">
+                    Cooking Station prominent to provide home made food for Bachelor,
+                    Official and Family's.
+                </p>
+                <p class="des">
+                    Every dish we create is a product of love and dedication. Our
+                    skilled chefs use the finest ingredients, combining traditional
+                    recipes with a modern twist to ensure each bite is a delightful
+                    experience.
+                </p>
+                <button class="cs_btn">Read More</button>
+                <div class="watch_btn_container">
+                    <button class="watch_btn">
+                        <img src="/assets/images/icons/watch_video.svg" alt="" /><span>Watch Video</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========= ABOUT SECTION ENDS HERE======== -->
+
+    <!-- ========= FEATURED START HERE======== -->
+    <section>
         <div class="container featured_sec">
-          <div class="section-top">
-            <h3 class="title">Our Feature Dishes</h3>
-            <p class="des">Check Our Healthy and Delicious Menu</p>
-          </div>
-  
-          <div class="swiper featured-swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="featured_card">
-                  <figure>
-                    <img
-                      src="/assets/images/Chicken Curry.png"
-                      alt=""
-                      class="featured_dish"
-                    />
-                  </figure>
-                  <h4 class="title">Chicken Curry</h4>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="featured_card">
-                  <figure>
-                    <img
-                      src="/assets/images/Chicken Curry.png"
-                      alt=""
-                      class="featured_dish"
-                    />
-                  </figure>
-                  <h4 class="title">Chicken Curry</h4>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="featured_card">
-                  <figure>
-                    <img
-                      src="/assets/images/Chicken Curry.png"
-                      alt=""
-                      class="featured_dish"
-                    />
-                  </figure>
-                  <h4 class="title">Chicken Curry</h4>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="featured_card">
-                  <figure>
-                    <img
-                      src="/assets/images/Chicken Curry.png"
-                      alt=""
-                      class="featured_dish"
-                    />
-                  </figure>
-                  <h4 class="title">Chicken Curry</h4>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="featured_card">
-                  <figure>
-                    <img
-                      src="/assets/images/Chicken Curry.png"
-                      alt=""
-                      class="featured_dish"
-                    />
-                  </figure>
-                  <h4 class="title">Chicken Curry</h4>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="featured_card">
-                  <figure>
-                    <img
-                      src="/assets/images/Chicken Curry.png"
-                      alt=""
-                      class="featured_dish"
-                    />
-                  </figure>
-                  <h4 class="title">Chicken Curry</h4>
-                </div>
-              </div>
+            <div class="section-top">
+                <h3 class="title">Our Feature Dishes</h3>
+                <p class="des">Check Our Healthy and Delicious Menu</p>
             </div>
-          </div>
-          <!-- swiper navigation buttons -->
-          <div class="featured-swiper-next swiper-button-next">
-            <i class="fa-solid fa-angle-right"></i>
-          </div>
-          <div class="featured-swiper-prev swiper-button-prev">
-            <i class="fa-solid fa-angle-left"></i>
-          </div>
-          <div class="featured_dish_action">
-            <button class="cs_btn">More Dishes</button>
-          </div>
+
+            <div class="swiper featured-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="featured_card">
+                            <figure>
+                                <img src="/assets/images/Chicken Curry.png" alt="" class="featured_dish" />
+                            </figure>
+                            <h4 class="title">Chicken Curry</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured_card">
+                            <figure>
+                                <img src="/assets/images/Chicken Curry.png" alt="" class="featured_dish" />
+                            </figure>
+                            <h4 class="title">Chicken Curry</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured_card">
+                            <figure>
+                                <img src="/assets/images/Chicken Curry.png" alt="" class="featured_dish" />
+                            </figure>
+                            <h4 class="title">Chicken Curry</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured_card">
+                            <figure>
+                                <img src="/assets/images/Chicken Curry.png" alt="" class="featured_dish" />
+                            </figure>
+                            <h4 class="title">Chicken Curry</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured_card">
+                            <figure>
+                                <img src="/assets/images/Chicken Curry.png" alt="" class="featured_dish" />
+                            </figure>
+                            <h4 class="title">Chicken Curry</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured_card">
+                            <figure>
+                                <img src="/assets/images/Chicken Curry.png" alt="" class="featured_dish" />
+                            </figure>
+                            <h4 class="title">Chicken Curry</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- swiper navigation buttons -->
+            <div class="featured-swiper-next swiper-button-next">
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="featured-swiper-prev swiper-button-prev">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="featured_dish_action">
+                <button class="cs_btn">More Dishes</button>
+            </div>
         </div>
-      </section>
-      <!-- ========= FEATURED SECTION ENDS HERE======== -->
+    </section>
+    <!-- ========= FEATURED SECTION ENDS HERE======== -->
 
 
     <!-- ========= PRICING SECTION START HERE======== -->
@@ -631,6 +570,98 @@
         </div>
     </section>
     <!-- ========= PRICING SECTION ENDS HERE======== -->
+
+    <!-- ========= WHY CHOOSE USE SECTION  START======== -->
+    <section class="whychoose">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="choose-wrapper">
+                        <div class="singlechoose">
+                            <div class="circle">
+                                <figure class="chooseusthumb">
+                                    <img src="assets/images/home/chooseus/1.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="right">
+                                <h3 class="title">Best Chef</h3>
+                                <p class="des">Every dish we create is a product of love and dedication. Our skilled
+                                    chefs use the finest ingredients, </p>
+                            </div>
+                        </div>
+                        <div class="singlechoose">
+                            <div class="circle">
+                                <figure class="chooseusthumb">
+                                    <img src="assets/images/home/chooseus/2.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="right">
+                                <h3 class="title">Fresh, Healthy and Hygienic</h3>
+                                <p class="des">Every dish we create is a product of love and dedication. Our skilled
+                                    chefs use the finest ingredients, </p>
+                            </div>
+                        </div>
+                        <div class="singlechoose">
+                            <div class="circle">
+                                <figure class="chooseusthumb">
+                                    <img src="assets/images/home/chooseus/3.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="right">
+                                <h3 class="title">Diet and nutrition management</h3>
+                                <p class="des">Every dish we create is a product of love and dedication. Our skilled
+                                    chefs use the finest ingredients, </p>
+                            </div>
+                        </div>
+                        <div class="singlechoose">
+                            <div class="circle">
+                                <figure class="chooseusthumb">
+                                    <img src="assets/images/home/chooseus/4.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="right">
+                                <h3 class="title">Delicious</h3>
+                                <p class="des">Every dish we create is a product of love and dedication. Our skilled
+                                    chefs use the finest ingredients, </p>
+                            </div>
+                        </div>
+                        <div class="singlechoose">
+                            <div class="circle">
+                                <figure class="chooseusthumb">
+                                    <img src="assets/images/home/chooseus/5.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="right">
+                                <h3 class="title">Fit your Budget</h3>
+                                <p class="des">Every dish we create is a product of love and dedication. Our skilled
+                                    chefs use the finest ingredients, </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="eventbox-btn reverse px-5">Learn More</button>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-top text-start align-items-start">
+                        <h1 class="title">Why Coose Us</h1>
+                        <p class="des">What makes us Difference to make you choose us! We are prominent to deliver home
+                            cooked and original taste food anywhere in the country and we gonna launch worldwide.</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <figure>
+                            <img src="assets/images/home/chooseus/right1.png" alt="">
+                        </figure>
+                        <figure>
+                            <img src="assets/images/home/chooseus/right-2.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========= WHY CHOOSE USE SECTION  END======== -->
+
+
     <!-- =================== TESTIMONIAL PART START=================== -->
     <section class="testimonial">
         <div class="container">
@@ -1269,56 +1300,56 @@
 
     </script>
 
-<script>
-    const swiper = new Swiper(".hero-swiper", {
-      // Optional parameters
+    <script>
+        const swiper = new Swiper(".hero-swiper", {
+            // Optional parameters
 
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        type: "bullets",
-      },
-      // Navigation arrows
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "bullets",
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
 
-    const featuredSwiper = new Swiper(".featured-swiper", {
-      // Optional parameters
-      slidesPerView: 1,
-      spaceBetween: 10,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        type: "bullets",
-      },
-      breakpoints: {
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        992: {
-          slidesPerView: 3,
-          spaceBetween: 40,
-        },
-        1220: {
-          slidesPerView: 4,
-          spaceBetween: 40,
-        },
-      },
-      // Navigation arrows
-      navigation: {
-        nextEl: ".featured-swiper-next",
-        prevEl: ".featured-swiper-prev",
-      },
-    });
-  </script>
+        const featuredSwiper = new Swiper(".featured-swiper", {
+            // Optional parameters
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "bullets",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1220: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: ".featured-swiper-next",
+                prevEl: ".featured-swiper-prev",
+            },
+        });
+    </script>
 
 </body>
 
