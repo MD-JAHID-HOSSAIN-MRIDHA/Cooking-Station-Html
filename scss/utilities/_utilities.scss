@@ -1,11 +1,11 @@
 @use "../global" as *;
 @use "../partials" as *;
 
-.section_title {
+.banner_title {
   @include font($eczar, 40, 500, normal, 52);
   color: $primary;
 }
-.section_body {
+.banner_body {
   @include font($nunito, 18, 500, normal, 26);
   color: $section_para;
 }
