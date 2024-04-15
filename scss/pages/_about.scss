@@ -2,7 +2,7 @@
 @use "../partials" as *;
 
 .about_sec {
-  margin-top: size(20);
+  margin-top: size(50);
   @include flex-column;
   @include flex-center;
   text-align: center;
@@ -30,13 +30,17 @@
 .about_sec > * {
   flex: 1;
 }
-
+.watch_btn_container {
+  display: flex;
+  justify-content: center;
+}
 .watch_btn {
   @include flex-center;
   gap: 19px;
   margin-top: size(50);
-  margin-left: 17rem;
-  padding-right: size(24);
+  // margin-left: 17rem;
+  text-align: center;
+  // padding-right: size(24);
 
   position: relative;
 
