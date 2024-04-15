@@ -127,16 +127,30 @@
       <div class="container">
         <div class="contact_us_container">
           <div>
-            <h1 class="banner_title">Cooking Station <br> <span class="fw-bold">Contact</span></h1>
+            <h1 class="banner_title">
+              Cooking Station <br />
+              <span class="fw-bold">Contact</span>
+            </h1>
             <div class="under_line">
-              <svg xmlns="http://www.w3.org/2000/svg" width="226" height="26" viewBox="0 0 226 26" fill="none">
-                <path d="M3 22.9039C54.1496 15.9099 105.148 6.84914 156.469 4.20614C176.85 3.15655 197.386 2.3823 217.774 3.68228C219.863 3.81553 225.295 3.58384 220.541 4.77028" stroke="#FFC107" stroke-width="6" stroke-linecap="round"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="226"
+                height="26"
+                viewBox="0 0 226 26"
+                fill="none"
+              >
+                <path
+                  d="M3 22.9039C54.1496 15.9099 105.148 6.84914 156.469 4.20614C176.85 3.15655 197.386 2.3823 217.774 3.68228C219.863 3.81553 225.295 3.58384 220.541 4.77028"
+                  stroke="#FFC107"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                />
               </svg>
             </div>
           </div>
 
           <figure>
-            <img src="../assets/images/about/about_banner.png" alt="" />
+            <img src="../assets/images/about/about_banner.png" alt="" class="w-100"/>
           </figure>
         </div>
       </div>
@@ -146,14 +160,134 @@
     <!-- CONTACT INFO SECTION START -->
     <section class="contact_info_sec">
       <div class="container">
-        <div>
+        <div class="section-top">
+          <h2 class="title main_title">Talk with our contact team</h2>
+        </div>
+        <div class="contact_info_container">
           <!-- contact form -->
-          <div>
-            
-          </div>
+
+          <form class="row contact_form">
+            <div class="col-md-6">
+              <label for="name" class="form-label">Name *</label>
+              <input
+                type="email"
+                class="form-control"
+                id="name"
+                placeholder="Nishi"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Phone Number *</label>
+              <input
+                type="number"
+                placeholder="+880"
+                class="form-control"
+                id="phone"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label"> Email *</label>
+              <input
+                type="email"
+                placeholder="Info@gmail.com"
+                class="form-control"
+                id="email"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="address" class="form-label">Address *</label>
+              <input
+                type="text"
+                class="form-control"
+                id="address"
+                placeholder="Banasree"
+              />
+            </div>
+
+            <div class="col-12">
+              <label for="message" class="form-label"
+                >What would you like to discuss? *</label
+              >
+              <textarea
+                class="form-control"
+                id="message"
+                rows="3"
+                placeholder="Description.."
+              ></textarea>
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="cs_btn">Submit</button>
+            </div>
+          </form>
 
           <!-- contact details -->
-          <div></div>
+          <div class="contact_details">
+            <div class="contact_header">
+              <h3 class="title text-center text-lg-start">Contact Details</h3>
+              <p class="des">
+                If you have any questions, just fill in the contact form, and we
+                will answer you shortly. If you are living nearby, come visit
+                our office.
+              </p>
+            </div>
+
+            <div class="contact_body">
+              <div>
+                <h4 class="title">Client Supports</h4>
+                <div class="d-flex gap-3">
+                  <figure>
+                    <img
+                      src="../assets/images/icons/phone-call.svg"
+                      alt=""
+                      class="object-fit-contain"
+                    />
+                  </figure>
+
+                  <div>
+                    <p>UK: +4473886243123</p>
+                    <p>BD: +8801648950765</p>
+                  </div>
+                </div>
+                <div class="divider"></div>
+              </div>
+
+              <div>
+                <h4 class="title">E-mail:</h4>
+                <div class="d-flex gap-3">
+                  <figure>
+                    <img
+                      src="../assets/images/icons/email 1.svg"
+                      alt=""
+                      class="object-fit-contain"
+                    />
+                  </figure>
+
+                  <div>
+                    <p>contact@cookingstation.homes</p>
+                  </div>
+                </div>
+                <div class="divider"></div>
+              </div>
+
+              <div>
+                <h4 class="title">Main Office:</h4>
+                <div class="d-flex gap-3">
+                  <figure>
+                    <img
+                      src="../assets/images/icons/pin 1.svg"
+                      alt=""
+                      class="object-fit-contain"
+                    />
+                  </figure>
+                  <div class="pt-4">
+                    <p>20 primrose street, London, EC2A 2EW United Kingdom</p>
+                  </div>
+                </div>
+                <div class="divider w-100"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
