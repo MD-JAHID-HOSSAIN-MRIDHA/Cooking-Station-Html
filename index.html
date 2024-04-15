@@ -17,156 +17,472 @@
 </head>
 
 <body>
-  <!-- ================== HEADER PART START================== -->
-  <header>
-    <nav class="navbar navbar-expand-lg p-0 bg-white z-3">
-      <div class="container">
-        <!-- logo -->
-        <a href="/"
-          ><img
-            class="logo"
-            src="./assets/images/Logo.svg"
-            alt="Cooking station"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- ================== HEADER PART START================== -->
+    <header>
+        <nav class="navbar navbar-expand-lg p-0 bg-white z-3">
+            <div class="container">
+                <!-- logo -->
+                <a href="/"><img class="logo" src="./assets/images/Logo.svg" alt="Cooking station" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- nav items -->
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
-            </li>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- nav items -->
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Packages</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Join as chef</a>
-            </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Join as chef</a>
+                        </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-          </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
 
-          <div
-            class="d-flex justify-content-center align-items-center gap-3"
-            role="search"
-          >
-            <a href="/login" class="login_btn">Login</a>
+                    <div class="d-flex justify-content-center align-items-center gap-3" role="search">
+                        <a href="/login" class="login_btn">Login</a>
 
-            <a href="/pakages" class="cs_btn">Book Your Plan </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!-- =================== HEADER PART END=================== -->
+                        <a href="/pakages" class="cs_btn">Book Your Plan </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- =================== HEADER PART END=================== -->
 
-  <!-- ========== HERO SECTION START ========= -->
-  <section class="container hero bg-white">
-    <div
-      class="d-lg-flex flex-md-row-reverse justify-content-between align-items-center w-100 gap-5"
-    >
-      <!-- hero slider -->
-      <div class="flex-1 overflow-hidden pt-6">
-        <div class="swiper hero-swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <img src="assets/images/chefs/chef_hero.jpg" alt="" />
+    <!-- ========== HERO SECTION START ========= -->
+    <section class="container hero bg-white">
+        <div class="d-lg-flex flex-md-row-reverse justify-content-between align-items-center w-100 gap-5">
+            <!-- hero slider -->
+            <div class="flex-1 overflow-hidden pt-6">
+                <div class="swiper hero-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="assets/images/chefs/chef_hero.jpg" alt="" />
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/images/chefs/chef_hero.jpg" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination cursor-pointer"></div>
+
+                    <div class="swiper-button-prev text-white">
+                        <!-- <i class="fa-solid fa-chevron-left"></i> -->
+                        <img src="assets/images/icons/left_arrow.svg" alt="" />
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="fa-solid fa-chevron-right text-black"></i>
+                        <!-- <img src="/assets/images/icons/right_arrow.svg" alt=""> -->
+                    </div>
+                </div>
             </div>
 
-            <div class="swiper-slide">
-              <img src="assets/images/chefs/chef_hero.jpg" alt="" />
+            <div class="hero_content flex-1 pt-3">
+                <div>
+                    <h1 class="section_title text-center text-lg-start">
+                        Enjoy Our Healthy and Delicious Dish
+                    </h1>
+                    <p class="section_body py-3 text-justify">
+                        Cooking Station is prominent to provide On Demand Home Cook Food
+                        Delivery For Bachelor, Officials, Family's and also as per needed
+                        for Events.
+                    </p>
+                </div>
+                <div class="hero_action_btn text-center text-lg-start">
+                    <button class="cs_btn">Subscription</button>
+                    <button class="live_btn"><span></span></button>
+                </div>
             </div>
-          </div>
-
-          <div class="swiper-pagination cursor-pointer"></div>
-
-          <div class="swiper-button-prev text-white">
-            <!-- <i class="fa-solid fa-chevron-left"></i> -->
-            <img src="assets/images/icons/left_arrow.svg" alt="" />
-          </div>
-          <div class="swiper-button-next">
-            <i class="fa-solid fa-chevron-right text-black"></i>
-            <!-- <img src="/assets/images/icons/right_arrow.svg" alt=""> -->
-          </div>
         </div>
-      </div>
+    </section>
+    <!-- ========== HERO SECTION END ========= -->
 
-      <div class="hero_content flex-1 pt-3">
-        <div>
-          <h1 class="section_title text-center text-lg-start">
-            Enjoy Our Healthy and Delicious Dish
-          </h1>
-          <p class="section_body py-3 text-justify">
-            Cooking Station is prominent to provide On Demand Home Cook Food
-            Delivery For Bachelor, Officials, Family's and also as per needed
-            for Events.
-          </p>
+    <!-- ========= ABOUT SECTION START HERE======== -->
+    <section>
+        <div class="container about_sec">
+            <figure class="">
+                <img src="assets/images/chefs/chef_about.jpg" alt="" />
+            </figure>
+
+            <div class=" ">
+                <h3 class="title">About Cooking Station</h3>
+                <p class="des">
+                    Cooking Station prominent to provide home made food for Bachelor,
+                    Official and Family's.
+                </p>
+                <p class="des">
+                    Every dish we create is a product of love and dedication. Our
+                    skilled chefs use the finest ingredients, combining traditional
+                    recipes with a modern twist to ensure each bite is a delightful
+                    experience.
+                </p>
+                <button class="cs_btn">Read More</button>
+                <div>
+                    <div>
+                        <button class="watch_btn">
+                            <img src="assets/images/icons/watch_video.svg" alt="" /><span>Watch Video</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="hero_action_btn text-center text-lg-start">
-          <button class="cs_btn">Subscription</button>
-          <button class="live_btn"><span></span></button>
+    </section>
+    <!-- ========= ABOUT SECTION ENDS HERE======== -->
+
+
+    <!-- ========= PRICING SECTION START HERE======== -->
+    <section class="pricing">
+        <div class="container">
+            <div class="section-top mb-5">
+                <h1 class="title">Pricing Package Choose Your Plan</h1>
+                <p class="des">Especially Design For Family, Bachelor, Students and Job-holder</p>
+            </div>
+            <div class="row g-4 mt-3">
+
+                <div class="col-lg-4">
+                    <div class="package-card">
+                        <div class="card-top">
+                            <h3 class="title">Regular</h3>
+                            <p class="price">BDT 60/per meal</p>
+                        </div>
+                        <ul class="features">
+                            <li>
+                                <span>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_642_161)">
+                                            <path
+                                                d="M4.75669 12.4262C4.35929 12.4264 3.97816 12.2684 3.69739 11.9872L0.49478 8.78576C0.150177 8.44105 0.150177 7.88227 0.49478 7.53756C0.839493 7.19295 1.39827 7.19295 1.74299 7.53756L4.75669 10.5513L12.7297 2.57828C13.0744 2.23367 13.6332 2.23367 13.9779 2.57828C14.3225 2.92299 14.3225 3.48177 13.9779 3.82648L5.81599 11.9872C5.53522 12.2684 5.15409 12.4264 4.75669 12.4262Z"
+                                                fill="#040415" fill-opacity="0.8" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_642_161">
+                                                <rect width="14" height="14" fill="white"
+                                                    transform="translate(0.236328 0.373047)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <span> 3, 7, 15, 30 days plan</span>
+                            </li>
+                            <li>
+                                <span>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_642_161)">
+                                            <path
+                                                d="M4.75669 12.4262C4.35929 12.4264 3.97816 12.2684 3.69739 11.9872L0.49478 8.78576C0.150177 8.44105 0.150177 7.88227 0.49478 7.53756C0.839493 7.19295 1.39827 7.19295 1.74299 7.53756L4.75669 10.5513L12.7297 2.57828C13.0744 2.23367 13.6332 2.23367 13.9779 2.57828C14.3225 2.92299 14.3225 3.48177 13.9779 3.82648L5.81599 11.9872C5.53522 12.2684 5.15409 12.4264 4.75669 12.4262Z"
+                                                fill="#040415" fill-opacity="0.8" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_642_161">
+                                                <rect width="14" height="14" fill="white"
+                                                    transform="translate(0.236328 0.373047)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <span>Student Friendly</span>
+                            </li>
+                            <li>
+                                <span>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_642_161)">
+                                            <path
+                                                d="M4.75669 12.4262C4.35929 12.4264 3.97816 12.2684 3.69739 11.9872L0.49478 8.78576C0.150177 8.44105 0.150177 7.88227 0.49478 7.53756C0.839493 7.19295 1.39827 7.19295 1.74299 7.53756L4.75669 10.5513L12.7297 2.57828C13.0744 2.23367 13.6332 2.23367 13.9779 2.57828C14.3225 2.92299 14.3225 3.48177 13.9779 3.82648L5.81599 11.9872C5.53522 12.2684 5.15409 12.4264 4.75669 12.4262Z"
+                                                fill="#040415" fill-opacity="0.8" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_642_161">
+                                                <rect width="14" height="14" fill="white"
+                                                    transform="translate(0.236328 0.373047)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <span>Special For Patient Guardian</span>
+                            </li>
+                            <li>
+                                <span>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_642_161)">
+                                            <path
+                                                d="M4.75669 12.4262C4.35929 12.4264 3.97816 12.2684 3.69739 11.9872L0.49478 8.78576C0.150177 8.44105 0.150177 7.88227 0.49478 7.53756C0.839493 7.19295 1.39827 7.19295 1.74299 7.53756L4.75669 10.5513L12.7297 2.57828C13.0744 2.23367 13.6332 2.23367 13.9779 2.57828C14.3225 2.92299 14.3225 3.48177 13.9779 3.82648L5.81599 11.9872C5.53522 12.2684 5.15409 12.4264 4.75669 12.4262Z"
+                                                fill="#040415" fill-opacity="0.8" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_642_161">
+                                                <rect width="14" height="14" fill="white"
+                                                    transform="translate(0.236328 0.373047)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <span>Special For Family's</span>
+                            </li>
+                            <li>
+                                <span>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_642_161)">
+                                            <path
+                                                d="M4.75669 12.4262C4.35929 12.4264 3.97816 12.2684 3.69739 11.9872L0.49478 8.78576C0.150177 8.44105 0.150177 7.88227 0.49478 7.53756C0.839493 7.19295 1.39827 7.19295 1.74299 7.53756L4.75669 10.5513L12.7297 2.57828C13.0744 2.23367 13.6332 2.23367 13.9779 2.57828C14.3225 2.92299 14.3225 3.48177 13.9779 3.82648L5.81599 11.9872C5.53522 12.2684 5.15409 12.4264 4.75669 12.4262Z"
+                                                fill="#040415" fill-opacity="0.8" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_642_161">
+                                                <rect width="14" height="14" fill="white"
+                                                    transform="translate(0.236328 0.373047)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <span>Special For Who Want to Test First</span>
+                            </li>
+                        </ul>
+                        <button class="btn-subscribe">Subscribe</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="package-card">
+                        <div class="card-top">
+                            <h3 class="title">Premium</h3>
+                            <p class="price">BDT 60/per meal</p>
+                        </div>
+                        <ul class="features">
+                            <li>
+                                <span>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_642_161)">
+                                            <path
+                                                d="M4.75669 12.4262C4.35929 12.4264 3.97816 12.2684 3.69739 11.9872L0.49478 8.78576C0.150177 8.44105 0.150177 7.88227 0.49478 7.53756C0.839493 7.19295 1.39827 7.19295 1.74299 7.53756L4.75669 10.5513L12.7297 2.57828C13.0744 2.23367 13.6332 2.23367 13.9779 2.57828C14.3225 2.92299 14.3225 3.48177 13.9779 3.82648L5.81599 11.9872C5.53522 12.2684 5.15409 12.4264 4.75669 12.4262Z"
+                                                fill="#040415" fill-opacity="0.8" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_642_161">
+                                                <rect width="14" height="14" fill="white"
+                                                    transform="translate(0.236328 0.373047)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <span> 3, 7, 15, 30 days plan</span>
+                            </li>
+                            <li>
+                                <span>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_642_161)">
+                                            <path
+                                                d="M4.75669 12.4262C4.35929 12.4264 3.97816 12.2684 3.69739 11.9872L0.49478 8.78576C0.150177 8.44105 0.150177 7.88227 0.49478 7.53756C0.839493 7.19295 1.39827 7.19295 1.74299 7.53756L4.75669 10.5513L12.7297 2.57828C13.0744 2.23367 13.6332 2.23367 13.9779 2.57828C14.3225 2.92299 14.3225 3.48177 13.9779 3.82648L5.81599 11.9872C5.53522 12.2684 5.15409 12.4264 4.75669 12.4262Z"
+                                                fill="#040415" fill-opacity="0.8" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_642_161">
+                                                <rect width="14" height="14" fill="white"
+                                                    transform="translate(0.236328 0.373047)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <span>Student Friendly</span>
+                            </li>
+                            <li>
+                                <span>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_642_161)">
+                                            <path
+                                                d="M4.75669 12.4262C4.35929 12.4264 3.97816 12.2684 3.69739 11.9872L0.49478 8.78576C0.150177 8.44105 0.150177 7.88227 0.49478 7.53756C0.839493 7.19295 1.39827 7.19295 1.74299 7.53756L4.75669 10.5513L12.7297 2.57828C13.0744 2.23367 13.6332 2.23367 13.9779 2.57828C14.3225 2.92299 14.3225 3.48177 13.9779 3.82648L5.81599 11.9872C5.53522 12.2684 5.15409 12.4264 4.75669 12.4262Z"
+                                                fill="#040415" fill-opacity="0.8" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_642_161">
+                                                <rect width="14" height="14" fill="white"
+                                                    transform="translate(0.236328 0.373047)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <span>Special For Patient Guardian</span>
+                            </li>
+                            <li>
+                                <span>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_642_161)">
+                                            <path
+                                                d="M4.75669 12.4262C4.35929 12.4264 3.97816 12.2684 3.69739 11.9872L0.49478 8.78576C0.150177 8.44105 0.150177 7.88227 0.49478 7.53756C0.839493 7.19295 1.39827 7.19295 1.74299 7.53756L4.75669 10.5513L12.7297 2.57828C13.0744 2.23367 13.6332 2.23367 13.9779 2.57828C14.3225 2.92299 14.3225 3.48177 13.9779 3.82648L5.81599 11.9872C5.53522 12.2684 5.15409 12.4264 4.75669 12.4262Z"
+                                                fill="#040415" fill-opacity="0.8" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_642_161">
+                                                <rect width="14" height="14" fill="white"
+                                                    transform="translate(0.236328 0.373047)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <span>Special For Family's</span>
+                            </li>
+                            <li>
+                                <span>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_642_161)">
+                                            <path
+                                                d="M4.75669 12.4262C4.35929 12.4264 3.97816 12.2684 3.69739 11.9872L0.49478 8.78576C0.150177 8.44105 0.150177 7.88227 0.49478 7.53756C0.839493 7.19295 1.39827 7.19295 1.74299 7.53756L4.75669 10.5513L12.7297 2.57828C13.0744 2.23367 13.6332 2.23367 13.9779 2.57828C14.3225 2.92299 14.3225 3.48177 13.9779 3.82648L5.81599 11.9872C5.53522 12.2684 5.15409 12.4264 4.75669 12.4262Z"
+                                                fill="#040415" fill-opacity="0.8" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_642_161">
+                                                <rect width="14" height="14" fill="white"
+                                                    transform="translate(0.236328 0.373047)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <span>Special For Who Want to Test First</span>
+                            </li>
+                        </ul>
+                        <button class="btn-subscribe">Subscribe</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="package-card">
+                        <div class="card-top">
+                            <h3 class="title">Regular</h3>
+                            <p class="price">BDT 60/per meal</p>
+                        </div>
+                        <ul class="features">
+                            <li>
+                                <span>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_642_161)">
+                                            <path
+                                                d="M4.75669 12.4262C4.35929 12.4264 3.97816 12.2684 3.69739 11.9872L0.49478 8.78576C0.150177 8.44105 0.150177 7.88227 0.49478 7.53756C0.839493 7.19295 1.39827 7.19295 1.74299 7.53756L4.75669 10.5513L12.7297 2.57828C13.0744 2.23367 13.6332 2.23367 13.9779 2.57828C14.3225 2.92299 14.3225 3.48177 13.9779 3.82648L5.81599 11.9872C5.53522 12.2684 5.15409 12.4264 4.75669 12.4262Z"
+                                                fill="#040415" fill-opacity="0.8" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_642_161">
+                                                <rect width="14" height="14" fill="white"
+                                                    transform="translate(0.236328 0.373047)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <span> 3, 7, 15, 30 days plan</span>
+                            </li>
+                            <li>
+                                <span>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_642_161)">
+                                            <path
+                                                d="M4.75669 12.4262C4.35929 12.4264 3.97816 12.2684 3.69739 11.9872L0.49478 8.78576C0.150177 8.44105 0.150177 7.88227 0.49478 7.53756C0.839493 7.19295 1.39827 7.19295 1.74299 7.53756L4.75669 10.5513L12.7297 2.57828C13.0744 2.23367 13.6332 2.23367 13.9779 2.57828C14.3225 2.92299 14.3225 3.48177 13.9779 3.82648L5.81599 11.9872C5.53522 12.2684 5.15409 12.4264 4.75669 12.4262Z"
+                                                fill="#040415" fill-opacity="0.8" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_642_161">
+                                                <rect width="14" height="14" fill="white"
+                                                    transform="translate(0.236328 0.373047)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <span>Student Friendly</span>
+                            </li>
+                            <li>
+                                <span>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_642_161)">
+                                            <path
+                                                d="M4.75669 12.4262C4.35929 12.4264 3.97816 12.2684 3.69739 11.9872L0.49478 8.78576C0.150177 8.44105 0.150177 7.88227 0.49478 7.53756C0.839493 7.19295 1.39827 7.19295 1.74299 7.53756L4.75669 10.5513L12.7297 2.57828C13.0744 2.23367 13.6332 2.23367 13.9779 2.57828C14.3225 2.92299 14.3225 3.48177 13.9779 3.82648L5.81599 11.9872C5.53522 12.2684 5.15409 12.4264 4.75669 12.4262Z"
+                                                fill="#040415" fill-opacity="0.8" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_642_161">
+                                                <rect width="14" height="14" fill="white"
+                                                    transform="translate(0.236328 0.373047)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <span>Special For Patient Guardian</span>
+                            </li>
+                            <li>
+                                <span>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_642_161)">
+                                            <path
+                                                d="M4.75669 12.4262C4.35929 12.4264 3.97816 12.2684 3.69739 11.9872L0.49478 8.78576C0.150177 8.44105 0.150177 7.88227 0.49478 7.53756C0.839493 7.19295 1.39827 7.19295 1.74299 7.53756L4.75669 10.5513L12.7297 2.57828C13.0744 2.23367 13.6332 2.23367 13.9779 2.57828C14.3225 2.92299 14.3225 3.48177 13.9779 3.82648L5.81599 11.9872C5.53522 12.2684 5.15409 12.4264 4.75669 12.4262Z"
+                                                fill="#040415" fill-opacity="0.8" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_642_161">
+                                                <rect width="14" height="14" fill="white"
+                                                    transform="translate(0.236328 0.373047)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <span>Special For Family's</span>
+                            </li>
+                            <li>
+                                <span>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_642_161)">
+                                            <path
+                                                d="M4.75669 12.4262C4.35929 12.4264 3.97816 12.2684 3.69739 11.9872L0.49478 8.78576C0.150177 8.44105 0.150177 7.88227 0.49478 7.53756C0.839493 7.19295 1.39827 7.19295 1.74299 7.53756L4.75669 10.5513L12.7297 2.57828C13.0744 2.23367 13.6332 2.23367 13.9779 2.57828C14.3225 2.92299 14.3225 3.48177 13.9779 3.82648L5.81599 11.9872C5.53522 12.2684 5.15409 12.4264 4.75669 12.4262Z"
+                                                fill="#040415" fill-opacity="0.8" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_642_161">
+                                                <rect width="14" height="14" fill="white"
+                                                    transform="translate(0.236328 0.373047)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <span>Special For Who Want to Test First</span>
+                            </li>
+                        </ul>
+                        <button class="btn-subscribe">Subscribe</button>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- ========== HERO SECTION END ========= -->
-
-  <!-- ========= ABOUT SECTION START HERE======== -->
-  <section>
-    <div class="container about_sec">
-      <figure class="">
-        <img src="assets/images/chefs/chef_about.jpg" alt="" />
-      </figure>
-
-      <div class=" ">
-        <h3 class="title">About Cooking Station</h3>
-        <p class="des">
-          Cooking Station prominent to provide home made food for Bachelor,
-          Official and Family's.
-        </p>
-        <p class="des">
-          Every dish we create is a product of love and dedication. Our
-          skilled chefs use the finest ingredients, combining traditional
-          recipes with a modern twist to ensure each bite is a delightful
-          experience.
-        </p>
-        <button class="cs_btn">Read More</button>
-        <div>
-          <div>
-            <button class="watch_btn">
-              <img src="assets/images/icons/watch_video.svg" alt="" /><span
-                >Watch Video</span
-              >
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ========= ABOUT SECTION ENDS HERE======== -->
-
-
+    </section>
+    <!-- ========= PRICING SECTION ENDS HERE======== -->
     <!-- =================== TESTIMONIAL PART START=================== -->
     <section class="testimonial">
         <div class="container">

@@ -1,5 +1,15 @@
 @use "../global" as *;
 @use "../partials" as *;
+.pricing {
+  background: #f8fffb;
+  padding: size(40) size(0);
+  @include breakpoint(mobile576) {
+    padding: size(60) size(0);
+  }
+  @include breakpoint(tab992) {
+    padding: size(90) size(0);
+  }
+}
 .testimonial {
   padding: size(40) size(0);
   @include breakpoint(mobile576) {

@@ -132,3 +132,84 @@
     }
   }
 }
+
+.package-card {
+  @include flex-column;
+  gap: size(10);
+  padding: size(20);
+  @include transitionsall;
+
+  @include radius(16);
+  .card-top {
+    @include flex-between;
+    align-items: center;
+  }
+  .features {
+    @include list-vertical;
+    gap: size(20);
+    margin-top: size(40);
+    li {
+      @include flex;
+      gap: size(10);
+      align-items: center;
+      color: #040415;
+      @include font($nunito, 16, normal, normal, 20);
+      @include transitionsall;
+      svg {
+        path {
+          @include transitionsall;
+        }
+      }
+    }
+  }
+  .title {
+    color: #040415;
+    @include font($montserrat, 28, medium, normal, 28);
+    @include transitionsall;
+  }
+  @include hover {
+    background: $primary;
+    color: $white;
+    .title {
+      color: $white;
+    }
+
+    .features {
+      li {
+        color: $white;
+        svg {
+          path {
+            fill: $white;
+          }
+        }
+      }
+    }
+    .price {
+      color: $white;
+    }
+    .btn-subscribe {
+      background: $white;
+      color: rgba(4, 4, 21, 0.8);
+    }
+  }
+  .price {
+    color: #040415;
+    text-align: right;
+    @include transitionsall;
+    @include font($nunito, 16, normal, normal, 16);
+  }
+  .btn-subscribe {
+    margin-top: size(30);
+    @include breakpoint(mobile576) {
+      margin-top: size(70);
+    }
+    background: $primary;
+    color: $white;
+    width: 80%;
+    margin: auto;
+    padding: size(12) size(8);
+    @include radius(8);
+    @include transitionsall;
+    @include font($montserrat, 18, semibold, normal, 20);
+  }
+}
