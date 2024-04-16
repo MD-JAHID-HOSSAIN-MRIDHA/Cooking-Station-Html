@@ -1765,15 +1765,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   margin-top: 8px;
 }
 
-.about-thumb {
-  max-height: 25.3125rem;
-  overflow: hidden;
-}
-.about-thumb img {
-  width: 100%;
-  height: 100%;
-}
-
 .banner_title {
   font-family: "Eczar", serif;
   font-size: 2.5rem;
@@ -1835,6 +1826,77 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .lightyellow-bg {
   background: #fff6e9 !important;
+}
+
+.about-thumb {
+  max-height: 25.3125rem;
+  overflow: hidden;
+}
+.about-thumb img {
+  width: 100%;
+  height: 100%;
+}
+
+.mission_sec {
+  padding: 3.4375rem 0;
+  background-color: #f9f9f9;
+  margin-top: 3.125rem;
+}
+@media screen and (min-width: 62rem) {
+  .mission_sec {
+    margin-top: 8.6875rem;
+  }
+}
+.mission_sec .mission_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+@media screen and (min-width: 62rem) {
+  .mission_sec .mission_container {
+    flex-direction: row;
+    gap: 5.625rem;
+  }
+}
+.mission_sec .mission_container > * {
+  flex: 1;
+  width: 100%;
+}
+.mission_sec .mission_container .about_video {
+  position: relative;
+}
+.mission_sec .mission_container .about_video img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.mission_sec .mission_container .title {
+  font-family: "Eczar", serif;
+  font-size: 1.875rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  color: hsl(147, 83%, 27%);
+}
+@media screen and (min-width: 36rem) {
+  .mission_sec .mission_container .title {
+    font-family: "Eczar", serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.3;
+  }
+}
+.mission_sec .mission_container .des {
+  color: hsl(0, 0%, 39%);
+  font-family: "Nunito", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.3333333333;
+  margin-bottom: 12px;
 }
 
 @keyframes rotating {
