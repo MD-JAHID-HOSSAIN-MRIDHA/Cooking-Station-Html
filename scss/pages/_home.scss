@@ -145,18 +145,83 @@
 // how we work section
 .how_work_sec {
   background-color: $green-light;
+  padding-top: size(50);
+  padding-bottom: size(100);
   @include breakpoint(desktop1100) {
     background-image: url("../../assets/images/home/food.png");
     background-repeat: no-repeat;
     background-position: top right;
+    padding-top: size(90);
+  padding-bottom: size(145);
   }
   .section_body {
-    padding-top: 1rem;
+    padding-top: 3rem;
     display: flex;
     flex-direction: column;
     margin: auto;
     gap: 3rem;
     max-width: 375px;
+    & > :not(:last-child) {
+      &::after {
+        content: url("../../assets/images/store/Ellipse_step.svg");
+        position: absolute;
+        top: 0;
+        display: inline-block;
+        width: 192px;
+        aspect-ratio: 1;
+        // border: 1px solid transparent;
+        // border-top: 1px solid #1a5d1a;
+        @include circle;
+      }
+    }
+
+    & > :nth-child(even) {
+      align-self: end;
+      direction: rtl;
+      padding-right: 1rem;
+      &::after {
+        transform: rotate(268deg);
+        left: -53px;
+        top: 165px;
+      }
+      figure {
+        margin-right: 2.5rem;
+      }
+    }
+
+    & > :nth-child(odd) {
+      align-self: start;
+      &::after {
+        left: 64px;
+        top: 10rem;
+      }
+    }
+    @include breakpoint(desktop1024) {
+      max-width: 60rem;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0;
+      height: 24rem;
+      & > :nth-child(odd) {
+        &::after {
+          top: 11rem;
+          left: 6rem;
+        }
+      }
+      & > :nth-child(even) {
+        align-self: end;
+        direction: ltr;
+        padding-right: 1rem;
+        &::after {
+          transform: rotate(99deg);
+          left: 48px;
+          top: -182px;
+        }
+        figure {
+          margin-right: 2.5rem;
+        }
+      }
+    }
     .step_card {
       width: 147px;
       aspect-ratio: 1;
@@ -166,6 +231,8 @@
       // text-align: center;
       padding-left: size(35);
       position: relative;
+      // flex-grow: 1;
+
       figure {
         transform: translateY(-1rem);
       }
@@ -180,42 +247,6 @@
       .step_plan {
         font-size: 1.2rem;
         margin-left: -1.4rem;
-      }
-    }
-
-    & > :not(:last-child) {
-      &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        display: inline-block;
-        width: 192px;
-        aspect-ratio: 1;
-        border: 1px solid transparent;
-        border-top: 1px solid #1a5d1a;
-        @include circle;
-      }
-    }
-
-    & > :nth-child(even) {
-      align-self: end;
-      direction: rtl;
-      padding-right: 1rem;
-      &::after {
-        transform: rotate(142deg);
-        left: -8rem;
-        top: 3rem;
-      }
-      figure {
-        margin-right: 2.5rem;
-      }
-    }
-
-    :nth-child(odd) {
-      &::after {
-        transform: rotate(229deg);
-        left: 105px;
-        top: 4rem;
       }
     }
   }
