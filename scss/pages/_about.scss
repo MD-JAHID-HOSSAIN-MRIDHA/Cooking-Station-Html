@@ -41,16 +41,64 @@
       }
     }
     .title {
-      @include font($eczar, 30, 500, normal, 45);
-      @include breakpoint(mobile576) {
-        @include font($eczar, 40, 500, normal, 52);
-      }
-      color: $primary;
+      @extend .title;
     }
     .des {
-      color: $section-top-des;
-      @include font($nunito, 18, 400, normal, 24);
-      margin-bottom: 12px;
+      @extend .des;
+    }
+  }
+}
+
+// commitment section
+.commitment_sec {
+  margin-top: size(50);
+  margin-bottom: size(50);
+  @include breakpoint(tab992) {
+    margin-top: size(139);
+  }
+  background-color: #fcfcfc;
+  .commitment_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 8px;
+    }
+    @include breakpoint(tab992) {
+      gap: size(90);
+      flex-direction: row-reverse;
+    }
+    & > * {
+      flex: 1;
+      width: 100%;
+    }
+    .title {
+      @extend .title;
+    }
+    .des {
+      @extend .des;
+    }
+    .middle {
+      padding: size(24) size(28);
+      background-color: #fff;
+      border-radius: 22px;
+      border-left: 6px solid $primary;
+      margin-bottom: 45px;
+      margin-top: 45px;
+      @extend .des;
+      color: rgba(4, 4, 21, 0.8);
+    }
+    .last {
+      display: flex;
+      gap: 30px;
+      h5 {
+        @include font($nunito, 16, 500, normal, normal);
+        color: rgba(4, 4, 21, 0.6);
+      }
     }
   }
 }

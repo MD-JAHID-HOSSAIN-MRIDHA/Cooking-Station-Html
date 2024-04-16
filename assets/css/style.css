@@ -1765,6 +1765,34 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   margin-top: 8px;
 }
 
+.title, .mission_sec .mission_container .title, .commitment_sec .commitment_container .title {
+  font-family: "Eczar", serif;
+  font-size: 1.875rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  color: hsl(147, 83%, 27%);
+}
+@media screen and (min-width: 36rem) {
+  .title, .mission_sec .mission_container .title, .commitment_sec .commitment_container .title {
+    font-family: "Eczar", serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.3;
+  }
+}
+
+.des, .mission_sec .mission_container .des, .commitment_sec .commitment_container .des, .commitment_sec .commitment_container .middle {
+  color: hsl(0, 0%, 39%);
+  font-family: "Nunito", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.3333333333;
+  margin-bottom: 12px;
+}
+
 .banner_title {
   font-family: "Eczar", serif;
   font-size: 2.5rem;
@@ -1790,7 +1818,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   align-items: center;
   text-align: center;
 }
-.section-top .title {
+.section-top .title, .section-top .mission_sec .mission_container .title, .mission_sec .mission_container .section-top .title, .section-top .commitment_sec .commitment_container .title, .commitment_sec .commitment_container .section-top .title {
   font-family: "Eczar", serif;
   font-size: 1.875rem;
   font-weight: semibold;
@@ -1799,7 +1827,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   color: hsl(147, 83%, 27%);
 }
 @media screen and (min-width: 36rem) {
-  .section-top .title {
+  .section-top .title, .section-top .mission_sec .mission_container .title, .mission_sec .mission_container .section-top .title, .section-top .commitment_sec .commitment_container .title, .commitment_sec .commitment_container .section-top .title {
     font-family: "Eczar", serif;
     font-size: 2.5rem;
     font-weight: semibold;
@@ -1807,7 +1835,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     line-height: 1.3;
   }
 }
-.section-top .des {
+.section-top .des, .section-top .mission_sec .mission_container .des, .mission_sec .mission_container .section-top .des, .section-top .commitment_sec .commitment_container .des, .commitment_sec .commitment_container .section-top .des, .section-top .commitment_sec .commitment_container .middle, .commitment_sec .commitment_container .section-top .middle {
   color: hsl(0, 0%, 39%);
   font-family: "Nunito", sans-serif;
   font-size: 1.125rem;
@@ -1872,31 +1900,58 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.mission_sec .mission_container .title {
-  font-family: "Eczar", serif;
-  font-size: 1.875rem;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 1.5;
-  color: hsl(147, 83%, 27%);
+.commitment_sec {
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
+  background-color: #fcfcfc;
 }
-@media screen and (min-width: 36rem) {
-  .mission_sec .mission_container .title {
-    font-family: "Eczar", serif;
-    font-size: 2.5rem;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 1.3;
+@media screen and (min-width: 62rem) {
+  .commitment_sec {
+    margin-top: 8.6875rem;
   }
 }
-.mission_sec .mission_container .des {
-  color: hsl(0, 0%, 39%);
+.commitment_sec .commitment_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.commitment_sec .commitment_container img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 62rem) {
+  .commitment_sec .commitment_container {
+    gap: 5.625rem;
+    flex-direction: row-reverse;
+  }
+}
+.commitment_sec .commitment_container > * {
+  flex: 1;
+  width: 100%;
+}
+.commitment_sec .commitment_container .middle {
+  padding: 1.5rem 1.75rem;
+  background-color: #fff;
+  border-radius: 22px;
+  border-left: 6px solid hsl(147, 83%, 27%);
+  margin-bottom: 45px;
+  margin-top: 45px;
+  color: rgba(4, 4, 21, 0.8);
+}
+.commitment_sec .commitment_container .last {
+  display: flex;
+  gap: 30px;
+}
+.commitment_sec .commitment_container .last h5 {
   font-family: "Nunito", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 500;
   font-style: normal;
-  line-height: 1.3333333333;
-  margin-bottom: 12px;
+  line-height: calc(normal / 16);
+  color: rgba(4, 4, 21, 0.6);
 }
 
 @keyframes rotating {

@@ -1,6 +1,19 @@
 @use "../global" as *;
 @use "../partials" as *;
 
+.title {
+  @include font($eczar, 30, 500, normal, 45);
+  @include breakpoint(mobile576) {
+    @include font($eczar, 40, 500, normal, 52);
+  }
+  color: $primary;
+}
+.des {
+  color: $section-top-des;
+  @include font($nunito, 18, 400, normal, 24);
+  margin-bottom: 12px;
+}
+
 .banner_title {
   @include font($eczar, 40, 500, normal, 52);
   color: $primary;
