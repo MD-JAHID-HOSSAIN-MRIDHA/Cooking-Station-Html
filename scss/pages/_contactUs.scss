@@ -7,7 +7,7 @@
   background: rgba(12, 128, 64, 0.02);
   .contact_us_container {
     @include flex-center;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 50px;
     @include breakpoint(tab992) {
       flex-direction: row;

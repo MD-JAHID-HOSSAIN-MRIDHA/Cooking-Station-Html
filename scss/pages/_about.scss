@@ -1,0 +1,9 @@
+@use "../global" as *;
+@use "../partials" as *;
+.about-thumb {
+  max-height: size(405);
+  overflow: hidden;
+  img {
+    @include wh100;
+  }
+}
