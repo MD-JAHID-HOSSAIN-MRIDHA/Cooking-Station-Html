@@ -1669,7 +1669,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column-reverse;
+  flex-direction: column;
   gap: 50px;
 }
 @media screen and (min-width: 62rem) {
@@ -1769,6 +1769,15 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   margin-top: 8px;
 }
 
+.about-thumb {
+  max-height: 25.3125rem;
+  overflow: hidden;
+}
+.about-thumb img {
+  width: 100%;
+  height: 100%;
+}
+
 .banner_title {
   font-family: "Eczar", serif;
   font-size: 2.5rem;
@@ -1826,6 +1835,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .text-justify {
   text-align: justify;
+}
+
+.lightyellow-bg {
+  background: #fff6e9 !important;
 }
 
 @keyframes rotating {
