@@ -1,5 +1,233 @@
 @use "../global" as *;
 @use "../partials" as *;
+// about section
+.about_sec {
+  margin-top: size(50);
+  @include flex-column;
+  @include flex-center;
+  text-align: center;
+  @include breakpoint(tab992) {
+    @include flex-center-vert;
+    @include flex-row;
+    margin-top: size(90);
+    text-align: start;
+  }
+  .title {
+    @include font($eczar, 30, semibold, normal, 45);
+    @include breakpoint(mobile576) {
+      @include font($eczar, 40, semibold, normal, 52);
+    }
+    color: $primary;
+    margin-bottom: size(24);
+  }
+  .des {
+    color: $section-top-des;
+    @include font($nunito, 18, medium, normal, 24);
+    margin-bottom: size(18);
+  }
+}
+
+.about_sec > * {
+  flex: 1;
+}
+.watch_btn_container {
+  display: flex;
+  justify-content: center;
+}
+.watch_btn {
+  @include flex-center;
+  gap: 19px;
+  margin-top: size(50);
+  // margin-left: 17rem;
+  text-align: center;
+  // padding-right: size(24);
+
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -12px;
+    left: -31px;
+    width: 79px;
+    height: 73px;
+    border: 2px solid #fae392;
+    z-index: -1;
+    @include radius(8);
+  }
+}
+
+// featured section
+.featured_sec {
+  margin-top: size(50);
+  position: relative;
+  @include breakpoint(tab992) {
+    margin-top: size(100);
+  }
+}
+
+.featured-swiper {
+  margin-top: size(40);
+  @include breakpoint(tab992) {
+    margin-top: size(90);
+  }
+  padding-bottom: size(10);
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+}
+.featured_card {
+  background-color: $green-light;
+  @include radius(48);
+  padding-left: 33px;
+  max-width: 300px;
+  height: 296px;
+  padding-right: 33px;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // gap: size(35);
+  box-shadow: 0px 4px 8px 0px rgba(11, 110, 105, 0.25);
+  padding-bottom: size(10);
+  .title {
+    @include font($eczar, 28, 600, normal, 52);
+    transform: translateY(-2rem);
+    color: $primary;
+    text-align: center;
+  }
+}
+
+.featured_dish {
+  width: size(198);
+  aspect-ratio: 1/1;
+  transform: translateY(-3rem);
+}
+
+.featured-swiper-next,
+.featured-swiper-prev {
+  @include circle;
+  border: 2px solid $primary;
+  width: size(40);
+  height: size(40);
+  @include breakpoint(mobile576) {
+    width: size(50);
+    height: size(50);
+  }
+  color: black;
+  position: absolute;
+  top: 60%;
+  z-index: 1;
+}
+.featured-swiper-next {
+  right: 1%;
+  @include breakpoint(mobile768) {
+    right: -2%;
+  }
+  @include breakpoint(desktop1200) {
+    right: -4%;
+  }
+}
+.featured-swiper-prev {
+  left: 1%;
+  @include breakpoint(mobile768) {
+    left: -2%;
+  }
+  @include breakpoint(desktop1200) {
+    left: -4%;
+  }
+}
+.featured_dish_action {
+  text-align: center;
+  margin-top: size(60);
+  margin-bottom: size(60);
+}
+// how we work section
+@use "../global" as *;
+@use "../partials" as *;
+
+.how_work_sec {
+  background-color: $green-light;
+  @include breakpoint(desktop1100) {
+    background-image: url("../../assets/images/home/food.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+  .section_body {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 3rem;
+    max-width: 375px;
+    .step_card {
+      width: 147px;
+      aspect-ratio: 1;
+      background-color: $yellow;
+      @include circle;
+      text-overflow: clip;
+      // text-align: center;
+      padding-left: size(35);
+      position: relative;
+      figure {
+        transform: translateY(-1rem);
+      }
+
+      .step {
+        @include font($eczar, 24, 600, normal, 32);
+        color: $primary;
+      }
+      .step_des {
+        width: 316px;
+      }
+      .step_plan {
+        font-size: 1.3rem;
+        margin-left: -1.4rem;
+      }
+    }
+
+    & > :not(:last-child) {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        display: inline-block;
+        width: 192px;
+        aspect-ratio: 1;
+        border: 1px solid transparent;
+        border-top: 1px solid #1a5d1a;
+        // border-left: 1px solid #1a5d1a;
+        @include circle;
+      }
+    }
+
+    & > :nth-child(even) {
+      align-self: end;
+      // direction: rtl;
+      text-align: left;
+      padding-right: 1rem;
+      &::after {
+        transform: rotate(142deg);
+        left: -8rem;
+        top: 3rem;
+      }
+      figure {
+        margin-right: 2.5rem;
+      }
+    }
+
+    :nth-child(odd) {
+      &::after {
+        transform: rotate(229deg);
+        left: 105px;
+        top: 4rem;
+      }
+    }
+  }
+}
+
 .whychoose {
   padding: size(40) size(0);
   @include breakpoint(mobile576) {
