@@ -1,5 +1,6 @@
 @use "../global" as *;
 @use "../partials" as *;
+
 // about section
 .about_sec {
   margin-top: size(50);
@@ -25,36 +26,35 @@
     @include font($nunito, 18, medium, normal, 24);
     margin-bottom: size(18);
   }
-}
+  & > * {
+    flex: 1;
+  }
+  .watch_btn_container {
+    display: flex;
+    justify-content: center;
+    .watch_btn {
+      @include flex-center;
+      gap: 19px;
+      margin-top: size(50);
+      // margin-left: 17rem;
+      text-align: center;
+      // padding-right: size(24);
 
-.about_sec > * {
-  flex: 1;
-}
-.watch_btn_container {
-  display: flex;
-  justify-content: center;
-}
-.watch_btn {
-  @include flex-center;
-  gap: 19px;
-  margin-top: size(50);
-  // margin-left: 17rem;
-  text-align: center;
-  // padding-right: size(24);
+      position: relative;
 
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    top: -12px;
-    left: -31px;
-    width: 79px;
-    height: 73px;
-    border: 2px solid #fae392;
-    z-index: -1;
-    @include radius(8);
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: -12px;
+        left: -31px;
+        width: 79px;
+        height: 73px;
+        border: 2px solid #fae392;
+        z-index: -1;
+        @include radius(8);
+      }
+    }
   }
 }
 
@@ -65,45 +65,43 @@
   @include breakpoint(tab992) {
     margin-top: size(100);
   }
-}
-
-.featured-swiper {
-  margin-top: size(40);
-  @include breakpoint(tab992) {
-    margin-top: size(90);
+  .featured-swiper {
+    margin-top: size(40);
+    @include breakpoint(tab992) {
+      margin-top: size(90);
+    }
+    padding-bottom: size(10);
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+    .featured_card {
+      background-color: $green-light;
+      @include radius(48);
+      padding-left: 33px;
+      max-width: 300px;
+      height: 296px;
+      padding-right: 33px;
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // gap: size(35);
+      box-shadow: 0px 4px 8px 0px rgba(11, 110, 105, 0.25);
+      padding-bottom: size(10);
+      .title {
+        @include font($eczar, 28, 600, normal, 52);
+        transform: translateY(-2rem);
+        color: $primary;
+        text-align: center;
+      }
+    }
+    .featured_dish {
+      width: size(198);
+      aspect-ratio: 1/1;
+      transform: translateY(-3rem);
+    }
   }
-  padding-bottom: size(10);
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-  }
-}
-.featured_card {
-  background-color: $green-light;
-  @include radius(48);
-  padding-left: 33px;
-  max-width: 300px;
-  height: 296px;
-  padding-right: 33px;
-  margin-top: 4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  // gap: size(35);
-  box-shadow: 0px 4px 8px 0px rgba(11, 110, 105, 0.25);
-  padding-bottom: size(10);
-  .title {
-    @include font($eczar, 28, 600, normal, 52);
-    transform: translateY(-2rem);
-    color: $primary;
-    text-align: center;
-  }
-}
-
-.featured_dish {
-  width: size(198);
-  aspect-ratio: 1/1;
-  transform: translateY(-3rem);
 }
 
 .featured-swiper-next,
@@ -145,9 +143,6 @@
   margin-bottom: size(60);
 }
 // how we work section
-@use "../global" as *;
-@use "../partials" as *;
-
 .how_work_sec {
   background-color: $green-light;
   @include breakpoint(desktop1100) {
@@ -183,7 +178,7 @@
         width: 316px;
       }
       .step_plan {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin-left: -1.4rem;
       }
     }
@@ -198,15 +193,13 @@
         aspect-ratio: 1;
         border: 1px solid transparent;
         border-top: 1px solid #1a5d1a;
-        // border-left: 1px solid #1a5d1a;
         @include circle;
       }
     }
 
     & > :nth-child(even) {
       align-self: end;
-      // direction: rtl;
-      text-align: left;
+      direction: rtl;
       padding-right: 1rem;
       &::after {
         transform: rotate(142deg);

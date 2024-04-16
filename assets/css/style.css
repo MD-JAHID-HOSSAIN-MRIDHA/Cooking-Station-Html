@@ -1228,17 +1228,14 @@ table tr td {
   line-height: 1.3333333333;
   margin-bottom: 1.125rem;
 }
-
 .about_sec > * {
   flex: 1;
 }
-
-.watch_btn_container {
+.about_sec .watch_btn_container {
   display: flex;
   justify-content: center;
 }
-
-.watch_btn {
+.about_sec .watch_btn_container .watch_btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1247,7 +1244,7 @@ table tr td {
   text-align: center;
   position: relative;
 }
-.watch_btn::after {
+.about_sec .watch_btn_container .watch_btn::after {
   content: "";
   position: absolute;
   display: block;
@@ -1269,22 +1266,20 @@ table tr td {
     margin-top: 6.25rem;
   }
 }
-
-.featured-swiper {
+.featured_sec .featured-swiper {
   margin-top: 2.5rem;
   padding-bottom: 0.625rem;
 }
 @media screen and (min-width: 62rem) {
-  .featured-swiper {
+  .featured_sec .featured-swiper {
     margin-top: 5.625rem;
   }
 }
-.featured-swiper .swiper-slide {
+.featured_sec .featured-swiper .swiper-slide {
   display: flex;
   justify-content: center;
 }
-
-.featured_card {
+.featured_sec .featured-swiper .featured_card {
   background-color: #f8fffb;
   border-radius: 3rem;
   padding-left: 33px;
@@ -1298,7 +1293,7 @@ table tr td {
   box-shadow: 0px 4px 8px 0px rgba(11, 110, 105, 0.25);
   padding-bottom: 0.625rem;
 }
-.featured_card .title {
+.featured_sec .featured-swiper .featured_card .title {
   font-family: "Eczar", serif;
   font-size: 1.75rem;
   font-weight: 600;
@@ -1308,8 +1303,7 @@ table tr td {
   color: hsl(147, 83%, 27%);
   text-align: center;
 }
-
-.featured_dish {
+.featured_sec .featured-swiper .featured_dish {
   width: 12.375rem;
   aspect-ratio: 1/1;
   transform: translateY(-3rem);
@@ -1366,6 +1360,81 @@ table tr td {
   text-align: center;
   margin-top: 3.75rem;
   margin-bottom: 3.75rem;
+}
+
+.how_work_sec {
+  background-color: #f8fffb;
+}
+@media screen and (min-width: 68.75rem) {
+  .how_work_sec {
+    background-image: url("../../assets/images/home/food.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+}
+.how_work_sec .section_body {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 3rem;
+  max-width: 375px;
+}
+.how_work_sec .section_body .step_card {
+  width: 147px;
+  aspect-ratio: 1;
+  background-color: rgba(249, 213, 86, 0.82);
+  border-radius: 100%;
+  text-overflow: clip;
+  padding-left: 2.1875rem;
+  position: relative;
+}
+.how_work_sec .section_body .step_card figure {
+  transform: translateY(-1rem);
+}
+.how_work_sec .section_body .step_card .step {
+  font-family: "Eczar", serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.3333333333;
+  color: hsl(147, 83%, 27%);
+}
+.how_work_sec .section_body .step_card .step_des {
+  width: 316px;
+}
+.how_work_sec .section_body .step_card .step_plan {
+  font-size: 1.2rem;
+  margin-left: -1.4rem;
+}
+.how_work_sec .section_body > :not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  width: 192px;
+  aspect-ratio: 1;
+  border: 1px solid transparent;
+  border-top: 1px solid #1a5d1a;
+  border-radius: 100%;
+}
+.how_work_sec .section_body > :nth-child(even) {
+  align-self: end;
+  direction: rtl;
+  padding-right: 1rem;
+}
+.how_work_sec .section_body > :nth-child(even)::after {
+  transform: rotate(142deg);
+  left: -8rem;
+  top: 3rem;
+}
+.how_work_sec .section_body > :nth-child(even) figure {
+  margin-right: 2.5rem;
+}
+.how_work_sec .section_body :nth-child(odd)::after {
+  transform: rotate(229deg);
+  left: 105px;
+  top: 4rem;
 }
 
 .whychoose {
