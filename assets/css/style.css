@@ -614,42 +614,6 @@ button:focus,
   min-height: 0 !important;
 }
 
-.active {
-  color: hsl(147, 83%, 27%) !important;
-}
-.active::after {
-  width: 100% !important;
-}
-
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
-  align-items: start;
-  margin-top: 7.5rem;
-}
-@media screen and (min-width: 62rem) {
-  .hero {
-    align-items: center;
-  }
-}
-
-.hero-swiper {
-  width: 100%;
-  border-radius: 1.625rem;
-  overflow: hidden;
-}
-.hero-swiper img {
-  border-radius: 1.625rem;
-  width: 100%;
-  max-height: 348px;
-}
-
-.hero_action_btn {
-  text-align: center;
-}
-
 .login_btn {
   font-family: "Nunito", sans-serif;
   font-size: 1rem;
@@ -661,59 +625,11 @@ button:focus,
   padding-right: 18px;
 }
 
-.live_btn {
-  border-radius: 100%;
-  border: 2px solid hsl(147, 83%, 27%);
-  width: 60px;
-  aspect-ratio: 1/1;
-  position: relative;
-  margin-left: 25px;
+.active {
+  color: hsl(147, 83%, 27%) !important;
 }
-.live_btn::after {
-  content: "Live kitchen";
-  display: inline-block;
-  color: hsl(147, 83%, 27%);
-  position: absolute;
-  left: 80%;
-  width: -moz-max-content;
-  width: max-content;
-  background-color: white;
-  font-family: "Inter", sans-serif;
-  font-size: 0.75rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.6666666667;
-}
-.live_btn::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  transform: translate(-50%);
-  background-color: hsl(147, 83%, 27%);
-  width: 10px;
-  aspect-ratio: 1;
-  border-radius: 100%;
-  animation: blinking 2s ease-in-out infinite;
-}
-
-@keyframes blinking {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.swiper-hero-prev,
-.swiper-hero-next {
-  background-color: #fae392;
-  width: 24px;
-  height: 63px;
+.active::after {
+  width: 100% !important;
 }
 
 input,
@@ -1179,6 +1095,86 @@ table tr td {
     width: 8.75rem;
     height: 2.875rem;
     padding: 0.625rem 1rem;
+  }
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 7.5rem;
+}
+.hero .hero-swiper {
+  width: 100%;
+  border-radius: 1.625rem;
+  overflow: hidden;
+}
+.hero .hero-swiper img {
+  border-radius: 1.625rem;
+  width: 100%;
+  max-height: 348px;
+}
+.hero .hero-swiper .swiper-hero-prev,
+.hero .hero-swiper .swiper-hero-next {
+  background-color: #fae392;
+  width: 24px;
+  height: 63px;
+}
+.hero .hero_action_btn {
+  text-align: center;
+}
+.hero .live_btn {
+  border-radius: 100%;
+  border: 2px solid hsl(147, 83%, 27%);
+  width: 60px;
+  aspect-ratio: 1/1;
+  position: relative;
+  margin-left: 25px;
+}
+.hero .live_btn::after {
+  content: "Live kitchen";
+  display: inline-block;
+  color: hsl(147, 83%, 27%);
+  position: absolute;
+  left: 80%;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6666666667;
+}
+.hero .live_btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%);
+  background-color: hsl(147, 83%, 27%);
+  width: 10px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  animation: blinking 2s ease-in-out infinite;
+}
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .hero {
+    align-items: center;
   }
 }
 

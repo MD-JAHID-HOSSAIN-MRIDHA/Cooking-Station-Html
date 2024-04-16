@@ -1,6 +1,81 @@
 @use "../global" as *;
 @use "../partials" as *;
 
+// hero section
+.hero {
+  @include flex-center;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: size(120);
+  .hero-swiper {
+    width: 100%;
+    @include radius(26);
+    overflow: hidden;
+    img {
+      @include radius(26);
+      width: 100%;
+      max-height: 348px;
+    }
+    .swiper-hero-prev,
+    .swiper-hero-next {
+      background-color: $yellow-light;
+      width: 24px;
+      height: 63px;
+    }
+  }
+  .hero_action_btn {
+    text-align: center;
+  }
+
+  .live_btn {
+    @include circle;
+    border: 2px solid $primary;
+    width: 60px;
+    aspect-ratio: 1/1;
+    position: relative;
+    margin-left: 25px;
+    &::after {
+      content: "Live kitchen";
+      display: inline-block;
+      color: $primary;
+      position: absolute;
+      left: 80%;
+      width: max-content;
+      background-color: white;
+      @include font($inter, 12, 400, normal, 20);
+    }
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 40%;
+      transform: translate(-50%);
+      background-color: $primary;
+      width: 10px;
+      aspect-ratio: 1;
+      @include circle;
+      animation: blinking 2s ease-in-out infinite;
+    }
+  }
+  @keyframes blinking {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @include breakpoint(tab992) {
+    & {
+      align-items: center;
+    }
+  }
+}
+
 // about section
 .about_sec {
   margin-top: size(50);
@@ -152,7 +227,7 @@
     background-repeat: no-repeat;
     background-position: top right;
     padding-top: size(90);
-  padding-bottom: size(145);
+    padding-bottom: size(145);
   }
   .section_body {
     padding-top: 3rem;
