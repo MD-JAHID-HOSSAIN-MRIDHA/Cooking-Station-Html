@@ -1900,6 +1900,76 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.mission_sec .mission_container .video-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/images/about/commitment.jpg");
+  background-repeat: no-repeat;
+  background-color: rgba(27, 27, 27, 0.54);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  height: 392px;
+}
+.mission_sec .mission_container .video-main .waves-block {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mission_sec .mission_container .video-main .waves-block .waves {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: rgb(199, 186, 181);
+  opacity: 0;
+  border-radius: 100%;
+  z-index: 0;
+  animation: waves 3s ease-in-out infinite;
+}
+.mission_sec .mission_container .video-main .waves-block .wave-1 {
+  animation-delay: 0s;
+}
+.mission_sec .mission_container .video-main .waves-block .wave-2 {
+  animation-delay: 1s;
+}
+.mission_sec .mission_container .video-main .waves-block .wave-3 {
+  animation-delay: 2s;
+}
+@keyframes waves {
+  0% {
+    transform: scale(0.2, 0.2);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  }
+  100% {
+    transform: scale(0.9, 0.9);
+    opacity: 0;
+  }
+}
+.mission_sec .mission_container .video-main .waves-block .video {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  border-radius: 100%;
+  background: transparent;
+  color: #fff;
+  background: hsl(147, 83%, 27%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.mission_sec .mission_container .video-main .waves-block .video .fa-play:before {
+  content: "\f04b";
+}
+
 .commitment_sec {
   margin-top: 3.125rem;
   margin-bottom: 3.125rem;

@@ -46,6 +46,84 @@
     .des {
       @extend .des;
     }
+    .video-main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("../../assets/images/about/commitment.jpg");
+      background-repeat: no-repeat;
+      background-color: rgba(27, 27, 27, 0.54);
+      background-blend-mode: overlay;
+      background-size: cover;
+      background-position: center;
+      height: 392px;
+      .waves-block {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .waves {
+          position: absolute;
+          width: 150px;
+          height: 150px;
+          background: rgba(199, 186, 181, 1);
+          opacity: 0;
+          border-radius: 100%;
+          z-index: -0;
+          -webkit-animation: waves 3s ease-in-out infinite;
+          animation: waves 3s ease-in-out infinite;
+        }
+        .wave-1 {
+          -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+        }
+
+        .wave-2 {
+          -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+        }
+
+        .wave-3 {
+          -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+        }
+        @keyframes waves {
+          0% {
+            -webkit-transform: scale(0.2, 0.2);
+            transform: scale(0.2, 0.2);
+            opacity: 0;
+          }
+          50% {
+            opacity: 0.9;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+          }
+          100% {
+            -webkit-transform: scale(0.9, 0.9);
+            transform: scale(0.9, 0.9);
+            opacity: 0;
+          }
+        }
+        .video {
+          height: 50px;
+          width: 50px;
+          text-align: center;
+          border-radius: 100%;
+          background: transparent;
+          color: #fff;
+          background: $primary;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          // z-index: 999;
+          .fa-play:before {
+            content: "\f04b";
+          }
+        }
+      }
+    }
   }
 }
 
