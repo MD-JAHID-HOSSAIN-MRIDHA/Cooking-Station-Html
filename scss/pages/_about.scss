@@ -191,6 +191,7 @@
     padding-bottom: size(190);
   }
   .section-top > .title {
+    @extend .title;
     font-size: 40px;
   }
   .difference_container {
@@ -216,6 +217,24 @@
         @include font($eczar, 24, 600, normal, 32);
         letter-spacing: 0.288px;
         color: $primary;
+      }
+    }
+  }
+}
+
+// OUR TEAM SECTION
+.our_team_sec {
+  padding-top: size(153);
+  padding-bottom: size(115);
+  .our_team_container {
+    @include flex-between;
+    gap: size(29);
+    flex-wrap: wrap;
+    .team {
+      width: 246px;
+      height: 481px;
+      background-color: $yellow-light;
+      .counter {
       }
     }
   }
