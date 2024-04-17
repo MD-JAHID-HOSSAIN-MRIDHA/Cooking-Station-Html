@@ -926,6 +926,21 @@ footer {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+footer .footer-contaiener {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 40px;
+}
+@media screen and (min-width: 36rem) {
+  footer .footer-contaiener {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 62rem) {
+  footer .footer-contaiener {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
 @media screen and (min-width: 62rem) {
   footer {
     padding-top: 80px;
