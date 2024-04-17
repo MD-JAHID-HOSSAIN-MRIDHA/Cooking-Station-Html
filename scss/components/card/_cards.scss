@@ -272,3 +272,23 @@
     }
   }
 }
+.counter {
+padding: size(100) size(0);
+}
+.counter-box {
+
+@include flex-column;
+gap: size(10);
+text-align: center;
+h3 {
+color: $primary;
+@include font($eczar, 36, semibold, normal, 44);
+}
+p {
+  color: #686873;
+  @include font($eczar, 22, medium, normal, 44);
+
+}
+
+}
+
