@@ -226,15 +226,49 @@
 .our_team_sec {
   padding-top: size(153);
   padding-bottom: size(115);
+  .des {
+    max-width: 619px;
+  }
   .our_team_container {
-    @include flex-between;
+    @include flex-center;
     gap: size(29);
     flex-wrap: wrap;
+    padding-top: size(33);
+
     .team {
       width: 246px;
       height: 481px;
-      background-color: $yellow-light;
-      .counter {
+      background-color: rgba(252, 241, 199, 0.32);
+      border-radius: 8px;
+      @include breakpoint(desktop1024) {
+        &:first-child,
+        &:last-child {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+      }
+      figure {
+        height: 312px;
+        img {
+          border-radius: 8px;
+          object-fit: cover;
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .team_body {
+        padding-top: size(28);
+        padding-bottom: size(42);
+        text-align: center;
+        .team_count {
+          @include font($eczar, 70, 800, normal, 78);
+          color: $yellow;
+        }
+        .team_name {
+          @include font($eczar, 24, 600, normal, 32);
+          color: $primary;
+        }
       }
     }
   }

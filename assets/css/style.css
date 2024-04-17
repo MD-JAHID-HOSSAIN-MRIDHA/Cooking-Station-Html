@@ -2114,17 +2114,62 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   padding-top: 9.5625rem;
   padding-bottom: 7.1875rem;
 }
+.our_team_sec .des, .our_team_sec .mission_sec .mission_container .des, .mission_sec .mission_container .our_team_sec .des, .our_team_sec .commitment_sec .commitment_container .des, .commitment_sec .commitment_container .our_team_sec .des, .our_team_sec .commitment_sec .commitment_container .middle, .commitment_sec .commitment_container .our_team_sec .middle {
+  max-width: 619px;
+}
 .our_team_sec .our_team_container {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   gap: 1.8125rem;
   flex-wrap: wrap;
+  padding-top: 2.0625rem;
 }
 .our_team_sec .our_team_container .team {
   width: 246px;
   height: 481px;
-  background-color: #fae392;
+  background-color: rgba(252, 241, 199, 0.32);
+  border-radius: 8px;
 }
+@media screen and (min-width: 64rem) {
+  .our_team_sec .our_team_container .team:first-child, .our_team_sec .our_team_container .team:last-child {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.our_team_sec .our_team_container .team figure {
+  height: 312px;
+}
+.our_team_sec .our_team_container .team figure img {
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.our_team_sec .our_team_container .team .team_body {
+  padding-top: 1.75rem;
+  padding-bottom: 2.625rem;
+  text-align: center;
+}
+.our_team_sec .our_team_container .team .team_body .team_count {
+  font-family: "Eczar", serif;
+  font-size: 4.375rem;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 1.1142857143;
+  color: rgba(249, 213, 86, 0.82);
+}
+.our_team_sec .our_team_container .team .team_body .team_name {
+  font-family: "Eczar", serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.3333333333;
+  color: hsl(147, 83%, 27%);
+}
+
 @keyframes rotating {
   from {
     transform: rotate(0deg);
