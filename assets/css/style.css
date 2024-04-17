@@ -2024,6 +2024,50 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   color: rgba(4, 4, 21, 0.6);
 }
 
+.difference_sec {
+  padding-top: 3.125rem;
+  padding-bottom: 9.375rem;
+  background-color: #f8fffb;
+}
+@media screen and (min-width: 62rem) {
+  .difference_sec {
+    padding-top: 6.25rem;
+    padding-bottom: 11.875rem;
+  }
+}
+.difference_sec .section-top > .title {
+  font-size: 40px;
+}
+.difference_sec .difference_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  flex-wrap: wrap;
+  padding-top: 60px;
+}
+.difference_sec .difference_container .difference {
+  background-color: rgba(249, 213, 86, 0.82);
+  width: 251px;
+  height: 251px;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding-top: 23px;
+}
+.difference_sec .difference_container .difference .title {
+  font-family: "Eczar", serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.3333333333;
+  letter-spacing: 0.288px;
+  color: hsl(147, 83%, 27%);
+}
+
 @keyframes rotating {
   from {
     transform: rotate(0deg);
