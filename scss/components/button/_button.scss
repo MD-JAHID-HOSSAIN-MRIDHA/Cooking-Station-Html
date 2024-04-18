@@ -23,8 +23,10 @@ button,
   @include font($nunito, 18, 600, normal, 24);
   padding: 11px 18px;
   color: white;
-  &:hover {
-    background-color: $danger;
+  @include hover {
+    color: $primary;
+    background-color: $white;
+    outline: 2px solid $primary;
   }
 }
 

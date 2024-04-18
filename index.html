@@ -113,6 +113,9 @@
 
   <!-- ========== HERO SECTION START ========= -->
   <section class="container hero bg-white">
+    <div class="smile_icon">
+        <img src="assets/images/icons/smile.svg" alt="">
+    </div>
     <div
       class="d-lg-flex flex-md-row-reverse justify-content-between align-items-center w-100 gap-5"
     >
@@ -1431,11 +1434,13 @@
     <script>
         const swiper = new Swiper(".hero-swiper", {
             // Optional parameters
-
             loop: true,
+            autoplay: {
+                delay: 3000,
+            },
             pagination: {
                 el: ".swiper-pagination",
-                type: "bullets",
+                clickable: true,
             },
             // Navigation arrows
             navigation: {

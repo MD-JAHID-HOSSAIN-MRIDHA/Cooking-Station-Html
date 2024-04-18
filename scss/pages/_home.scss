@@ -2,11 +2,18 @@
 @use "../partials" as *;
 
 // hero section
+.smile_icon {
+  position: absolute;
+  top: 0;
+  right: -90px;
+}
 .hero {
   @include flex-center;
   justify-content: space-between;
   align-items: start;
-  margin-top: size(120);
+  padding-top: size(120);
+  position: relative;
+
   .hero-swiper {
     width: 100%;
     @include radius(26);
