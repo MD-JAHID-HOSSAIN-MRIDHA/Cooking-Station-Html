@@ -1,0 +1,31 @@
+@use "../global" as *;
+@use "../partials" as *;
+
+.faq_banner {
+  // background-color: $yellow-light;
+  // padding-top: size(190);
+  .fac_banner_container {
+    @include flex-center;
+    .title {
+      @extend .title;
+      color: $primary;
+      width: fit-content;
+    }
+    .des {
+      @extend .des;
+    }
+    .accordion-button:not(.collapsed) {
+      background-color: $yellow-light;
+    }
+    .accordion-button::after {
+      background-image: none;
+      content: "\F119";
+      font-family: "bootstrap-icons";
+      font-size: 1.2rem;
+      transform-origin: center center;
+    }
+    & > * {
+      flex: 1;
+    }
+  }
+}
