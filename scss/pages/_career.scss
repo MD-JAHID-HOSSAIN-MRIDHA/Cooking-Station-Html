@@ -1,0 +1,130 @@
+@use "../global" as *;
+@use "../partials" as *;
+
+.joinwithus {
+  padding: size(30) 0;
+  margin-top: 70px;
+  @include breakpoint(tab992) {
+    padding: size(60) 0;
+  }
+  &-content {
+    @include flex-column;
+    gap: size(36);
+    @include breakpoint(tab992) {
+      gap: size(48);
+    }
+  }
+  &-header {
+    @include flex-column;
+    gap: size(8);
+    align-items: center;
+    text-align: center;
+    padding: size(0) size(30);
+    .small-title {
+      color: $primary;
+      font-size: size(18);
+      font-weight: 600;
+      line-height: size(28);
+    }
+    .title {
+      color: #19191a;
+      text-align: center;
+      font-weight: 700;
+    }
+    .des {
+      color: #5b5b5f;
+      font-size: size(16);
+      font-weight: 400;
+      line-height: size(22);
+      @include breakpoint(tab992) {
+        font-size: size(18);
+        line-height: size(30);
+      }
+    }
+  }
+ 
+  .jobs {
+    @include flex;
+    flex-direction: column;
+    gap: size(24);
+    border-radius: 30px;
+ 
+    @include border(solid, 1, #f1f1f1);
+    padding: size(24);
+    @include breakpoint(tab992) {
+      padding: size(48);
+    }
+  }
+  .job {
+    background: #f5f5f6;
+    @include flex-between;
+    align-items: center;
+    padding: size(16);
+    @include radius(16);
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: size(20);
+    @include breakpoint(mobile576) {
+      padding: size(24);
+    }
+    @include breakpoint(mobile768) {
+      justify-content: space-between;
+    }
+    .jobleft {
+      @include flex-column;
+      gap: size(8);
+      @include breakpoint(mobile576) {
+        gap: size(16);
+      }
+    }
+    .top {
+      @include flex;
+      align-items: center;
+      gap: size(10);
+    }
+    .title {
+      color: $black;
+      font-weight: 700;
+      font-size: 30px;
+    }
+    .line {
+      height: size(28);
+      width: size(1);
+      background-color: $primary;
+    }
+    .jobduration {
+      color: #85868b;
+      font-size: size(16);
+      font-style: normal;
+      font-weight: 600;
+      line-height: size(28);
+    }
+    .bottom {
+      @include flex;
+      align-items: center;
+      gap: size(12);
+      .location {
+        @include flex;
+        flex-wrap: nowrap;
+        gap: size(8);
+        .text {
+          font-size: size(16);
+          font-weight: 400;
+          line-height: size(24);
+          color: #85868b;
+        }
+      }
+      .time {
+        @include flex;
+        flex-wrap: nowrap;
+        .text {
+          font-size: size(16);
+          font-weight: 400;
+          line-height: size(24);
+          color: $black;
+        }
+      }
+    }
+  
+  }
+}

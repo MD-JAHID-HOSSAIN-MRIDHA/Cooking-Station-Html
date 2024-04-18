@@ -81,3 +81,33 @@ button,
     background: darken($white, 30%);
   }
 }
+.applynow {
+  @include setBgColor($primary, $white);
+  @include flex;
+  padding: size(10) size(14);
+  gap: size(10);
+  display: inline-flex;
+  @include radius(10);
+  width: size(180);
+  align-items: center;
+  justify-content: center;
+  @include border(solid, 5, $primary);
+  font-size: size(16);
+  font-style: normal;
+  font-weight: 500;
+  line-height: size(24);
+  svg {
+    path {
+      @include transitionsall;
+    }
+  }
+  @include hover {
+    @include setBgColor(transparent, $primary);
+
+    svg {
+      path {
+        stroke: $primary;
+      }
+    }
+  }
+}
