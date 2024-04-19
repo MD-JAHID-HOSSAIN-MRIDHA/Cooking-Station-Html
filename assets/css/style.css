@@ -2512,7 +2512,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   line-height: 1.75rem;
 }
 .joinwithus-header .title {
-  color: #19191a;
+  color: #19191a !important;
   text-align: center;
   font-weight: 700;
 }
@@ -2623,6 +2623,321 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   font-weight: 400;
   line-height: 1.5rem;
   color: hsl(0, 0%, 0%);
+}
+
+.orbitanimation {
+  background: linear-gradient(101deg, #10537c 0%, #47b43a 99.27%);
+  padding: 2.5rem 0rem;
+}
+@media screen and (min-width: 62rem) {
+  .orbitanimation {
+    padding: 5rem 0rem;
+  }
+}
+.orbitanimation-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0rem 1.875rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  color: hsl(0, 0%, 100%);
+}
+@media screen and (min-width: 36rem) {
+  .orbitanimation-header {
+    gap: 1rem;
+  }
+}
+.orbitanimation-body {
+  min-height: 50vh;
+  position: relative;
+  padding: 15.625rem 1.875rem;
+  padding-bottom: 7.5rem;
+  overflow: hidden;
+  /* .ring-2>*:nth-of-type(1) {
+      transform: rotate(47.5deg) translate(4.3em) rotate(-47.5deg);
+      background-color: red;
+  } */
+  /* .ring-2>*:nth-of-type(3) {
+      transform: rotate(142.5deg) translate(4.3em) rotate(-142.5deg);
+  } */
+  /* 
+  .ring-2>*:nth-of-type(5) {
+      transform: rotate(237.5deg) translate(4.3em) rotate(-237.5deg);
+  } */
+  /* .ring-2>*:nth-of-type(7) {
+      transform: rotate(332.5deg) translate(4.3em) rotate(-332.5deg);
+  } */
+  /* center;
+  */
+  /* animations */
+  /* icons */
+}
+.orbitanimation-body .orbit-icon {
+  width: 1.6em;
+  height: 1.6em;
+  line-height: 1.6em;
+  font-size: 1.2em;
+  border-radius: 50%;
+  background: #ccc;
+  color: #fff;
+  text-align: center;
+  display: block;
+}
+.orbitanimation-body .orbit-icon img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  border: 0.654px solid rgba(241, 249, 254, 0.8);
+}
+.orbitanimation-body .orbit-wrap {
+  list-style: none;
+  font-size: 1.3em;
+}
+.orbitanimation-body .orbit-wrap > li {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.orbitanimation-body .orbit-wrap > li:hover ul {
+  border-width: 2px;
+  border-color: #fff;
+}
+.orbitanimation-body .orbit-wrap > li:hover ~ li ul li {
+  opacity: 0.4;
+}
+.orbitanimation-body ul[class^=ring] {
+  transition: all 300ms ease-in-out;
+}
+.orbitanimation-body ul[class^=ring] li {
+  transition: all 300ms ease-in-out;
+}
+.orbitanimation-body .ring-0 {
+  width: 7em;
+  height: 7em;
+  animation: clockwiseRotate 35s linear infinite;
+}
+.orbitanimation-body .ring-0 i {
+  animation: counterClockwiseRotate 35s linear infinite;
+}
+.orbitanimation-body .ring-0 > *:nth-of-type(1) {
+  transform: rotate(95deg) translate(7.5em) rotate(-95deg);
+}
+.orbitanimation-body .ring-0 > *:nth-of-type(2) {
+  transform: rotate(190deg) translate(7.5em) rotate(-190deg);
+}
+.orbitanimation-body .ring-0 > *:nth-of-type(3) {
+  transform: rotate(285deg) translate(7.5em) rotate(-285deg);
+}
+.orbitanimation-body .ring-0 > *:nth-of-type(4) {
+  transform: rotate(380deg) translate(7.5em) rotate(-380deg);
+}
+.orbitanimation-body .ring-1 {
+  width: 15em;
+  height: 15em;
+  animation: clockwiseRotate 30s linear infinite;
+}
+.orbitanimation-body .ring-1 i {
+  animation: counterClockwiseRotate 30s linear infinite;
+}
+.orbitanimation-body .ring-1 > *:nth-of-type(1) {
+  transform: rotate(136.6666666667deg) translate(6em) rotate(-136.6666666667deg);
+}
+.orbitanimation-body .ring-1 > *:nth-of-type(2) {
+  transform: rotate(253.3333333333deg) translate(6em) rotate(-253.3333333333deg);
+}
+.orbitanimation-body .ring-1 > *:nth-of-type(3) {
+  transform: rotate(390deg) translate(6em) rotate(-390deg);
+}
+.orbitanimation-body .ring-2 {
+  width: 11.5em;
+  height: 11.5em;
+  animation: clockwiseRotate 25s linear infinite;
+}
+.orbitanimation-body .ring-2 i {
+  animation: counterClockwiseRotate 25s linear infinite;
+}
+.orbitanimation-body .ring-2 > *:nth-of-type(2) {
+  transform: rotate(95deg) translate(3em) rotate(-95deg);
+}
+.orbitanimation-body .ring-2 > *:nth-of-type(4) {
+  transform: rotate(190deg) translate(3em) rotate(-190deg);
+}
+.orbitanimation-body .ring-2 > *:nth-of-type(6) {
+  transform: rotate(285deg) translate(3em) rotate(-285deg);
+}
+.orbitanimation-body .ring-2 > *:nth-of-type(8) {
+  transform: rotate(380deg) translate(3em) rotate(-380deg);
+}
+.orbitanimation-body .ring-3 {
+  width: 10em;
+  height: 10em;
+  animation: clockwiseRotate 20s linear infinite;
+}
+.orbitanimation-body .ring-3 i {
+  animation: counterClockwiseRotate 20s linear infinite;
+}
+.orbitanimation-body .ring-3 > *:nth-of-type(1) {
+  transform: rotate(126.6666666667deg) translate(5em) rotate(-126.6666666667deg);
+}
+.orbitanimation-body .ring-3 > *:nth-of-type(2) {
+  transform: rotate(253.3333333333deg) translate(5em) rotate(-253.3333333333deg);
+}
+.orbitanimation-body .ring-3 > *:nth-of-type(3) {
+  transform: rotate(380deg) translate(5em) rotate(-380deg);
+}
+.orbitanimation-body ul[class^=ring] {
+  border: dashed 1px hsl(0, 0%, 100%);
+  position: relative;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+  box-sizing: content-box;
+}
+.orbitanimation-body ul[class^=ring] li {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.6em;
+  height: 1.6em;
+  margin: -0.8em;
+}
+.orbitanimation-body ul[class^=ring] li img {
+  border-radius: 50%;
+}
+.orbitanimation-body .orbit-center {
+  z-index: 5;
+  font-size: 2em;
+  width: 1.8em;
+  height: 1.8em;
+  line-height: 1.8em;
+  text-align: center;
+  background: hotpink;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.orbitanimation-body .orbit-center img {
+  width: 100%;
+  height: 100%;
+}
+.orbitanimation-body .orbit-center:hover .orbit-center__icon {
+  transform: rotateZ(0deg);
+}
+.orbitanimation-body .orbit-center__icon {
+  transform: rotateZ(-360deg);
+  transition: all 300ms ease-in-out;
+}
+.orbitanimation-body .orbit-center__icon img {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+}
+.orbitanimation-body .orbit-wrap > li.orbit-center:hover ~ li > ul {
+  width: 0;
+  height: 0;
+}
+.orbitanimation-body .orbit-wrap > li.orbit-center:hover ~ li > ul * {
+  transform: translate(0, 0);
+  border-radius: 50%;
+}
+@keyframes clockwiseRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes counterClockwiseRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.orbitanimation-body .fa-heart-o {
+  background: #b71c1c;
+  color: white;
+}
+.orbitanimation-body .fa-coffee {
+  background: #4caf50;
+  color: #cddc39;
+}
+.orbitanimation-body .fa-safari {
+  background: white;
+  color: darkslateblue;
+}
+.orbitanimation-body .fa-firefox {
+  background: #1565c0;
+  color: #ff8f00;
+}
+.orbitanimation-body .fa-chrome {
+  background: #fbc02d;
+  color: #ef6c00;
+}
+.orbitanimation-body .fa-edge {
+  background: #03a9f4;
+  color: white;
+}
+.orbitanimation-body .fa-android {
+  background: snow;
+  color: limegreen;
+}
+.orbitanimation-body .fa-apple {
+  background: #444;
+  color: white;
+}
+.orbitanimation-body .fa-linux {
+  background: white;
+  color: #222;
+}
+.orbitanimation-body .fa-windows {
+  background: white;
+  color: #03a9f4;
+}
+.orbitanimation-body .fa-terminal {
+  background: #222;
+  color: #fff;
+}
+.orbitanimation-body .fa-html5 {
+  background: white;
+  color: #e65100;
+}
+.orbitanimation-body .fa-css3 {
+  background: white;
+  color: #2196f3;
+}
+.orbitanimation-body .fa-git {
+  background: #222;
+  color: white;
+}
+.orbitanimation-body .fa-free-code-camp {
+  background: green;
+  color: white;
+}
+.orbitanimation-body .fa-meetup {
+  background: red;
+  color: white;
+}
+.orbitanimation-body .fa-podcast {
+  background: red;
+  color: white;
+}
+.orbitanimation-body .fa-codepen {
+  background: #333;
+  color: white;
 }
 
 @keyframes rotating {
