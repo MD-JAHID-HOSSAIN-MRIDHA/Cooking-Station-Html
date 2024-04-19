@@ -144,6 +144,12 @@
     @include flex-column;
     gap: size(10);
     color: $white;
+    .title {
+      color: white;
+    }
+    .des {
+      color: #ddd;
+    }
     @include breakpoint(mobile576) {
       gap: size(16);
     }

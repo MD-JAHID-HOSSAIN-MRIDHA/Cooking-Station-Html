@@ -2645,6 +2645,12 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   gap: 0.625rem;
   color: hsl(0, 0%, 100%);
 }
+.orbitanimation-header .title {
+  color: white;
+}
+.orbitanimation-header .des {
+  color: #ddd;
+}
 @media screen and (min-width: 36rem) {
   .orbitanimation-header {
     gap: 1rem;
