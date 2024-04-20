@@ -1,5 +1,36 @@
 @use "../global" as *;
 @use "../partials" as *;
+.corevalues {
+  padding: size(30) 0;
+  @include breakpoint(tab992) {
+    padding: size(60) 0;
+  }
+
+  &-content {
+    @include flex-column;
+    gap: size(36);
+    @include breakpoint(tab992) {
+      gap: size(48);
+    }
+  }
+  &-top {
+    @include flex-column;
+    align-items: center;
+    text-align: center;
+    .smalltitle {
+      color: $footer-link;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+    }
+    .title {
+      color: $primary;
+      font-weight: 700;
+    }
+  }
+  &-body {
+  }
+}
 
 .joinwithus {
   padding: size(30) 0;

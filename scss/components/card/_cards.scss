@@ -58,6 +58,67 @@
     @include font($nunito, 16, normal, normal, 20);
   }
 }
+.cardcorevaleu {
+  border-radius: 16px;
+  @include border(solid, 1, #f1f1f1);
+  background: linear-gradient(
+    97deg,
+    rgba(255, 255, 255, 0.95) 1.12%,
+    #fff 98.93%
+  );
+  padding: size(20);
+  @include transitiontransform;
+  @include flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  @include hover {
+    transform: translateY(-8px);
+    .icon {
+      margin-bottom: size(16);
+      animation: rotateIcon 1s 2 linear; /* Rotate twice */
+    }
+    @keyframes rotateIcon {
+      0% {
+        transform: rotate(0deg); /* Start rotation from 0 degrees */
+      }
+      50% {
+        transform: rotate(180deg); /* Rotate halfway to 180 degrees */
+      }
+      100% {
+        transform: rotate(360deg); /* Rotate to 360 degrees */
+      }
+    }
+  }
+  .icon {
+    margin-bottom: size(16);
+  }
+  .title {
+    font-family: Inter;
+    font-size: size(21);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    color: #19191a;
+    @include breakpoint(tab992) {
+      font-size: size(18);
+    }
+    @include breakpoint(desktop1400) {
+      font-size: size(21);
+    }
+  }
+  .des {
+    color: #5b5b5f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  @include breakpoint(mobile768) {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
 
 @-webkit-keyframes circle {
   0% {
