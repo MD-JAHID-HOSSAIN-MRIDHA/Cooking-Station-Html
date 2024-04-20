@@ -3085,6 +3085,627 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   color: white;
 }
 
+.authentications {
+  background: hsl(217, 16%, 84%);
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.authentications .left-content {
+  display: none;
+}
+@media screen and (min-width: 62rem) {
+  .authentications .left-content {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 68.75rem) {
+  .authentications .left-content {
+    width: 58%;
+  }
+}
+.authentications .left-content .sliderbox {
+  max-width: 80%;
+  height: 21.25rem;
+  -webkit-border-radius: 0.625rem;
+  -moz-border-radius: 0.625rem;
+  -ms-border-radius: 0.625rem;
+  -o-border-radius: 0.625rem;
+  border-radius: 0.625rem;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (min-width: 68.75rem) {
+  .authentications .left-content .sliderbox {
+    max-width: 32.125rem;
+  }
+}
+.authentications .left-content .sliderbox .authSlider {
+  width: 100%;
+  height: 100%;
+  height: 19.0625rem;
+  -webkit-border-radius: 0.625rem;
+  -moz-border-radius: 0.625rem;
+  -ms-border-radius: 0.625rem;
+  -o-border-radius: 0.625rem;
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+.authentications .left-content .sliderbox .authSlider .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.authentications .left-content .sliderbox .authSlider .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.authentications .left-content .sliderbox .swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.authentications .left-content .sliderbox .swiper-pagination-bullet {
+  width: 0.625rem;
+  height: 0.625rem;
+  background: hsl(218, 15%, 65%);
+  margin: 0;
+  opacity: 1;
+}
+.authentications .left-content .sliderbox .swiper-pagination-bullet:hover:not(.active) {
+  background: hsl(219, 18%, 22%);
+}
+.authentications .left-content .sliderbox .swiper-pagination-bullet-active {
+  background: hsl(219, 18%, 22%);
+}
+.authentications .right-content {
+  background: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1rem;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* Optional: Control scrollbar behavior on hover */
+}
+.authentications .right-content::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: Hide scrollbar background */
+}
+@media screen and (min-width: 36rem) {
+  .authentications .right-content {
+    padding: 1.25rem;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .authentications .right-content {
+    padding: 1.5rem;
+    gap: 4rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .authentications .right-content {
+    width: 50%;
+    gap: 5rem;
+  }
+}
+@media screen and (min-width: 68.75rem) {
+  .authentications .right-content {
+    width: 42%;
+    padding: 2.5rem;
+  }
+}
+.authentications .right-content .authenticationheader .logo {
+  width: 7.8125rem;
+  height: 4.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.authentications .right-content .authenticationheader .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.authentications .right-content .authentic {
+  background: hsl(0, 0%, 100%);
+  border: solid 0.0625rem hsl(220, 17%, 93%);
+  -webkit-border-radius: 0.625rem;
+  -moz-border-radius: 0.625rem;
+  -ms-border-radius: 0.625rem;
+  -o-border-radius: 0.625rem;
+  border-radius: 0.625rem;
+  width: 100%;
+  padding: 1.5rem;
+  margin: auto;
+}
+@media screen and (min-width: 36rem) {
+  .authentications .right-content .authentic {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .authentications .right-content .authentic {
+    width: 31.25rem;
+    padding: 2rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .authentications .right-content .authentic {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 87.5rem) {
+  .authentications .right-content .authentic {
+    width: 31.25rem;
+    padding: 3rem;
+  }
+}
+.authentications .right-content .authentic .welcome-title {
+  color: hsl(219, 18%, 22%);
+  font-weight: 600;
+  letter-spacing: -0.043125rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 48rem) {
+  .authentications .right-content .authentic .welcome-title {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .authentications .right-content .authentic .welcome-title {
+    margin-bottom: 2.5rem;
+  }
+}
+.authentications .right-content .authentic .welcome-text {
+  color: hsl(218, 15%, 65%);
+  font-size: 0.8125rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 48rem) {
+  .authentications .right-content .authentic .welcome-text {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .authentications .right-content .authentic .welcome-text {
+    margin-bottom: 2.5rem;
+  }
+}
+.authentications .right-content .authentic .forgotinfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+@media screen and (min-width: 62rem) {
+  .authentications .right-content .authentic .forgotinfo {
+    margin-bottom: 2.5rem;
+  }
+}
+.authentications .right-content .authentic .forgotinfo .text {
+  color: hsl(221, 13%, 46%);
+  font-family: "Nunito", sans-serif;
+  font-size: 0.75rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: 0.000625rem;
+}
+.authentications .right-content .authentic .socialauth {
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 48rem) {
+  .authentications .right-content .authentic .socialauth {
+    margin-bottom: 2rem;
+  }
+}
+.authentications .right-content .authentic .socialauth .btn-socialauth {
+  background: hsl(0, 0%, 100%);
+  border: solid 0.0625rem hsl(220, 17%, 93%);
+  -webkit-border-radius: 8.125rem;
+  -moz-border-radius: 8.125rem;
+  -ms-border-radius: 8.125rem;
+  -o-border-radius: 8.125rem;
+  border-radius: 8.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  width: 100%;
+}
+.authentications .right-content .authentic .socialauth .btn-socialauth .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.authentications .right-content .authentic .socialauth .btn-socialauth .icon svg {
+  width: 100%;
+  height: 100%;
+}
+.authentications .right-content .authentic .socialauth .btn-socialauth .text {
+  color: hsl(219, 18%, 22%);
+  font-family: "Nunito", sans-serif;
+  font-size: 0.875rem;
+  font-weight: medium;
+  font-style: normal;
+  line-height: 1.7142857143;
+  letter-spacing: -0.005625rem;
+}
+.authentications .right-content .authentic .divide {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.authentications .right-content .authentic .divide .or {
+  width: 2.5rem;
+  background: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.authentications .right-content .authentic .divide .or .ortitle {
+  color: hsl(218, 15%, 65%);
+  font-family: "Nunito", sans-serif;
+  font-size: 0.75rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 2;
+}
+.authentications .right-content .authentic .divide .bar {
+  background: hsl(220, 17%, 93%);
+  width: calc(50% - 1rem);
+  height: 0.0625rem;
+}
+.authentications .topicon,
+.authentications .bottomicon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+}
+.authentications .topicon {
+  top: 0;
+  right: -1.25rem;
+}
+@media screen and (min-width: 87.5rem) {
+  .authentications .topicon {
+    right: 0;
+  }
+}
+.authentications .topicon svg {
+  width: 100%;
+  height: 100%;
+}
+.authentications .bottomicon {
+  bottom: 0;
+  left: -1.25rem;
+}
+@media screen and (min-width: 87.5rem) {
+  .authentications .bottomicon {
+    left: 0;
+  }
+}
+
+.authform {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.authform .inputbox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+}
+.authform .inputbox .inputlabel {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+.authform .inputbox .inputfield {
+  background: hsl(0, 0%, 100%);
+  color: hsl(219, 18%, 22%);
+  padding: 0.90625rem 0.75rem 0.90625rem 1.25rem;
+  -webkit-transition: all 350ms ease-in-out;
+  -moz-transition: all 350ms ease-in-out;
+  -ms-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+}
+.authform .inputbox .inputfield::placeholder {
+  color: hsl(217, 16%, 84%);
+}
+.authform .inputbox .inputfield:focus {
+  border-color: hsl(147, 83%, 27%);
+}
+.authform .inputbox .btn-toggle {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: 1.75rem;
+  right: 0;
+}
+.authform .inputbox.errorfield .inputfield {
+  border-color: hsl(0, 91%, 54%);
+}
+.authform .inputbox.passwordbox .inputfield {
+  padding-right: 3.375rem;
+}
+.authform .inputbox .employeelist {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+.authform .inputbox .employeelist .inputradio .radio:checked ~ .radiolabel {
+  background: hsl(147, 83%, 27%);
+  color: hsl(0, 0%, 100%);
+  border-color: hsl(147, 83%, 27%);
+  font-weight: 500;
+}
+.authform .inputbox .employeelist .inputradio .radiolabel {
+  background: hsl(0, 0%, 100%);
+  color: hsl(218, 15%, 65%);
+  border: solid 0.0625rem hsl(220, 17%, 93%);
+  -webkit-border-radius: 0.625rem;
+  -moz-border-radius: 0.625rem;
+  -ms-border-radius: 0.625rem;
+  -o-border-radius: 0.625rem;
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 0.75rem 0.875rem;
+  text-align: center;
+}
+.authform .agreebox .agreecheck:checked ~ .agreelabel::before {
+  background: hsl(147, 83%, 27%);
+  border-color: hsl(147, 83%, 27%);
+}
+.authform .agreebox .agreecheck:checked ~ .agreelabel::after {
+  opacity: 1;
+  visibility: visible;
+}
+.authform .agreebox .agreelabel {
+  position: relative;
+  padding-left: 1.375rem;
+  cursor: pointer;
+  font-size: 0.8125rem;
+  color: hsl(221, 13%, 46%);
+}
+.authform .agreebox .agreelabel .link {
+  color: hsl(147, 83%, 27%);
+  font-weight: 500;
+  -webkit-transition: all 350ms ease-in-out;
+  -moz-transition: all 350ms ease-in-out;
+  -ms-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+}
+.authform .agreebox .agreelabel .link:not([disabled]):hover {
+  text-decoration: underline;
+}
+.authform .agreebox .agreelabel::selection {
+  background: transparent;
+  color: hsl(147, 83%, 27%);
+}
+.authform .agreebox .agreelabel::before, .authform .agreebox .agreelabel::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+}
+.authform .agreebox .agreelabel::before {
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  background: hsl(0, 0%, 100%);
+  border: solid 0.125rem hsl(217, 16%, 84%);
+  -webkit-border-radius: 0.1875rem;
+  -moz-border-radius: 0.1875rem;
+  -ms-border-radius: 0.1875rem;
+  -o-border-radius: 0.1875rem;
+  border-radius: 0.1875rem;
+}
+.authform .agreebox .agreelabel::after {
+  width: 0.3125rem;
+  height: 0.5625rem;
+  border: solid 0.125rem hsl(0, 0%, 100%);
+  -webkit-transform: translateY(-60%) rotate(45deg);
+  -moz-transform: translateY(-60%) rotate(45deg);
+  -ms-transform: translateY(-60%) rotate(45deg);
+  transform: translateY(-60%) rotate(45deg);
+  border-top: 0;
+  border-left: 0;
+  left: 0.359375rem;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 350ms ease-in-out;
+  -moz-transition: all 350ms ease-in-out;
+  -ms-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+}
+.authform .forgotlink {
+  color: hsl(218, 15%, 65%);
+  font-family: "Nunito", sans-serif;
+  font-size: 0.75rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 2;
+  -webkit-transition: all 350ms ease-in-out;
+  -moz-transition: all 350ms ease-in-out;
+  -ms-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+}
+.authform .forgotlink:not([disabled]):hover {
+  color: hsl(219, 18%, 22%);
+}
+.authform .submitbox {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+.authform .submitbox .btn-submit {
+  width: 100%;
+  -webkit-border-radius: 0.625rem;
+  -moz-border-radius: 0.625rem;
+  -ms-border-radius: 0.625rem;
+  -o-border-radius: 0.625rem;
+  border-radius: 0.625rem;
+  background: hsl(147, 83%, 27%);
+  color: hsl(0, 0%, 100%);
+  height: 3rem;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.875rem;
+  font-weight: medium;
+  font-style: normal;
+  line-height: 1.7142857143;
+  letter-spacing: -0.005625rem;
+  text-align: center;
+}
+.authform .submitbox .authtext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3125rem;
+  color: hsl(219, 18%, 22%);
+  font-family: "Nunito", sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.7142857143;
+  letter-spacing: -0.005625rem;
+}
+.authform .submitbox .authtext .authlink {
+  color: hsl(147, 83%, 27%);
+  font-family: "Nunito", sans-serif;
+  font-size: 0.875rem;
+  font-weight: medium;
+  font-style: normal;
+  line-height: 1.7142857143;
+  letter-spacing: -0.005625rem;
+  -webkit-transition: all 350ms ease-in-out;
+  -moz-transition: all 350ms ease-in-out;
+  -ms-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+}
+.authform .submitbox .authtext .authlink:not([disabled]):hover {
+  text-decoration: underline;
+}
+.authform .submitbox .authtext .btn-resend {
+  color: hsl(147, 83%, 27%);
+  font-family: "Nunito", sans-serif;
+  font-size: 0.875rem;
+  font-weight: medium;
+  font-style: normal;
+  line-height: 1.7142857143;
+  letter-spacing: -0.005625rem;
+  text-decoration: underline;
+  -webkit-transition: all 350ms ease-in-out;
+  -moz-transition: all 350ms ease-in-out;
+  -ms-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+}
+.authform .submitbox .authtext .btn-resend:not([disabled]):hover {
+  text-decoration: none;
+}
+.authform .submitbox .backlink {
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem;
+}
+.authform .submitbox .backlink span {
+  color: hsl(219, 18%, 22%);
+  font-family: "Nunito", sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.7142857143;
+  letter-spacing: -0.005625rem;
+}
+.authform .submitbox .backlink:not([disabled]):hover span {
+  color: hsl(147, 83%, 27%);
+}
+.authform .submitbox .backlink:not([disabled]):hover span svg path {
+  stroke: hsl(147, 83%, 27%);
+}
+
+.inputfield,
+.textareafield {
+  border: solid 0.0625rem hsl(220, 17%, 93%);
+  font-family: "Nunito", sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2142857143;
+  padding: 0.625rem 1rem;
+  -webkit-transition: all 350ms ease-in-out;
+  -moz-transition: all 350ms ease-in-out;
+  -ms-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  color: hsl(221, 13%, 46%);
+}
+.inputfield::placeholder,
+.textareafield::placeholder {
+  color: hsl(218, 15%, 65%);
+}
+.inputfield:focus,
+.textareafield:focus {
+  border-color: hsl(147, 83%, 27%);
+}
+
 @keyframes rotating {
   from {
     -webkit-transform: rotate(0deg);
@@ -3280,4 +3901,4 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
   }
-}/*# sourceMappingURL=style.css.map */
+}
