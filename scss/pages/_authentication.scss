@@ -209,29 +209,20 @@ $textPrimary: hsl(221, 13%, 46%); //#667085
           margin-bottom: size(32);
         }
 
+        @include flex-center;
+        gap: 10px;
         .btn-socialauth {
           background: $white;
           @include border(solid, 1, $headerborder);
-          @include radius(130);
+          @include radius(10);
           @include flex-center;
           gap: size(8);
           padding: size(12);
           @include w100;
-
-          .icon {
-            @include square(24);
-            @include flex-center;
-            overflow: hidden;
-
-            svg {
-              @include wh100;
-            }
-          }
-
-          .text {
-            color: $headingText;
-            @include font($nunito, 14, medium, normal, 24);
-            letter-spacing: size(-0.09);
+          font-size: 20px;
+          &:hover {
+            background-color: $primary;
+            color: white;
           }
         }
       }
@@ -248,10 +239,8 @@ $textPrimary: hsl(221, 13%, 46%); //#667085
           @include flex-center;
           text-align: center;
 
-          .ortitle {
-            color: $textSecondary;
-            @include font($nunito, 12, normal, normal, 24);
-          }
+          color: $textSecondary;
+          @include font($nunito, 12, normal, normal, 24);
         }
 
         .bar {
@@ -373,6 +362,15 @@ $textPrimary: hsl(221, 13%, 46%); //#667085
   }
 
   .agreebox {
+    display: flex;
+    justify-content: space-between;
+    .forgot_pass {
+      color: $headingText;
+      font-size: 14px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
     .agreecheck {
       &:checked ~ .agreelabel {
         &::before {
