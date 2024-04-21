@@ -21,7 +21,7 @@ $textPrimary: hsl(221, 13%, 46%); //#667085
     }
 
     @include breakpoint(desktop1100) {
-      width: 58%;
+      width: 42%;
     }
 
     .sliderbox {
@@ -110,7 +110,7 @@ $textPrimary: hsl(221, 13%, 46%); //#667085
     }
 
     @include breakpoint(desktop1100) {
-      width: 42%;
+      width: 58%;
       padding: size(40);
     }
 
