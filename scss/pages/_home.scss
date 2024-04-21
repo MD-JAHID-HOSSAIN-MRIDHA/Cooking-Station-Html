@@ -182,12 +182,17 @@
       align-items: center;
       // gap: size(35);
       box-shadow: 0px 4px 8px 0px rgba(11, 110, 105, 0.25);
-      padding-bottom: size(10);
+      padding-bottom: size(7);
       .title {
         @include font($eczar, 28, 600, normal, 52);
         transform: translateY(-2rem);
         color: $primary;
         text-align: center;
+      }
+      transition: 0.3s;
+      &:hover {
+        // transform: scale(1.1);
+        box-shadow: 0px 4px 8px 4px rgba(11, 110, 105, 0.25);
       }
     }
     .featured_dish {
@@ -204,6 +209,7 @@
   border: 2px solid $primary;
   width: size(40);
   height: size(40);
+  @include flex-center;
   @include breakpoint(mobile576) {
     width: size(50);
     height: size(50);
@@ -211,7 +217,12 @@
   color: black;
   position: absolute;
   top: 60%;
+  transition: 0.3s;
   z-index: 1;
+  &:hover {
+    background-color: $primary;
+    color: white;
+  }
 }
 .featured-swiper-next {
   right: 1%;
