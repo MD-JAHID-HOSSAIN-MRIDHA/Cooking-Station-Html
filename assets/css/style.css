@@ -2344,10 +2344,30 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   .wrapper .accordion {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    -moz-column-gap: 10px;
-         column-gap: 10px;
+    gap: 10px;
     z-index: 1;
     position: relative;
+  }
+  .wrapper .accordion .acc_title {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.625rem;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.8461538462;
+    color: hsl(147, 83%, 27%);
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  .wrapper .accordion .acc_title::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 50px;
+    border-radius: 8px;
+    background-color: rgba(249, 213, 86, 0.82);
   }
 }
 .wrapper .accordion-button:not(.collapsed) {

@@ -22,7 +22,6 @@
     .des {
       @extend .des;
     }
-
     & > * {
       flex: 1;
     }
@@ -34,9 +33,26 @@
     .accordion {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 10px;
+      gap: 10px;
       z-index: 1;
       position: relative;
+      .acc_title {
+        @include font($nunito, 26, 700, normal, 48);
+        color: $primary;
+        position: relative;
+        margin-bottom: 1rem;
+        &::after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 3px;
+          width: 50px;
+          border-radius: 8px;
+          background-color: $yellow;
+        }
+      }
     }
   }
   padding-bottom: 6rem;
