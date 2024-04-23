@@ -2,18 +2,21 @@
 @use "../partials" as *;
 
 // hero section
-.smile_icon {
-  position: absolute;
-  top: 0;
-  right: -90px;
-}
+
 .hero {
   @include flex-center;
   justify-content: space-between;
   align-items: start;
   padding-top: size(120);
   position: relative;
-
+  .smile_icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include breakpoint(mobile576) {
+      right: -90px;
+    }
+  }
   .hero-swiper {
     width: 100%;
     @include radius(26);
@@ -147,6 +150,14 @@
         border: 2px solid #fae392;
         z-index: -1;
         @include radius(8);
+        transition: 0.5s;
+      }
+      &:hover::after {
+        left: 0px;
+        // border: 2px solid red;
+        width: 110%;
+        top: -6px;
+        height: 80px;
       }
     }
   }

@@ -1232,12 +1232,6 @@ table tr td {
   }
 }
 
-.smile_icon {
-  position: absolute;
-  top: 0;
-  right: -90px;
-}
-
 .hero {
   display: flex;
   align-items: center;
@@ -1246,6 +1240,16 @@ table tr td {
   align-items: start;
   padding-top: 7.5rem;
   position: relative;
+}
+.hero .smile_icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media screen and (min-width: 36rem) {
+  .hero .smile_icon {
+    right: -90px;
+  }
 }
 .hero .hero-swiper {
   width: 100%;
@@ -1405,6 +1409,13 @@ table tr td {
   border: 2px solid #fae392;
   z-index: -1;
   border-radius: 0.5rem;
+  transition: 0.5s;
+}
+.about_sec .watch_btn_container .watch_btn:hover::after {
+  left: 0px;
+  width: 110%;
+  top: -6px;
+  height: 80px;
 }
 
 .featured_sec {
