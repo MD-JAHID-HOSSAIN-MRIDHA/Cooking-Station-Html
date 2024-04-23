@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forgot Password</title>
+    <title>Verify Otp</title>
     <!-- FAVICON  -->
     <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon" />
     <!-- Link Swiper's CSS -->
@@ -51,28 +51,36 @@
             </header>
 
             <div class="authentic">
-                <h4 class="welcome-title mb-2">Before we get started...</h4>
+                <h4 class="welcome-title">Check Your Email</h4>
 
-                <p class="welcome-text">Could you tell us a bit about yourself?</p>
+                <div class="forgotinfo">
+                    <span class="text">We sent a 6 digit otp to</span>
+                    <span class="text">dummy@cookingstation.com</span>
+                </div>
 
                 <form class="authform">
                     <div class="inputbox">
-                        <label for="forgot-email" class="inputlabel">
-                            Email Address
-                        </label>
+                        <label for="verify-code" class="inputlabel"> 6-digit code </label>
 
-                        <input type="email" id="forgot-email" class="inputfield"
-                            placeholder="Enter your work email address" autocomplete="off" />
-
+                        <input type="number" id="verify-code" class="inputfield"
+                            placeholder="Enter your verification code" autocomplete="off" />
                     </div>
 
                     <div class="submitbox">
-                        <a href="./verifyotp.html" class="btn-submit">Reset Password</a>
+                        <button type="button" class="btn-submit" onclick="resetPassword()">Reset Password</button>
 
-                        <!-- RESET-PASSWORD -->
+
+                        <!-- VERIFY-PASSWORD -->
                         <button type="button" class="btn-submit d-none">
-                            Reset Password
+                            Verify Password
                         </button>
+
+                        <p class="authtext">
+                            Didn’t receive any code?
+                            <button type="button" class="btn-resend">
+                                Click to resend
+                            </button>
+                        </p>
 
                         <div class="d-flex justify-content-center w-100">
                             <a href="./login.html" class="backlink">
@@ -131,6 +139,13 @@
             },
         });
     </script>
+    <script>
+        function resetPassword() {
+            event.preventDefault();
+            window.location.href = 'change-password.html';
+        }
+    </script>
+
 
 </body>
 
