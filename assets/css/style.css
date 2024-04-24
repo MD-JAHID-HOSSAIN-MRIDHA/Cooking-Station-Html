@@ -3566,6 +3566,22 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   font-style: normal;
   line-height: 1.3928571429;
 }
+.how_we_work_sec .how_we_work_container .event_step_container .event_step_card .step_des {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.event_book_section {
+  padding: 6.25rem 0;
+}
+.event_book_section .event_form {
+  row-gap: 1rem;
+  max-width: 760px;
+  margin: auto;
+}
 
 @keyframes rotating {
   from {

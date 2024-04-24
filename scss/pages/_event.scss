@@ -41,9 +41,18 @@
           @include font($eczar, 28, 600, normal, 39);
         }
         .step_des {
-          @include font($nunito, 18, 500, style, 27);
+          @include font($nunito, 18, 500, normal, 27);
         }
       }
     }
+  }
+}
+
+.event_book_section {
+  padding: size(100) 0;
+  .event_form {
+    row-gap: 1rem;
+    max-width: 760px;
+    margin: auto;
   }
 }
