@@ -4,18 +4,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cooking Station || Checkout</title>
+    <title>Cooking Station Home</title>
     <!-- FAVICON  -->
-    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon" />
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
     <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css" />
-
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
+    <!-- SWIPER JS  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css" />
-
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- font awosome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -24,11 +21,10 @@
 
 <body>
     <!-- ================== HEADER PART START================== -->
-
     <header>
         <nav class="navbar navbar-expand-lg bg-white p-0 z-3 fixed-top">
             <div class="container">
-                <a href="/"><img class="logo" src="../assets/images/Logo.svg" alt="Cooking station" /></a>
+                <a href="/"><img class="logo" src="assets/images/Logo.svg" alt="Cooking station" /></a>
                 <div class="d-flex d-lg-none justify-content-center align-items-center gap-3" role="search">
                     <!-- <a href="/login" class="login_btn">Login</a> -->
 
@@ -48,12 +44,12 @@
                     </div>
                     <div class="offcanvas-body">
                         <div class="d-flex justify-content-between w-100">
-                            <ul class="navbar-nav mx-auto mb-2 mt-lg-2 ">
+                            <ul class="navbar-nav mx-auto mb-2 mt-lg-2">
                                 <li class="nav-item">
-                                    <a class="nav-link " aria-current="page" href="/">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="/">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="#">About us</a>
+                                    <a class="nav-link" href="#">About us</a>
                                 </li>
 
                                 <li class="nav-item">
@@ -67,7 +63,7 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/contact.html">Contact Us</a>
+                                    <a class="nav-link" href="/contactUs">Contact Us</a>
                                 </li>
                             </ul>
 
@@ -83,73 +79,86 @@
         </nav>
     </header>
     <!-- =================== HEADER PART END=================== -->
-    <section class="checkout">
-        <div class="section-top">
-            <h1 class="title">Checkout</h1>
-            <span>
-                <svg width="220" height="40" viewBox="0 0 377 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 37C89.4781 25.0528 175.7 9.57513 262.468 5.06034C296.926 3.26742 331.647 1.94484 366.115 4.16548C369.648 4.39309 378.832 3.99732 370.795 6.02401" stroke="#0C8040" stroke-width="6" stroke-linecap="round"/>
-                </svg>
-            </span>
-        </div>
+
+    <section class="subscription">
         <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-lg-6">
-                    <div class="left-col">
-                        <h5 class="title">Billing Address</h5>
-                        <div class="inputbox">
-                            <label for="name">Name</label>
-                            <input type="text" id="name">
-                        </div>
-                        <div class="inputbox">
-                            <label for="name">Email </label>
-                            <input type="email" id="name">
-                        </div>
-                        <div class="inputbox">
-                            <label for="name">Delivery address</label>
-                            <input type="text" id="name">
-                        </div>
-                        <div class="inputbox">
-                            <label for="name">Phone no.</label>
-                            <input type="text" id="name">
-                        </div>
-                    </div>
+            <div class="subscription-content">
+                <h1 class="title">Subscribe</h1>
+                <div class="des-wrapper">
+                    <p class="des">
+                        Welcome to Cooking Station – where the heart of home-cooked goodness meets the convenience of
+                        doorstep delivery! We are passionate food enthusiasts committed to bringing the warmth and
+                        flavors of homemade meals right to your table. Our journey began with a simple idea – to share
+                        the joy of delicious, freshly prepared food, just like mom used to make.
+                    </p> <br>
+                    <br>
+                    <p class="des">
+                        Welcome to Cooking Station – where the heart of home-cooked goodness meets the convenience of
+                        doorstep delivery! We are passionate food enthusiasts committed
+                    </p>
                 </div>
-                <div class="col-lg-5">
-                    <div class="right-col">
-                        <div class="billing-box">
-                            <h2 class="title">Billing Summary</h2>
-                            <span class="line"></span>
-                            <span class="plan-detail">Plan Detail</span>
-                            <div class="single-bill mt-5">
-                                <p class="name">Plan</p>
-                                <p class="value">15 Days</p>
-                            </div>
-                            <div class="single-bill">
-                                <p class="name">Plan type</p>
-                                <p class="value">Premium</p>
-                            </div>
-                            <div class="single-bill">
-                                <p class="name">Per Meal</p>
-                                <p class="value">70 BDT</p>
-                            </div>
-                            <div class="single-bill">
-                                <p class="name">Daily Meals</p>
-                                <p class="value">2</p>
-                            </div>
-                            <div class="single-bill">
-                                <p class="name">Total Meal</p>
-                                <p class="value">60</p>
-                            </div>
-                            <div class="single-bill last">
-                                <p class="name">Total Bill</p>
-                                <p class="value">4200 BDT</p>
-                            </div>
-                            <button class="confirm-ordr-btn">Confirm Order</button>
-                        </div>
+                <form action="" class="subscription-form">
+                    <input type="email" name="" id="">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="support">
+        <div class="support_section collapse" id="collapseExample">
+            <div class="support_header">
+                <h3 class="title">Hello there</h3>
+                <p class="desc">
+                    Please let us know who you are to start the conversation
+                </p>
+            </div>
+
+            <div class="support_body">
+                <form class="row contact_form">
+                    <div class="col-12 mb-3">
+                        <input type="text" class="form-control" id="name" placeholder="Name" />
+                    </div>
+                    <div class="col-12 mb-3">
+                        <input type="number" placeholder="Phone Number: Ex. 017xxxxxxxxxx" class="form-control"
+                            id="phone" />
+                    </div>
+
+                    <div class="col-12">
+                        <button type="submit" class="cs_btn w-100">Continue</button>
+                    </div>
+                </form>
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+            </div>
+
+            <div class="support_footer">
+                <p>Contact us with our support number</p>
+                <div class="icon_container">
+                    <div>
+                        <a href="">
+                            <img src="assets/icons/whatsup.png" alt="" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="assets/icons/messanger.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="assets/icons/phone.jpg" alt="" />
+                        </a>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="text-end mt-3">
+            <button class="cs_btn message-icon" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fa-regular fa-comments fs-3"></i>
+            </button>
         </div>
     </section>
 
@@ -361,17 +370,59 @@
         </div>
     </footer>
     <!-- =================== Footer PART END=================== -->
+    <!-- BOOTSTRAP JS -->
+    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- TOOLTIP JS -->
+    <script src="assets/js/tooltip/tooltip.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var chefSwiper = new Swiper(".chefswiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            autoplay: {
+                delay: 3000,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+            },
+            grabCursor: true,
+        });
 
-    <!-- swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        var testimonialSwiper = new Swiper(".testimonial-slider", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            },
+            pagination: {
+                el: ".swiper-pagination-slide",
+                clickable: true,
+            },
+        });
+    </script>
+
     <script>
         const swiper = new Swiper(".hero-swiper", {
             // Optional parameters
-
             loop: true,
+            autoplay: {
+                delay: 3000,
+            },
             pagination: {
                 el: ".swiper-pagination",
-                type: "bullets",
+                clickable: true,
             },
             // Navigation arrows
             navigation: {
@@ -414,10 +465,6 @@
             },
         });
     </script>
-    <!-- BOOTSTRAP JS -->
-    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- TOOLTIP JS -->
-    <script src="assets/js/tooltip/tooltip.js"></script>
 </body>
 
 </html>

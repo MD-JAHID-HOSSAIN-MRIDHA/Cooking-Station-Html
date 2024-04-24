@@ -1,0 +1,130 @@
+@use "../global" as *;
+@use "../partials" as *;
+.checkout {
+  margin-top: size(120);
+  padding: size(100) size(0);
+  .section-top {
+    @include flex-column;
+    padding-bottom: size(150);
+    span {
+      margin-top: size(-24);
+    }
+  }
+  .left-col {
+    .title {
+      color: #111;
+      leading-trim: both;
+      text-edge: cap;
+      font-family: Eczar;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px;
+    }
+    .inputbox {
+      @include flex-column;
+      gap: size(12);
+      margin-top: size(20);
+
+      label {
+        color: #111;
+        leading-trim: both;
+        text-edge: cap;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+      }
+      input {
+        @include border(solid, 1, #e5e5e5);
+        @include radius(5);
+        padding: size(8);
+        @include transitionsall;
+        &:focus {
+          border-color: $primary;
+        }
+      }
+    }
+  }
+  .right-col {
+    @include border(solid, 1, #e5e5e5);
+    padding: size(30);
+    @include radius(1);
+    .billing-box {
+      @include flex-column;
+      gap: size(14);
+      .title {
+        color: #111;
+        leading-trim: both;
+        text-edge: cap;
+        font-family: Eczar;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: center;
+      }
+      .line {
+        height: size(1);
+        width: 100%;
+        background-color: #ededed;
+      }
+      .plan-detail {
+        background-color: #434443;
+        color: $white;
+        color: #fff;
+        leading-trim: both;
+        text-edge: cap;
+        font-family: Nunito;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: center;
+        padding: size(10);
+        @include radius(5);
+      }
+      .single-bill {
+        @include flex-between;
+        padding:  size(10) size(20);
+        @include border(solid, 1, #e5e5e5);
+        @include radius(35);
+        .name {
+            color: #111;
+            leading-trim: both;
+            text-edge: cap;
+            font-family: Nunito;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26px; /* 185.714% */
+        }
+        .value {
+            color: #696868;
+            leading-trim: both;
+            text-edge: cap;
+            font-family: Nunito;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26px; /* 185.714% */
+        }
+        &.last {
+            background: rgba(241, 240, 240, 0.55);
+        }
+       
+
+      }
+      .confirm-ordr-btn {
+        background-color: $primary;
+        padding: size(10) size(18);
+        color: $white;
+        @include radius(5);
+        margin-top: size(20);
+        &:hover {
+            background-color:hsl(147, 83%, 17%)
+        }
+    }
+    }
+  }
+}
