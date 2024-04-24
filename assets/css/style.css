@@ -1147,7 +1147,7 @@ table tr td {
 
 .support {
   position: fixed;
-  right: 1rem;
+  right: 2rem;
   bottom: 2rem;
   z-index: 999;
 }
@@ -3512,6 +3512,59 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .inputfield:focus,
 .textareafield:focus {
   border-color: hsl(147, 83%, 27%);
+}
+
+.how_we_work_sec {
+  background-color: hsl(147, 83%, 27%);
+  color: #e5e5e5;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  background-image: url("../../assets/images/table.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+}
+.how_we_work_sec .how_we_work_container {
+  max-width: 636px;
+}
+.how_we_work_sec .how_we_work_container .section_title {
+  font-family: "Eczar", serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.3;
+}
+.how_we_work_sec .how_we_work_container .event_step_container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.how_we_work_sec .how_we_work_container .event_step_container .event_step_card {
+  display: flex;
+  gap: 40px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.how_we_work_sec .how_we_work_container .event_step_container .event_step_card .icon {
+  position: relative;
+}
+.how_we_work_sec .how_we_work_container .event_step_container .event_step_card .icon::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 2px;
+  background-color: #e5e5e5;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 2.5rem;
+}
+.how_we_work_sec .how_we_work_container .event_step_container .event_step_card .step_title {
+  font-family: "Eczar", serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.3928571429;
 }
 
 @keyframes rotating {

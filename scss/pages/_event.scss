@@ -1,0 +1,49 @@
+@use "../global" as *;
+@use "../partials" as *;
+
+.how_we_work_sec {
+  background-color: $primary;
+  color: #e5e5e5;
+  padding-top: size(100);
+  padding-bottom: size(100);
+  background-image: url("../../assets/images/table.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+  .how_we_work_container {
+    max-width: 636px;
+    .section_title {
+      @include font($eczar, 40, 500, normal, 52);
+    }
+    .event_step_container {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      .event_step_card {
+        display: flex;
+        gap: 40px;
+        height: fit-content;
+        .icon {
+          position: relative;
+          &::after {
+            content: "";
+            display: block;
+            height: 100%;
+            width: 2px;
+            background-color: #e5e5e5;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 2.5rem;
+          }
+        }
+        .step_title {
+          @include font($eczar, 28, 600, normal, 39);
+        }
+        .step_des {
+          @include font($nunito, 18, 500, style, 27);
+        }
+      }
+    }
+  }
+}
