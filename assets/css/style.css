@@ -3562,6 +3562,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   transform: translateX(-50%);
   top: 2rem;
 }
+.how_we_work_sec .how_we_work_container .event_step_container .event_step_card .third {
+  width: 44px !important;
+}
 .how_we_work_sec .how_we_work_container .event_step_container .event_step_card .last::after {
   background: transparent;
 }
