@@ -1,0 +1,48 @@
+@use "../global" as *;
+@use "../partials" as *;
+@use "../utilities" as *;
+
+.terms_banner_sec {
+  padding-top: size(150);
+  background-color: #efefef;
+  padding-bottom: size(100);
+  .terms_banner_container {
+    display: flex;
+    gap: 10px;
+  }
+  .des {
+    color: $danger;
+    font-weight: bold;
+  }
+}
+
+.terms_sec {
+  padding: size(60) 0;
+  .terms-group {
+    // background-color: #efefef;
+    border-radius: 10px;
+    padding: 20px;
+    .group_title {
+      @extend .title;
+      font-size: 24px;
+      border-left: 6px solid $primary;
+      border-radius: 9px;
+      padding-left: 10px;
+      margin-bottom: 1rem;
+    }
+    ol {
+      padding-left: 16px;
+      li {
+        @extend .des;
+      }
+    }
+  }
+}
+.note {
+  max-width: 900px;
+  background-color: $yellow-light;
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
+  margin-top: -3rem;
+}

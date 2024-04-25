@@ -2009,7 +2009,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   margin-top: 8px;
 }
 
-.title, .mission_sec .mission_container .title, .commitment_sec .commitment_container .title, .difference_sec .section-top > .title {
+.title, .terms_sec .terms-group .group_title, .mission_sec .mission_container .title, .commitment_sec .commitment_container .title, .difference_sec .section-top > .title {
   font-family: "Eczar", serif;
   font-size: 1.875rem;
   font-weight: 500;
@@ -2018,7 +2018,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   color: hsl(147, 83%, 27%);
 }
 @media screen and (min-width: 36rem) {
-  .title, .mission_sec .mission_container .title, .commitment_sec .commitment_container .title, .difference_sec .section-top > .title {
+  .title, .terms_sec .terms-group .group_title, .mission_sec .mission_container .title, .commitment_sec .commitment_container .title, .difference_sec .section-top > .title {
     font-family: "Eczar", serif;
     font-size: 2.5rem;
     font-weight: 500;
@@ -2027,7 +2027,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   }
 }
 
-.des, .mission_sec .mission_container .des, .commitment_sec .commitment_container .des, .commitment_sec .commitment_container .middle {
+.des, .terms_sec .terms-group ol li, .mission_sec .mission_container .des, .commitment_sec .commitment_container .des, .commitment_sec .commitment_container .middle {
   color: hsl(0, 0%, 39%);
   font-family: "Nunito", sans-serif;
   font-size: 1.125rem;
@@ -2062,7 +2062,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   align-items: center;
   text-align: center;
 }
-.section-top .title, .section-top .mission_sec .mission_container .title, .mission_sec .mission_container .section-top .title, .section-top .commitment_sec .commitment_container .title, .commitment_sec .commitment_container .section-top .title, .difference_sec .section-top > .title {
+.section-top .title, .section-top .terms_sec .terms-group .group_title, .terms_sec .terms-group .section-top .group_title, .section-top .mission_sec .mission_container .title, .mission_sec .mission_container .section-top .title, .section-top .commitment_sec .commitment_container .title, .commitment_sec .commitment_container .section-top .title, .difference_sec .section-top > .title {
   font-family: "Eczar", serif;
   font-size: 1.875rem;
   font-weight: semibold;
@@ -2071,7 +2071,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   color: hsl(147, 83%, 27%);
 }
 @media screen and (min-width: 36rem) {
-  .section-top .title, .section-top .mission_sec .mission_container .title, .mission_sec .mission_container .section-top .title, .section-top .commitment_sec .commitment_container .title, .commitment_sec .commitment_container .section-top .title, .difference_sec .section-top > .title {
+  .section-top .title, .section-top .terms_sec .terms-group .group_title, .terms_sec .terms-group .section-top .group_title, .section-top .mission_sec .mission_container .title, .mission_sec .mission_container .section-top .title, .section-top .commitment_sec .commitment_container .title, .commitment_sec .commitment_container .section-top .title, .difference_sec .section-top > .title {
     font-family: "Eczar", serif;
     font-size: 2.5rem;
     font-weight: semibold;
@@ -2079,7 +2079,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     line-height: 1.3;
   }
 }
-.section-top .des, .section-top .mission_sec .mission_container .des, .mission_sec .mission_container .section-top .des, .section-top .commitment_sec .commitment_container .des, .commitment_sec .commitment_container .section-top .des, .section-top .commitment_sec .commitment_container .middle, .commitment_sec .commitment_container .section-top .middle {
+.section-top .des, .section-top .terms_sec .terms-group ol li, .terms_sec .terms-group ol .section-top li, .section-top .mission_sec .mission_container .des, .mission_sec .mission_container .section-top .des, .section-top .commitment_sec .commitment_container .des, .commitment_sec .commitment_container .section-top .des, .section-top .commitment_sec .commitment_container .middle, .commitment_sec .commitment_container .section-top .middle {
   color: hsl(0, 0%, 39%);
   font-family: "Nunito", sans-serif;
   font-size: 1.125rem;
@@ -3796,6 +3796,46 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 .checkout .right-col .billing-box .confirm-ordr-btn:hover {
   background-color: hsl(147, 83%, 17%);
+}
+
+.terms_banner_sec {
+  padding-top: 9.375rem;
+  background-color: #efefef;
+  padding-bottom: 6.25rem;
+}
+.terms_banner_sec .terms_banner_container {
+  display: flex;
+  gap: 10px;
+}
+.terms_banner_sec .des, .terms_banner_sec .terms_sec .terms-group ol li, .terms_sec .terms-group ol .terms_banner_sec li {
+  color: hsl(0, 91%, 54%);
+  font-weight: bold;
+}
+
+.terms_sec {
+  padding: 3.75rem 0;
+}
+.terms_sec .terms-group {
+  border-radius: 10px;
+  padding: 20px;
+}
+.terms_sec .terms-group .group_title {
+  font-size: 24px;
+  border-left: 6px solid hsl(147, 83%, 27%);
+  border-radius: 9px;
+  padding-left: 10px;
+  margin-bottom: 1rem;
+}
+.terms_sec .terms-group ol {
+  padding-left: 16px;
+}
+.note {
+  max-width: 900px;
+  background-color: #fae392;
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
+  margin-top: -3rem;
 }
 
 @keyframes rotating {
