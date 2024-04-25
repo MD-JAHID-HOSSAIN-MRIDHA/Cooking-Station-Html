@@ -3807,10 +3807,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   display: flex;
   gap: 10px;
 }
-.terms_banner_sec .des, .terms_banner_sec .terms_sec .terms-group ol li, .terms_sec .terms-group ol .terms_banner_sec li {
-  color: hsl(0, 91%, 54%);
-  font-weight: bold;
-}
 
 .terms_sec {
   padding: 3.75rem 0;
