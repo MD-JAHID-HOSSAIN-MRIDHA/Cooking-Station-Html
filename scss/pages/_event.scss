@@ -21,10 +21,15 @@
       gap: 50px;
       .event_step_card {
         display: flex;
-        gap: 40px;
+        gap: 20px;
         height: fit-content;
+
         .icon {
           position: relative;
+          // width: 10px;
+          img {
+            width: 30px;
+          }
           &::after {
             content: "";
             display: block;
@@ -34,7 +39,12 @@
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            top: 2.5rem;
+            top: 2rem;
+          }
+        }
+        .last {
+          &::after {
+            background: transparent;
           }
         }
         .step_title {

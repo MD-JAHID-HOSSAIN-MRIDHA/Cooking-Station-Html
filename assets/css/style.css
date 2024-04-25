@@ -3541,12 +3541,15 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 .how_we_work_sec .how_we_work_container .event_step_container .event_step_card {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   height: -moz-fit-content;
   height: fit-content;
 }
 .how_we_work_sec .how_we_work_container .event_step_container .event_step_card .icon {
   position: relative;
+}
+.how_we_work_sec .how_we_work_container .event_step_container .event_step_card .icon img {
+  width: 30px;
 }
 .how_we_work_sec .how_we_work_container .event_step_container .event_step_card .icon::after {
   content: "";
@@ -3557,7 +3560,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 2.5rem;
+  top: 2rem;
+}
+.how_we_work_sec .how_we_work_container .event_step_container .event_step_card .last::after {
+  background: transparent;
 }
 .how_we_work_sec .how_we_work_container .event_step_container .event_step_card .step_title {
   font-family: "Eczar", serif;
