@@ -1,0 +1,64 @@
+@use "../global" as *;
+@use "../partials" as *;
+
+// .subscription {
+
+//     &-content {
+
+//     }
+//     .des-wrapper {
+
+//     }
+// }
+.subscription {
+    padding: 100px 0;
+    
+}
+.subscription h1 {
+    color: #0C8040;
+    font-family: Eczar;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 62px; 
+    margin-bottom: 10px;
+}
+.subscription p {
+    color: rgba(4, 4, 21, 0.60);
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+} 
+.subscription-form {
+    display: flex;
+    gap: 0;
+    width: 100%;
+}
+.subscription-form input{
+    border: 1px solid #E5E5E5;
+    padding: 14px 10px ;
+    flex: 1;
+    border-radius: 5px 0px 0px 5px;
+    transition: .5s;
+}
+.subscription-form input:focus {
+    border-color: #0C8040;
+}
+.subscription-form button{
+    background-color: #0C8040;
+    color: #fff;
+    padding: 14px 80px;
+    border-radius: 0px 5px 5px 0px;
+    color: #FFF;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 133.333% */
+}
+.subscription-form button:hover {
+    background-color: #064924;
+}
