@@ -1,6 +1,10 @@
 @use "../global" as *;
 @use "../partials" as *;
 
+.h-full {
+  height: 100vh;
+}
+
 .title {
   @include font($eczar, 30, 500, normal, 45);
   @include breakpoint(mobile576) {
