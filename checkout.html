@@ -23,6 +23,14 @@
 </head>
 
 <body>
+    <!-- PRELOADER-START -->
+    <div class="preloader" id="preloader">
+        <div class="h-full d-flex justify-content-center align-items-center">
+            <lottie-player src="https://lottie.host/c590f155-6689-43cd-b9ce-43c78b999e12/UgKnebTk9F.json"
+                background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></lottie-player>
+        </div>
+    </div>
+    <!-- PRELOADER-END -->
     <!-- ================== HEADER PART START================== -->
 
     <header>
@@ -63,7 +71,7 @@
                                     <a class="nav-link" href="#">Packages</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Join as chef</a>
+                                    <a class="nav-link" href="/authentications/chef-registration.html">Join as chef</a>
                                 </li>
 
                                 <li class="nav-item">
@@ -90,7 +98,9 @@
             <h1 class="title">Checkout</h1>
             <span>
                 <svg width="220" height="40" viewBox="0 0 377 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 37C89.4781 25.0528 175.7 9.57513 262.468 5.06034C296.926 3.26742 331.647 1.94484 366.115 4.16548C369.648 4.39309 378.832 3.99732 370.795 6.02401" stroke="#0C8040" stroke-width="6" stroke-linecap="round"/>
+                    <path
+                        d="M3 37C89.4781 25.0528 175.7 9.57513 262.468 5.06034C296.926 3.26742 331.647 1.94484 366.115 4.16548C369.648 4.39309 378.832 3.99732 370.795 6.02401"
+                        stroke="#0C8040" stroke-width="6" stroke-linecap="round" />
                 </svg>
             </span>
         </div>
@@ -364,6 +374,11 @@
         </div>
     </footer>
     <!-- =================== Footer PART END=================== -->
+
+    <!--  LOTTIE PLAYER JS -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- PRELOADER-JS -->
+    <script src="assets/js/loader/loader.js"></script>
 
     <!-- swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

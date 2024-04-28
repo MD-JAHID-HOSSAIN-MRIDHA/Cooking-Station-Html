@@ -17,11 +17,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="assets/css/back-top/back-top.css">
+    <link rel="stylesheet" href="assets/css/back-top/back-top.css">
 </head>
 
 <body>
-    <!-- ================== HEADER PART START================== -->
+    <!-- PRELOADER-START -->
+    <div class="preloader" id="preloader">
+        <div class="h-full d-flex justify-content-center align-items-center">
+            <lottie-player src="https://lottie.host/c590f155-6689-43cd-b9ce-43c78b999e12/UgKnebTk9F.json"
+                background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></lottie-player>
+        </div>
+    </div>
+    <!-- PRELOADER-END -->
+
     <!-- ================== HEADER PART START================== -->
 
     <header>
@@ -67,7 +75,7 @@
                                     <a class="nav-link" href="#">Packages</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Join as chef</a>
+                                    <a class="nav-link" href="/authentications/chef-registration.html">Join as chef</a>
                                 </li>
 
                                 <li class="nav-item">
@@ -1392,6 +1400,9 @@
         </div>
     </footer>
     <!-- =================== Footer PART END=================== -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- PRELOADER-JS -->
+    <script src="assets/js/loader/loader.js"></script>
     <!-- BOOTSTRAP JS -->
     <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- TOOLTIP JS -->
@@ -1399,6 +1410,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/back-top/back-top.js"></script>
     <script src="assets/js/back-top/backtotop.js"></script>
+
     <script>
         var chefSwiper = new Swiper(".chefswiper", {
             slidesPerView: 1,
