@@ -112,7 +112,11 @@
                         <label for="other_certification" class="inputlabel">
                             Any Other Experience or Certification
                         </label>
-                        <input type="file" id="other_certification" class="inputfield" accept=".pdf, .jpg, .png" />
+                        <div class="inputfield p-0">
+                            <input type="file" id="other_certification" class="inputfield" accept=".pdf, .jpg, .png" hidden/>
+                            <span id="other_cirtificate">Choose other certificate</span>
+                            <button class="cs_btn">Upload</button>
+                        </div>
                     </div>
 
                     <div class="inputbox">
