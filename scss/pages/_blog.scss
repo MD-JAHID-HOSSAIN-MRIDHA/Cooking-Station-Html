@@ -1,87 +1,65 @@
 @use "../global" as *;
 @use "../partials" as *;
-.blog-card {
-  @include flex-column;
-  gap: size(20);
-  align-items: flex-start;
-  @include transitionsall;
 
-  @include hover {
-    transform: translateY(-8px);
+.blog {
+  padding: 100px 0;
+  .section-top {
+    padding-bottom: size(120);
   }
-
-  .blog-thumb {
-    overflow: hidden;
-    img {
-      @include wh100;
-      object-fit: cover;
+  .right-content {
+    @include flex-column;
+    align-items: flex-start;
+    background-color: red;
+    gap: size(10);
+    .icon {
+      align-self: flex-end;
     }
-  }
-
-  .blog-title {
-    color: $primary;
-    font-family: Eczar;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-  }
-  .des {
-    color: #575757;
-    font-family: Nunito;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-  }
-  .btn-blog {
   }
 }
 
 .blog-posts {
-    @include flex-column;
-    .blog-post {
-        @include flex;
-        gap: size(20);
-        padding: size(20) size(0);
-        border-bottom: 1px solid #ddd;
-        @include hover {
-            transform:translateX(8px);
-        }
-
-        figure {
-            @include square(90);
-            overflow: hidden;
-            flex-shrink: 0;
-            
-            img {
-                @include wh100;
-                object-fit: cover;
-            }
-        }
-        .right {
-            @include flex-column;
-            justify-content: space-between;
-            padding: size(10) size(0);
-        }
-        .title {
-            color: #111;
-            font-family: Eczar;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 22px; 
-        }
-        .date {
-            @include flex;
-            gap: size(10);
-            color: #6A6A6A;
-            font-family: Nunito;
-            font-size: 15px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            
-        }
+  @include flex-column;
+  .blog-post {
+    @include flex;
+    gap: size(20);
+    padding: size(20) size(0);
+    border-bottom: 1px solid #ddd;
+    @include hover {
+      transform: translateX(8px);
     }
+
+    figure {
+      @include square(90);
+      overflow: hidden;
+      flex-shrink: 0;
+
+      img {
+        @include wh100;
+        object-fit: cover;
+      }
+    }
+    .right {
+      @include flex-column;
+      justify-content: space-between;
+      padding: size(10) size(0);
+    }
+    .title {
+      color: #111;
+      font-family: Eczar;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 22px;
+    }
+    .date {
+      @include flex;
+      gap: size(10);
+      color: #6a6a6a;
+      font-family: Nunito;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
 }

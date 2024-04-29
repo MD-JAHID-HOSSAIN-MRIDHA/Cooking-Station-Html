@@ -802,6 +802,44 @@ button:focus,
   line-height: 2;
 }
 
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: flex-start;
+  -webkit-transition: all 350ms ease-in-out;
+  -moz-transition: all 350ms ease-in-out;
+  -ms-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+}
+.blog-card:not([disabled]):hover {
+  transform: translateY(-8px);
+}
+.blog-card .blog-thumb {
+  overflow: hidden;
+}
+.blog-card .blog-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blog-card .blog-title {
+  color: hsl(147, 83%, 27%);
+  font-family: Eczar;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.blog-card .des {
+  color: #575757;
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
 .nav-link {
   color: #808082 !important;
   position: relative;
@@ -4226,44 +4264,23 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #064924;
 }
 
-.blog-card {
+.blog {
+  padding: 100px 0;
+}
+.blog .section-top {
+  padding-bottom: 7.5rem;
+}
+.blog .right-content {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
   align-items: flex-start;
-  -webkit-transition: all 350ms ease-in-out;
-  -moz-transition: all 350ms ease-in-out;
-  -ms-transition: all 350ms ease-in-out;
-  -o-transition: all 350ms ease-in-out;
-  transition: all 350ms ease-in-out;
+  background-color: red;
+  gap: 0.625rem;
 }
-.blog-card:not([disabled]):hover {
-  transform: translateY(-8px);
+.blog .right-content .icon {
+  align-self: flex-end;
 }
-.blog-card .blog-thumb {
-  overflow: hidden;
-}
-.blog-card .blog-thumb img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.blog-card .blog-title {
-  color: hsl(147, 83%, 27%);
-  font-family: Eczar;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
-}
-.blog-card .des {
-  color: #575757;
-  font-family: Nunito;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-}
+
 .blog-posts {
   display: flex;
   flex-direction: column;
@@ -4305,7 +4322,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .blog-posts .blog-post .date {
   display: flex;
   gap: 0.625rem;
-  color: #6A6A6A;
+  color: #6a6a6a;
   font-family: Nunito;
   font-size: 15px;
   font-style: normal;
