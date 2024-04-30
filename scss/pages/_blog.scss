@@ -43,7 +43,8 @@
         font-size: 28px;
         font-style: normal;
         font-weight: 600;
-        line-height: 30px; /* 107.143% */
+        line-height: 30px; 
+        margin-top: 30px;
       }
     }
   }
@@ -64,6 +65,7 @@
       @include square(90);
       overflow: hidden;
       flex-shrink: 0;
+      @include radius(10);
 
       img {
         @include wh100;
@@ -160,6 +162,32 @@
           background-color: #79BF99;
         }
       }
+    }
+  }
+}
+.popular-tags {
+  @include flex;
+  gap: size(10);
+  flex-wrap: wrap;
+   margin-top: 60px;
+   justify-content: flex-start;
+
+  .popular-tag {
+    padding: size(8) size(35);
+    background-color: #F4F4F4;
+   
+  
+    text-align: center;
+    font-family: Nunito;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    @include radius(45);
+    cursor: pointer;
+    &.active {
+      background-color: #0c8040;
+        color: #fff !important; 
     }
   }
 }
