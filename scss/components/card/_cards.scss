@@ -352,4 +352,42 @@ p {
 }
 
 }
+.blog-card {
+  @include flex-column;
+  gap: size(20);
+  align-items: flex-start;
+  @include transitionsall;
+
+  @include hover {
+    transform: translateY(-8px);
+  }
+
+  .blog-thumb {
+    overflow: hidden;
+    @include w100;
+    img {
+      @include wh100;
+      object-fit: cover;
+    }
+  }
+
+  .blog-title {
+    color: $primary;
+    font-family: Eczar;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .des {
+    color: #575757;
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .btn-blog {
+  }
+}
 

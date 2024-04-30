@@ -4,7 +4,7 @@ function showHidePreloader() {
   preloader.classList.remove('d-none');
   setTimeout(() => {
     preloader.classList.add('d-none');
-  }, 2000); // 5000 milliseconds = 5 seconds
+  }, 0); // 5000 milliseconds = 5 seconds
 }
 
 window.addEventListener('load', showHidePreloader);
