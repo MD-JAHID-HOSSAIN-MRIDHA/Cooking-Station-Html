@@ -4274,7 +4274,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: red;
   gap: 0.625rem;
 }
 .blog .right-content .icon {

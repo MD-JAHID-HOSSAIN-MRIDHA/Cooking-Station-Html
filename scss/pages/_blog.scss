@@ -9,7 +9,6 @@
   .right-content {
     @include flex-column;
     align-items: flex-start;
-    background-color: red;
     gap: size(10);
     .icon {
       align-self: flex-end;
