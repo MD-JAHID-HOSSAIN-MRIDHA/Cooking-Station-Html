@@ -4297,7 +4297,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   border-color: rgb(144, 202, 169);
 }
 .blog .right-content .search-title {
-  color: #0C8040;
+  color: #0c8040;
   font-family: Eczar;
   font-size: 28px;
   font-style: normal;
@@ -4308,7 +4308,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   align-self: flex-end;
 }
 .blog .right-content .recent-blog .recentblog-title {
-  color: #0C8040;
+  color: #0c8040;
   font-family: Eczar;
   font-size: 28px;
   font-style: normal;
@@ -4363,6 +4363,86 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.blog-pagination {
+  margin-top: 6.25rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+@media screen and (min-width: 62rem) {
+  .blog-pagination {
+    flex-direction: row;
+  }
+}
+.blog-pagination .prev,
+.blog-pagination .next {
+  display: flex;
+  align-items: center;
+  gap: siz(10);
+  flex-wrap: nowrap;
+}
+.blog-pagination .prev .icon,
+.blog-pagination .next .icon {
+  flex-shrink: 0;
+}
+.blog-pagination .prev span,
+.blog-pagination .next span {
+  color: #02061a;
+  text-align: center;
+  font-family: Eczar;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  white-space: nowrap;
+}
+.blog-pagination .pagination-numbers {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.blog-pagination .pagination-numbers li {
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  color: #02061a;
+  text-align: center;
+  font-family: Nunito;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  flex-wrap: nowrap;
+  position: relative;
+}
+.blog-pagination .pagination-numbers li::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 4px;
+  z-index: -1;
+}
+.blog-pagination .pagination-numbers li.active {
+  background: #c2ffdd;
+}
+.blog-pagination .pagination-numbers li.active::after {
+  background-color: #79BF99;
 }
 
 @keyframes rotating {

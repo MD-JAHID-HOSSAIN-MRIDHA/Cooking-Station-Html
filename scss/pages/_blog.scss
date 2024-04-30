@@ -20,25 +20,25 @@
         padding: size(30);
         @include transitionsall;
         &:focus {
-          border-color:   rgb(144, 202, 169); 
+          border-color: rgb(144, 202, 169);
         }
       }
     }
     .search-title {
-      color: #0C8040;
+      color: #0c8040;
       font-family: Eczar;
       font-size: 28px;
       font-style: normal;
       font-weight: 600;
-      line-height: 30px; 
-          }
+      line-height: 30px;
+    }
     .icon {
       align-self: flex-end;
     }
 
     .recent-blog {
       .recentblog-title {
-        color: #0C8040;
+        color: #0c8040;
         font-family: Eczar;
         font-size: 28px;
         font-style: normal;
@@ -92,6 +92,74 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+    }
+  }
+}
+
+.blog-pagination {
+  margin-top: size(100);
+  @include flex-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  @include breakpoint(tab992) {
+    flex-direction: row
+  }
+  .prev,
+  .next {
+    @include flex;
+    align-items: center;
+    gap: siz(10);
+    flex-wrap: nowrap;
+    .icon {
+      flex-shrink: 0;
+    }
+    span {
+      color: #02061a;
+      text-align: center;
+      font-family: Eczar;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      white-space: nowrap;
+    }
+  }
+  .pagination-numbers {
+    @include list-horizontal;
+    padding: size(8);
+    flex-wrap: wrap;
+    gap: 20px;
+    li {
+      cursor: pointer;
+      @include square(50);
+      @include flex-center;
+      border-radius: 4px;
+      color: #02061a;
+      text-align: center;
+      font-family: Nunito;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      flex-wrap: nowrap;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        top: 10px;
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+        border-radius: 4px;
+        z-index: -1;
+      }
+      &.active {
+        background: #c2ffdd;
+        &::after {
+          background-color: #79BF99;
+        }
+      }
     }
   }
 }
