@@ -818,6 +818,7 @@ button:focus,
 }
 .blog-card .blog-thumb {
   overflow: hidden;
+  width: 100%;
 }
 .blog-card .blog-thumb img {
   width: 100%;
@@ -4305,6 +4306,14 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 .blog .right-content .icon {
   align-self: flex-end;
+}
+.blog .right-content .recent-blog .recentblog-title {
+  color: #0C8040;
+  font-family: Eczar;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 107.143% */
 }
 
 .blog-posts {
