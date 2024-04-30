@@ -10,6 +10,28 @@
     @include flex-column;
     align-items: flex-start;
     gap: size(10);
+    .search-wrapper {
+      @include flex-column;
+      gap: size(10);
+      input {
+        border-radius: 10px;
+        background: rgba(239, 255, 246, 0.51);
+        border: 1px solid transparent;
+        padding: size(30);
+        @include transitionsall;
+        &:focus {
+          border-color:   rgb(144, 202, 169); 
+        }
+      }
+    }
+    .search-title {
+      color: #0C8040;
+      font-family: Eczar;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 30px; 
+          }
     .icon {
       align-self: flex-end;
     }

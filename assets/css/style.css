@@ -4276,6 +4276,33 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   align-items: flex-start;
   gap: 0.625rem;
 }
+.blog .right-content .search-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.blog .right-content .search-wrapper input {
+  border-radius: 10px;
+  background: rgba(239, 255, 246, 0.51);
+  border: 1px solid transparent;
+  padding: 1.875rem;
+  -webkit-transition: all 350ms ease-in-out;
+  -moz-transition: all 350ms ease-in-out;
+  -ms-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+}
+.blog .right-content .search-wrapper input:focus {
+  border-color: rgb(144, 202, 169);
+}
+.blog .right-content .search-title {
+  color: #0C8040;
+  font-family: Eczar;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+}
 .blog .right-content .icon {
   align-self: flex-end;
 }
