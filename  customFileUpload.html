@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chef Registration</title>
+    <!-- FAVICON  -->
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css" />
+    <!-- font awosome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/back-top/back-top.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+
+  <!--
+    1. design the input field
+    2. after file upload show the image or pdf on the front-end
+    2. he can close the selected files.
+    -->
+
+  <body>
+    <main class="authentications">
+      <div class="left-content order-1">
+        <div class="sliderbox">
+          <div class="swiper authSlider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="slider-thumbnail"
+                />
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="slider-thumbnail"
+                />
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?q=80&w=1420&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="slider-thumbnail"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="right-content order-0">
+        <header class="authenticationheader">
+          <a href="../index.html" class="logo">
+            <img src="../assets/images/Logo.svg" alt="logo" />
+          </a>
+        </header>
+
+        <div class="authentic">
+          <form class="authform">
+            <div class="inputbox">
+              <label for="nid_passport" class="inputlabel">
+                NID or Passport
+              </label>
+              <div class="p-0">
+                <input
+                  type="file"
+                  id="nid_passport"
+                  class="inputfield"
+                  accept=".pdf, .jpg, .png"
+                  hidden
+                />
+                <label for="nid_passport" class="upload_button">
+                  <img
+                    src="assets/icons/NID.svg"
+                    alt=""
+                    class="upload_file_image"
+                  />
+                  <div class="upload_icon_container">
+                    <span class="upload_icon">
+                      <i class="fa-solid fa-upload"></i>
+                    </span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div class="inputbox">
+              <span class="inputlabel"> Food Safety Certification </span>
+
+              <div class="p-0">
+                <input
+                  type="file"
+                  id="food_safety_cirtificate"
+                  class="inputfield"
+                  accept=".pdf, .jpg, .png"
+                  hidden
+                />
+                <label for="food_safety_cirtificate" class="upload_button">
+                  <img
+                    src="assets/icons/cirtificate.svg"
+                    alt=""
+                    class="upload_file_image"
+                  />
+                  <div class="upload_icon_container">
+                    <span class="upload_icon">
+                      <i class="fa-solid fa-upload"></i>
+                    </span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div class="inputbox">
+              <label class="inputlabel">
+                Any Other Experience or Certification
+              </label>
+              <div class="p-0">
+                <input
+                  type="file"
+                  id="others_cirtificate"
+                  class="inputfield"
+                  accept=".pdf, .jpg, .png"
+                  hidden
+                />
+                <label for="others_cirtificate" class="upload_button">
+                  <img
+                    src="assets/icons/cirtificate.svg"
+                    alt=""
+                    class="upload_file_image"
+                  />
+                  <div class="upload_icon_container">
+                    <span class="upload_icon">
+                      <i class="fa-solid fa-upload"></i>
+                    </span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div class="submitbox">
+              <button type="button" class="btn-submit">Get Started</button>
+
+              <p class="authtext">
+                Already have an account?
+                <a href="./login.html" class="authlink">Login</a>
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <!-- RIGHT-TOP ICON -->
+        <figure class="topicon">
+          <svg
+            width="129"
+            height="235"
+            viewBox="0 0 129 235"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 -305H400L451 235H51L0 -305Z" fill="#EAECF0" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M49.3168 28.8885C49.2576 27.8289 48.3811 27 47.3199 27H25.1133C23.9649 27 23.0524 27.9649 23.1165 29.1115L24.5561 54.8885C24.6202 56.0351 23.7076 57 22.5592 57H3.11335C1.96494 57 1.05242 57.9649 1.11646 59.1115L2.68029 87.1115C2.73947 88.1711 3.61594 89 4.67718 89H26.8837C28.0321 89 28.9446 88.0351 28.8806 86.8885L27.4409 61.1115C27.3769 59.9649 28.2894 59 29.4378 59H48.8837C50.0321 59 50.9446 58.0351 50.8806 56.8885L49.3168 28.8885Z"
+              fill="#EA7462"
+            />
+          </svg>
+        </figure>
+
+        <!-- BOTTOM-LEFT ICON -->
+        <figure class="bottomicon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="125"
+            height="242"
+            viewBox="0 0 125 242"
+            fill="none"
+          >
+            <path d="M-339 17H61L112 557H-288L-339 17Z" fill="#EAECF0" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M122.462 3.78076C122.346 1.65999 120.592 0 118.468 0H86.2249C83.9296 0 82.1051 1.9274 82.2309 4.21925L84.2379 40.7808C84.3637 43.0726 82.5392 45 80.2439 45H34.2267C31.9307 45 30.106 46.9285 30.2328 49.2209L33.9392 116.221C34.0565 118.341 35.8098 120 37.9331 120H90.7719C93.0679 120 94.8926 118.072 94.7658 115.779L91.3605 54.2209C91.2336 51.9285 93.0584 50 95.3543 50H120.774C123.069 50 124.893 48.0726 124.768 45.7808L122.462 3.78076Z"
+              fill="#93DCDA"
+            />
+          </svg>
+        </figure>
+      </div>
+    </main>
+    <script>
+      // select all the input type file
+      const fileInputs = document.querySelectorAll('input[type="file"]');
+
+      fileInputs.forEach((inp) => {
+        inp.addEventListener("change", (e) => {
+          const file = e.target.files[0];
+          const parent = e.target.parentElement;
+          // access image tag by class name
+          const image = parent.querySelector(".upload_file_image");
+          const reader = new FileReader();
+          if (file) {
+            reader.readAsDataURL(file);
+          } else {
+            console.log(e.target);
+          }
+
+          reader.onloadend = () => {
+            image.src = reader.result;
+          };
+        });
+      });
+    </script>
+  </body>
+</html>
