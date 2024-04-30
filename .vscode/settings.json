@@ -8,5 +8,6 @@
     }
   ],
   "liveServer.settings.donotShowInfoMsg": true,
-  "liveSassCompile.settings.showOutputWindowOn": "None"
+  "liveSassCompile.settings.showOutputWindowOn": "None",
+  "liveServer.settings.port": 5501
 }

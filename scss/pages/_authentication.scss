@@ -1,5 +1,6 @@
 @use "../global" as *;
 @use "../partials" as *;
+@use "../components";
 $checkborder: hsl(217, 16%, 84%);
 $headerborder: hsl(220, 17%, 93%);
 $textSecondary: hsl(218, 15%, 65%);
@@ -535,5 +536,20 @@ $textPrimary: hsl(221, 13%, 46%); //#667085
 
   &:focus {
     border-color: $primary;
+  }
+}
+
+.upload_button {
+  @extend .cs_btn;
+  font-size: 16px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background-color: rgba(#0c8040, 0.9) !important;
+    color: $white !important;
+    outline: none !important;
   }
 }
