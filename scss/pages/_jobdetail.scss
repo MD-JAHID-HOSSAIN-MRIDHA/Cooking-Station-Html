@@ -124,5 +124,14 @@
   .inputfield:disabled {
     background: #e6e6e7;
     cursor: not-allowed;
+  } 
+  .uploadbox {
+    @include flex;
+    gap: 10px;
+    align-items: center;
+    .title {
+      color: #111 !important;
+      font-size: 30px;
+    }
   }
 }
