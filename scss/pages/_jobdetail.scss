@@ -1,0 +1,128 @@
+@use "../global" as *;
+@use "../partials" as *;
+.jobdetail {
+   padding: size(50) size(0);
+
+  @include breakpoint(tab992) {
+    padding: size(100) size(0);
+  }
+  &-content {
+    @include flex-column;
+    gap: size(30);
+    @include breakpoint(mobile576) {
+      gap: size(50);
+    }
+  }
+  form {
+    @include border(solid, 1, #f5f5f6);
+    @include radius(24);
+    padding: size(28) size(24);
+  }
+
+    .job {
+      @include flex-between;
+      align-items: center;
+      padding: size(16);
+      @include radius(16);
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: size(20);
+      @include breakpoint(mobile576) {
+        padding: size(24);
+      }
+      @include breakpoint(mobile768) {
+        justify-content: space-between;
+      }
+      .jobleft {
+        @include flex-column;
+        gap: size(8);
+        @include breakpoint(mobile576) {
+          gap: size(16);
+        }
+      }
+      .top {
+        @include flex;
+        align-items: center;
+        gap: size(10);
+      }
+      .title {
+        color: #19191a;
+        font-weight: 700;
+      }
+      .line {
+        height: size(28);
+        width: size(1);
+        background-color: #19191a;
+      }
+      .jobduration {
+        color: #85868b;
+        font-size: size(16);
+        font-style: normal;
+        font-weight: 600;
+        line-height: size(28);
+      }
+      .bottom {
+        @include flex;
+        align-items: center;
+        gap: size(12);
+        .location {
+          @include flex;
+          flex-wrap: nowrap;
+          gap: size(8);
+          .text {
+            font-size: size(16);
+            font-weight: 400;
+            line-height: size(24);
+            color: #ddd;
+          }
+        }
+        .time {
+          @include flex;
+          flex-wrap: nowrap;
+          .text {
+            font-size: size(16);
+            font-weight: 400;
+            line-height: size(24);
+            color: #ddd;
+          }
+        }
+      }
+    }
+  .des {
+    margin-bottom: size(20);
+    font-size: size(14);
+    font-weight: 400;
+    line-height: 26px;
+    color: #222;
+    @include breakpoint(mobile576) {
+      font-size: size(16);
+    }
+  }
+  h4 {
+    margin-bottom: size(20);
+    color: black;
+    &:first-of-type {
+      margin-bottom: size(10);
+    }
+    @include breakpoint(mobile576) {
+      margin-bottom: size(30);
+    }
+  }
+  ul {
+    padding-bottom: size(50);
+    @include flex-column;
+    gap: size(10);
+    li {
+      color: #5b5b5f;
+      font-size: size(14);
+      font-weight: 400;
+      @include breakpoint(mobile576) {
+        font-size: size(16);
+      }
+    }
+  }
+  .inputfield:disabled {
+    background: #e6e6e7;
+    cursor: not-allowed;
+  }
+}
