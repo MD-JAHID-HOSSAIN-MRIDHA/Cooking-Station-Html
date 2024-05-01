@@ -4442,7 +4442,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #c2ffdd;
 }
 .blog-pagination .pagination-numbers li.active::after {
-  background-color: #79BF99;
+  background-color: #79bf99;
 }
 
 @keyframes rotating {
