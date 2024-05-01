@@ -1,7 +1,7 @@
 @use "../global" as *;
 @use "../partials" as *;
 .jobdetail {
-   padding: size(50) size(0);
+  padding: size(50) size(0);
 
   @include breakpoint(tab992) {
     padding: size(100) size(0);
@@ -19,75 +19,75 @@
     padding: size(28) size(24);
   }
 
-    .job {
-      @include flex-between;
-      align-items: center;
-      padding: size(16);
-      @include radius(16);
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: size(20);
+  .job {
+    @include flex-between;
+    align-items: center;
+    padding: size(16);
+    @include radius(16);
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: size(20);
+    @include breakpoint(mobile576) {
+      padding: size(24);
+    }
+    @include breakpoint(mobile768) {
+      justify-content: space-between;
+    }
+    .jobleft {
+      @include flex-column;
+      gap: size(8);
       @include breakpoint(mobile576) {
-        padding: size(24);
+        gap: size(16);
       }
-      @include breakpoint(mobile768) {
-        justify-content: space-between;
-      }
-      .jobleft {
-        @include flex-column;
+    }
+    .top {
+      @include flex;
+      align-items: center;
+      gap: size(10);
+    }
+    .title {
+      color: #19191a;
+      font-weight: 700;
+    }
+    .line {
+      height: size(28);
+      width: size(1);
+      background-color: #19191a;
+    }
+    .jobduration {
+      color: #85868b;
+      font-size: size(16);
+      font-style: normal;
+      font-weight: 600;
+      line-height: size(28);
+    }
+    .bottom {
+      @include flex;
+      align-items: center;
+      gap: size(12);
+      .location {
+        @include flex;
+        flex-wrap: nowrap;
         gap: size(8);
-        @include breakpoint(mobile576) {
-          gap: size(16);
+        .text {
+          font-size: size(16);
+          font-weight: 400;
+          line-height: size(24);
+          color: #ddd;
         }
       }
-      .top {
+      .time {
         @include flex;
-        align-items: center;
-        gap: size(10);
-      }
-      .title {
-        color: #19191a;
-        font-weight: 700;
-      }
-      .line {
-        height: size(28);
-        width: size(1);
-        background-color: #19191a;
-      }
-      .jobduration {
-        color: #85868b;
-        font-size: size(16);
-        font-style: normal;
-        font-weight: 600;
-        line-height: size(28);
-      }
-      .bottom {
-        @include flex;
-        align-items: center;
-        gap: size(12);
-        .location {
-          @include flex;
-          flex-wrap: nowrap;
-          gap: size(8);
-          .text {
-            font-size: size(16);
-            font-weight: 400;
-            line-height: size(24);
-            color: #ddd;
-          }
-        }
-        .time {
-          @include flex;
-          flex-wrap: nowrap;
-          .text {
-            font-size: size(16);
-            font-weight: 400;
-            line-height: size(24);
-            color: #ddd;
-          }
+        flex-wrap: nowrap;
+        .text {
+          font-size: size(16);
+          font-weight: 400;
+          line-height: size(24);
+          color: #ddd;
         }
       }
     }
+  }
   .des {
     margin-bottom: size(20);
     font-size: size(14);
@@ -124,7 +124,7 @@
   .inputfield:disabled {
     background: #e6e6e7;
     cursor: not-allowed;
-  } 
+  }
   .uploadbox {
     @include flex;
     gap: 10px;

@@ -1,0 +1,74 @@
+@use "../global" as *;
+@use "../partials" as *;
+@use "../utilities" as *;
+
+.article {
+  .article_header {
+    .article_info {
+      border-top: 2px solid rgba(gray, 0.4);
+      border-bottom: 2px solid rgba(gray, 0.4);
+      // box-shadow: 0px 0px 10px 0px rgba($black, 0.4);
+    }
+    .header_image {
+      width: 100%;
+      aspect-ratio: 1/0.5;
+      border-radius: 10px;
+    }
+    .header_title {
+      @include font($eczar, 30, 600, normal, normal);
+      margin: 26px 0;
+      color: $primary;
+    }
+  }
+  .para_section {
+    padding: 1rem 0;
+    .sub_title {
+      @include font($nunito, 25, 700, normal, normal);
+      margin-bottom: size(20);
+      margin-top: size(20);
+    }
+    .para {
+      @extend .des;
+    }
+    ul,
+    ol {
+      padding: 0;
+      padding-left: 16px;
+      li {
+        margin: 16px 0;
+      }
+    }
+  }
+  .end_para {
+    --size: 20px;
+    width: var(--size);
+    height: var(--size);
+    @include circle;
+    border: 2px solid $primary;
+    position: relative;
+    margin: 2rem auto;
+    &::after,
+    &::before {
+      content: "";
+      display: inline-block;
+      height: 2px;
+      width: 100px;
+      background-color: $primary;
+      position: absolute;
+      left: 26px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &::before {
+      content: "";
+      display: inline-block;
+      height: 2px;
+      width: 100px;
+      background-color: $primary;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -110px;
+    }
+  }
+}
