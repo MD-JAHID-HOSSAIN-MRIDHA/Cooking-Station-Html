@@ -32,6 +32,12 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
 
+  <!--
+    1. design the input field
+    2. after file upload show the image or pdf on the front-end
+    2. he can close the selected files.
+    -->
+
   <body>
     <main class="authentications">
       <div class="left-content order-1">
@@ -72,67 +78,12 @@
         </header>
 
         <div class="authentic">
-          <h4 class="welcome-title mb-2">Before we get started...</h4>
-
-          <p class="welcome-text">
-            Welcome, Chef! We're excited to have you join our culinary
-            community. Before we proceed, could you please provide us with some
-            information about yourself?
-          </p>
-
           <form class="authform">
-            <div class="inputbox">
-              <label for="firstName" class="inputlabel"> First name* </label>
-
-              <input
-                type="text"
-                id="firstName"
-                class="inputfield"
-                placeholder="Enter your first name"
-                autocomplete="off"
-              />
-            </div>
-
-            <div class="inputbox">
-              <label for="lastName" class="inputlabel"> Last Name* </label>
-
-              <input
-                type="tel"
-                id="lastName"
-                class="inputfield"
-                placeholder=" Enter your last name"
-                autocomplete="off"
-              />
-            </div>
-
-            <div class="inputbox">
-              <label for="industry" class="inputlabel"> Email </label>
-
-              <input
-                type="text"
-                id="industry"
-                class="inputfield"
-                placeholder="Enter Your Email"
-                autocomplete="off"
-              />
-            </div>
-
-            <div class="inputbox">
-              <label for="phone" class="inputlabel"> Phone </label>
-              <input
-                type="tel"
-                id="phone"
-                class="inputfield"
-                placeholder="Enter your phone number"
-                autocomplete="off"
-              />
-            </div>
-
             <div class="inputbox">
               <label for="nid_passport" class="inputlabel">
                 NID or Passport
               </label>
-              <div class="inputfield p-0">
+              <div class="p-0">
                 <input
                   type="file"
                   id="nid_passport"
@@ -141,29 +92,43 @@
                   hidden
                 />
                 <label for="nid_passport" class="upload_button">
-                  <i class="fa-solid fa-file-import me-1"></i> Choose
+                  <img
+                    src="assets/icons/NID.svg"
+                    alt=""
+                    class="upload_file_image"
+                  />
+                  <div class="upload_icon_container">
+                    <span class="upload_icon">
+                      <i class="fa-solid fa-upload"></i>
+                    </span>
+                  </div>
                 </label>
-                <span id="nid_passport">Choose NID or Passport</span>
               </div>
             </div>
 
             <div class="inputbox">
               <span class="inputlabel"> Food Safety Certification </span>
 
-              <div class="inputfield p-0">
+              <div class="p-0">
                 <input
                   type="file"
-                  id="food_sefety_certification"
+                  id="food_safety_cirtificate"
                   class="inputfield"
                   accept=".pdf, .jpg, .png"
                   hidden
                 />
-                <label for="food_sefety_certification" class="upload_button">
-                  <i class="fa-solid fa-file-import me-1"></i> Choose
+                <label for="food_safety_cirtificate" class="upload_button">
+                  <img
+                    src="assets/icons/cirtificate.svg"
+                    alt=""
+                    class="upload_file_image"
+                  />
+                  <div class="upload_icon_container">
+                    <span class="upload_icon">
+                      <i class="fa-solid fa-upload"></i>
+                    </span>
+                  </div>
                 </label>
-                <span id="food_sefety_certification"
-                  >Choose Food Safety Certification</span
-                >
               </div>
             </div>
 
@@ -171,81 +136,27 @@
               <label class="inputlabel">
                 Any Other Experience or Certification
               </label>
-              <div class="inputfield p-0">
+              <div class="p-0">
                 <input
                   type="file"
-                  id="other_certification"
+                  id="others_cirtificate"
                   class="inputfield"
                   accept=".pdf, .jpg, .png"
                   hidden
                 />
-                <label for="other_certification" class="upload_button">
-                  <i class="fa-solid fa-file-import me-1"></i> Choose
+                <label for="others_cirtificate" class="upload_button">
+                  <img
+                    src="assets/icons/cirtificate.svg"
+                    alt=""
+                    class="upload_file_image"
+                  />
+                  <div class="upload_icon_container">
+                    <span class="upload_icon">
+                      <i class="fa-solid fa-upload"></i>
+                    </span>
+                  </div>
                 </label>
-                <span id="other_cirtificate">Choose other certificate</span>
               </div>
-            </div>
-
-            <div class="inputbox">
-              <label class="inputlabel">How Many People you can serve*</label>
-
-              <div class="employeelist">
-                <div class="inputradio">
-                  <input
-                    type="radio"
-                    name="serve_count"
-                    id="serve_count_1_10"
-                    class="radio"
-                    hidden
-                  />
-                  <label for="serve_count_1_10" class="radiolabel">1-10</label>
-                </div>
-                <div class="inputradio">
-                  <input
-                    type="radio"
-                    name="serve_count"
-                    id="serve_count_11_20"
-                    class="radio"
-                    hidden
-                  />
-                  <label for="serve_count_11_20" class="radiolabel"
-                    >11-20</label
-                  >
-                </div>
-
-                <div class="inputradio">
-                  <input
-                    type="radio"
-                    name="serve_count"
-                    id="serve_count_21_50"
-                    class="radio"
-                    hidden
-                  />
-                  <label for="serve_count_21_50" class="radiolabel"
-                    >21-50</label
-                  >
-                </div>
-
-                <div class="inputradio">
-                  <input
-                    type="radio"
-                    name="serve_count"
-                    id="serve_count_50_plus"
-                    class="radio"
-                    hidden
-                  />
-                  <label for="serve_count_50_plus" class="radiolabel"
-                    >50+</label
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="agreebox">
-              <input type="checkbox" id="agree" class="agreecheck" hidden />
-              <label for="agree" class="agreelabel">
-                I Agree to the <a href="#" class="link">Terms and Policy</a>
-              </label>
             </div>
 
             <div class="submitbox">
@@ -298,44 +209,26 @@
         </figure>
       </div>
     </main>
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-      const authSlider = new Swiper(".authSlider", {
-        slidesPerView: 1,
-        loop: true,
-        centeredSlides: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-
-  
-      // }
-      const fileInputs = (function () {
-        const allInput = document.querySelectorAll("input");
-        const storeFileInput = [];
-        allInput.forEach((inp) => {
-          if (inp.type === "file") {
-            storeFileInput.push(inp);
-          }
-        });
-        return storeFileInput;
-      })();
+      // select all the input type file
+      const fileInputs = document.querySelectorAll('input[type="file"]');
 
       fileInputs.forEach((inp) => {
         inp.addEventListener("change", (e) => {
           const file = e.target.files[0];
+          const parent = e.target.parentElement;
+          // access image tag by class name
+          const image = parent.querySelector(".upload_file_image");
+          const reader = new FileReader();
           if (file) {
-            const parent = e.target.parentElement;
-            const display = parent.children[2];
-            display.innerText = file.name;
+            reader.readAsDataURL(file);
+          } else {
+            console.log(e.target);
           }
+
+          reader.onloadend = () => {
+            image.src = reader.result;
+          };
         });
       });
     </script>
