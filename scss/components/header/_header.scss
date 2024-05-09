@@ -1,44 +1,45 @@
 @use "../../global" as *;
 @use "../../partials" as *;
 
-.nav-link {
-  color: #808082 !important;
-  position: relative;
-  padding: 3px 0 !important;
-  margin: 4px 10px;
-  transition: 0.3s;
-  display: inline-block !important;
-  &::after {
-    content: "";
-    width: 0%;
-    height: 2px;
-    background-color: $primary;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: all 0.3s ease-in-out;
+.navbar {
+  .offcanvas {
+    min-height: 0 !important;
   }
-  &:hover {
+  .login_btn {
+    @include font($nunito, 16, 600, normal, 24);
+    letter-spacing: 0.24px;
+    color: $primary;
+    padding-right: 18px;
+  }
+  .active {
     color: $primary !important;
+    &::after {
+      width: 100% !important;
+    }
   }
-  &:hover::after {
-    width: 100%;
-  }
-}
-
-.offcanvas {
-  min-height: 0 !important;
-}
-.login_btn {
-  @include font($nunito, 16, 600, normal, 24);
-  letter-spacing: 0.24px;
-  color: $primary;
-  padding-right: 18px;
-}
-.active {
-  color: $primary !important;
-  &::after {
-    width: 100% !important;
+  .nav-link {
+    color: #808082 !important;
+    position: relative;
+    padding: 3px 0 !important;
+    margin: 4px 10px;
+    transition: 0.3s;
+    display: inline-block !important;
+    &::after {
+      content: "";
+      width: 0%;
+      height: 2px;
+      background-color: $primary;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+      color: $primary !important;
+    }
+    &:hover::after {
+      width: 100%;
+    }
   }
 }
