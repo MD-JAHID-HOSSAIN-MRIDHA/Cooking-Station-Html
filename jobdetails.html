@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cooking Station || Job Details</title>
+    <!-- FAVICON  -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- font awosome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- PRELOADER-START -->
+    <div class="preloader" id="preloader">
+        <div class="h-full d-flex justify-content-center align-items-center">
+            <lottie-player src="https://lottie.host/c590f155-6689-43cd-b9ce-43c78b999e12/UgKnebTk9F.json"
+                background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></lottie-player>
+        </div>
+    </div>
+    <!-- PRELOADER-END -->
+    <!-- ================== HEADER PART START================== -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white p-0 z-3 fixed-top lightyellow-bg">
+            <div class="container">
+                <a href="/"><img class="logo" src="assets/images/Logo.svg" alt="Cooking station" /></a>
+                <div class="d-flex d-lg-none justify-content-center align-items-center gap-3" role="search">
+                    <!-- <a href="/login" class="login_btn">Login</a> -->
+
+                    <a href="/pakages" class="btn-success btn btn-sm">Book Your Plan
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas flex-1 offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="fa-solid fa-xmark fs-4"></i>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="d-flex justify-content-between w-100 lightyellow-bg">
+                            <ul class="navbar-nav mx-auto mb-2 mt-lg-2 ">
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="/">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="about.html">About us</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="menu.html">Menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Packages</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/authentications/chef-registration.html">Join as chef</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/contact.html">Contact Us</a>
+                                </li>
+                            </ul>
+
+                            <div class="d-lg-flex d-none justify-content-center align-items-center gap-3" role="search">
+                                <a href="/login" class="login_btn">Login</a>
+
+                                <a href="/pakages" class="cs_btn">Book Your Plan </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- =================== HEADER PART END=================== -->
+
+    <!-- ===================ABOUT BANNER START =================== -->
+    <section class="contact_us_sec lightyellow-bg">
+        <div class="container">
+            <div class="contact_us_container">
+                <div>
+                    <h1 class="banner_title">
+                        <span class="fw-bold"> Cooking </span> Station </span>
+                    </h1>
+
+                </div>
+
+                <figure class="about-thumb">
+                    <img src="assets/images/blog-hero.png" alt="" class="w-100" />
+                </figure>
+            </div>
+        </div>
+    </section>
+    <!-- =================== ABOUT BANNER END =================== -->
+
+    <!-- JOB DETAIL-SECTION-START -->
+    <section class="jobdetail">
+        <div class="container">
+            <div class="jobdetail-content">
+                <div class="jobdetail-header">
+                    <div class="job">
+                        <div class="jobleft">
+                            <div class="top">
+                                <h3 class="title">Head Chef</h3>
+                                <span class="line"></span>
+                                <span class="jobduration">Full Time</span>
+                            </div>
+                            <div class="bottom">
+                                <div class="location">
+                                    <span class="icon">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_6468_1267)">
+                                                <path
+                                                    d="M8.00016 0C6.23265 0.00194106 4.53808 0.704943 3.28826 1.95477C2.03844 3.20459 1.33544 4.89915 1.3335 6.66667C1.3335 10.188 6.9335 15.022 7.5695 15.562L8.00016 15.926L8.43083 15.562C9.06683 15.022 14.6668 10.188 14.6668 6.66667C14.6649 4.89915 13.9619 3.20459 12.7121 1.95477C11.4622 0.704943 9.76768 0.00194106 8.00016 0ZM8.00016 10C7.34089 10 6.69643 9.8045 6.14826 9.43823C5.6001 9.07196 5.17286 8.55136 4.92056 7.94228C4.66827 7.33319 4.60226 6.66297 4.73088 6.01637C4.8595 5.36976 5.17696 4.77582 5.64314 4.30964C6.10931 3.84347 6.70326 3.526 7.34986 3.39738C7.99646 3.26876 8.66669 3.33478 9.27577 3.58707C9.88486 3.83936 10.4055 4.2666 10.7717 4.81477C11.138 5.36293 11.3335 6.0074 11.3335 6.66667C11.3324 7.5504 10.9809 8.39763 10.356 9.02252C9.73112 9.64741 8.88389 9.99894 8.00016 10Z"
+                                                    fill="#85868B" />
+                                                <path
+                                                    d="M8 8.66699C9.10457 8.66699 10 7.77156 10 6.66699C10 5.56242 9.10457 4.66699 8 4.66699C6.89543 4.66699 6 5.56242 6 6.66699C6 7.77156 6.89543 8.66699 8 8.66699Z"
+                                                    fill="#85868B" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_6468_1267">
+                                                    <rect width="16" height="16" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
+                                    </span>
+                                    <span class="text">Ashulia,Dhaka</span>
+                                </div>
+                                <div class="time">
+                                    <span class="icon">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.2002 9.60039C4.2002 9.44126 4.26341 9.28865 4.37593 9.17613C4.48845 9.0636 4.64107 9.00039 4.8002 9.00039H4.8082C4.96733 9.00039 5.11994 9.0636 5.23246 9.17613C5.34498 9.28865 5.4082 9.44126 5.4082 9.60039V9.60839C5.4082 9.76752 5.34498 9.92013 5.23246 10.0327C5.11994 10.1452 4.96733 10.2084 4.8082 10.2084H4.8002C4.64107 10.2084 4.48845 10.1452 4.37593 10.0327C4.26341 9.92013 4.2002 9.76752 4.2002 9.60839V9.60039ZM4.8002 10.6004C4.64107 10.6004 4.48845 10.6636 4.37593 10.7761C4.26341 10.8886 4.2002 11.0413 4.2002 11.2004V11.2084C4.2002 11.5396 4.469 11.8084 4.8002 11.8084H4.8082C4.96733 11.8084 5.11994 11.7452 5.23246 11.6327C5.34498 11.5201 5.4082 11.3675 5.4082 11.2084V11.2004C5.4082 11.0413 5.34498 10.8886 5.23246 10.7761C5.11994 10.6636 4.96733 10.6004 4.8082 10.6004H4.8002ZM5.8002 9.60039C5.8002 9.44126 5.86341 9.28865 5.97593 9.17613C6.08845 9.0636 6.24107 9.00039 6.4002 9.00039H6.4082C6.56733 9.00039 6.71994 9.0636 6.83246 9.17613C6.94498 9.28865 7.0082 9.44126 7.0082 9.60039V9.60839C7.0082 9.76752 6.94498 9.92013 6.83246 10.0327C6.71994 10.1452 6.56733 10.2084 6.4082 10.2084H6.4002C6.24107 10.2084 6.08845 10.1452 5.97593 10.0327C5.86341 9.92013 5.8002 9.76752 5.8002 9.60839V9.60039ZM6.4002 10.6004C6.24107 10.6004 6.08845 10.6636 5.97593 10.7761C5.86341 10.8886 5.8002 11.0413 5.8002 11.2004V11.2084C5.8002 11.5396 6.069 11.8084 6.4002 11.8084H6.4082C6.56733 11.8084 6.71994 11.7452 6.83246 11.6327C6.94498 11.5201 7.0082 11.3675 7.0082 11.2084V11.2004C7.0082 11.0413 6.94498 10.8886 6.83246 10.7761C6.71994 10.6636 6.56733 10.6004 6.4082 10.6004H6.4002ZM7.4002 8.00039C7.4002 7.84126 7.46341 7.68865 7.57593 7.57613C7.68845 7.46361 7.84107 7.40039 8.0002 7.40039H8.0082C8.16733 7.40039 8.31994 7.46361 8.43246 7.57613C8.54498 7.68865 8.6082 7.84126 8.6082 8.00039V8.00839C8.6082 8.16752 8.54498 8.32013 8.43246 8.43265C8.31994 8.54518 8.16733 8.60839 8.0082 8.60839H8.0002C7.84107 8.60839 7.68845 8.54518 7.57593 8.43265C7.46341 8.32013 7.4002 8.16752 7.4002 8.00839V8.00039ZM8.0002 9.00039C7.84107 9.00039 7.68845 9.0636 7.57593 9.17613C7.46341 9.28865 7.4002 9.44126 7.4002 9.60039V9.60839C7.4002 9.93959 7.669 10.2084 8.0002 10.2084H8.0082C8.16733 10.2084 8.31994 10.1452 8.43246 10.0327C8.54498 9.92013 8.6082 9.76752 8.6082 9.60839V9.60039C8.6082 9.44126 8.54498 9.28865 8.43246 9.17613C8.31994 9.0636 8.16733 9.00039 8.0082 9.00039H8.0002ZM7.4002 11.2004C7.4002 11.0413 7.46341 10.8886 7.57593 10.7761C7.68845 10.6636 7.84107 10.6004 8.0002 10.6004H8.0082C8.16733 10.6004 8.31994 10.6636 8.43246 10.7761C8.54498 10.8886 8.6082 11.0413 8.6082 11.2004V11.2084C8.6082 11.3675 8.54498 11.5201 8.43246 11.6327C8.31994 11.7452 8.16733 11.8084 8.0082 11.8084H8.0002C7.84107 11.8084 7.68845 11.7452 7.57593 11.6327C7.46341 11.5201 7.4002 11.3675 7.4002 11.2084V11.2004ZM9.6002 7.40039C9.44107 7.40039 9.28845 7.46361 9.17593 7.57613C9.06341 7.68865 9.0002 7.84126 9.0002 8.00039V8.00839C9.0002 8.33959 9.269 8.60839 9.6002 8.60839H9.6082C9.76733 8.60839 9.91994 8.54518 10.0325 8.43265C10.145 8.32013 10.2082 8.16752 10.2082 8.00839V8.00039C10.2082 7.84126 10.145 7.68865 10.0325 7.57613C9.91994 7.46361 9.76733 7.40039 9.6082 7.40039H9.6002ZM9.0002 9.60039C9.0002 9.44126 9.06341 9.28865 9.17593 9.17613C9.28845 9.0636 9.44107 9.00039 9.6002 9.00039H9.6082C9.76733 9.00039 9.91994 9.0636 10.0325 9.17613C10.145 9.28865 10.2082 9.44126 10.2082 9.60039V9.60839C10.2082 9.76752 10.145 9.92013 10.0325 10.0327C9.91994 10.1452 9.76733 10.2084 9.6082 10.2084H9.6002C9.44107 10.2084 9.28845 10.1452 9.17593 10.0327C9.06341 9.92013 9.0002 9.76752 9.0002 9.60839V9.60039ZM9.6002 10.6004C9.44107 10.6004 9.28845 10.6636 9.17593 10.7761C9.06341 10.8886 9.0002 11.0413 9.0002 11.2004V11.2084C9.0002 11.5396 9.269 11.8084 9.6002 11.8084H9.6082C9.76733 11.8084 9.91994 11.7452 10.0325 11.6327C10.145 11.5201 10.2082 11.3675 10.2082 11.2084V11.2004C10.2082 11.0413 10.145 10.8886 10.0325 10.7761C9.91994 10.6636 9.76733 10.6004 9.6082 10.6004H9.6002ZM10.6002 8.00039C10.6002 7.84126 10.6634 7.68865 10.7759 7.57613C10.8885 7.46361 11.0411 7.40039 11.2002 7.40039H11.2082C11.3673 7.40039 11.5199 7.46361 11.6325 7.57613C11.745 7.68865 11.8082 7.84126 11.8082 8.00039V8.00839C11.8082 8.16752 11.745 8.32013 11.6325 8.43265C11.5199 8.54518 11.3673 8.60839 11.2082 8.60839H11.2002C11.0411 8.60839 10.8885 8.54518 10.7759 8.43265C10.6634 8.32013 10.6002 8.16752 10.6002 8.00839V8.00039ZM11.2002 9.00039C11.0411 9.00039 10.8885 9.0636 10.7759 9.17613C10.6634 9.28865 10.6002 9.44126 10.6002 9.60039V9.60839C10.6002 9.93959 10.869 10.2084 11.2002 10.2084H11.2082C11.3673 10.2084 11.5199 10.1452 11.6325 10.0327C11.745 9.92013 11.8082 9.76752 11.8082 9.60839V9.60039C11.8082 9.44126 11.745 9.28865 11.6325 9.17613C11.5199 9.0636 11.3673 9.00039 11.2082 9.00039H11.2002Z"
+                                                fill="#85868B" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.6001 1.59961C4.75923 1.59961 4.91184 1.66282 5.02436 1.77535C5.13688 1.88787 5.2001 2.04048 5.2001 2.19961V3.19961H10.8001V2.19961C10.8001 2.04048 10.8633 1.88787 10.9758 1.77535C11.0884 1.66282 11.241 1.59961 11.4001 1.59961C11.5592 1.59961 11.7118 1.66282 11.8244 1.77535C11.9369 1.88787 12.0001 2.04048 12.0001 2.19961V3.19961H12.2001C12.7836 3.19961 13.3432 3.43139 13.7557 3.84397C14.1683 4.25655 14.4001 4.81613 14.4001 5.39961V12.1996C14.4001 12.7831 14.1683 13.3427 13.7557 13.7552C13.3432 14.1678 12.7836 14.3996 12.2001 14.3996H3.8001C3.21662 14.3996 2.65704 14.1678 2.24446 13.7552C1.83188 13.3427 1.6001 12.7831 1.6001 12.1996V5.39961C1.6001 4.81613 1.83188 4.25655 2.24446 3.84397C2.65704 3.43139 3.21662 3.19961 3.8001 3.19961H4.0001V2.19961C4.0001 2.04048 4.06331 1.88787 4.17583 1.77535C4.28836 1.66282 4.44097 1.59961 4.6001 1.59961ZM3.8001 5.99961C3.2481 5.99961 2.8001 6.44761 2.8001 6.99961V12.1996C2.8001 12.7516 3.2481 13.1996 3.8001 13.1996H12.2001C12.7521 13.1996 13.2001 12.7516 13.2001 12.1996V6.99961C13.2001 6.44761 12.7521 5.99961 12.2001 5.99961H3.8001Z"
+                                                fill="#85868B" />
+                                        </svg>
+
+                                    </span>
+                                    <span class="text"> 31 Jan, 2024</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="jobright  ">
+                            <a href="jobdetails.html" class="applynow">
+                                <span class="text">Apply Now</span>
+                                <span class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+                                        fill="none">
+                                        <path d="M10.5 3.75L15.75 9M15.75 9L10.5 14.25M15.75 9L2.25 9" stroke="#F9FAFB"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="jobdetail-body">
+                    <h4 class="jobtitle">Role & Responsibilities</h4>
+                    <p class="des">
+                        As a chef, you'll be responsible for crafting delectable culinary experiences that delight our
+                        guests. Your role encompasses various tasks and duties aimed at ensuring exceptional food
+                        quality and customer satisfaction. Here's what you can expect:
+
+                    </p>
+                    <ul>
+                        <li>Creating tantalizing menus that showcase creativity and innovation while aligning with our
+                            establishment's culinary vision.</li>
+                        <li>Preparing and cooking a diverse range of dishes, ensuring each one is executed to perfection
+                            and meets our high standards for taste, presentation, and consistency.</li>
+                        <li>Sourcing the freshest, highest quality ingredients to use in your recipes, maintaining
+                            relationships with suppliers, and overseeing inventory management to ensure ingredient
+                            freshness and availability.</li>
+                        <li>Supervising kitchen staff, providing guidance and training to ensure adherence to recipes,
+                            food safety protocols, and sanitation standards.</li>
+                        <li>Collaborating with other team members, including servers and management, to coordinate menu
+                            offerings, accommodate special requests or dietary restrictions, and deliver exceptional
+                            service.</li>
+                        <li>Adhering to budgetary constraints and cost-control measures while maximizing the value and
+                            quality of our culinary offerings.</li>
+                        <li>Staying updated on industry trends, culinary techniques, and dietary preferences to
+                            continually enhance our menu offerings and remain competitive in the market.</li>
+                        <li>Maintaining a clean, organized, and efficient kitchen environment, adhering to all health
+                            and safety regulations, and ensuring equipment is properly maintained.</li>
+                    </ul>
+
+
+
+                    <h4>Requirements</h4>
+                    <ul>
+                        <li>Proven culinary experience in a professional kitchen environment.</li>
+                        <li>Formal culinary training or degree from an accredited culinary institution is preferred.
+                        </li>
+                        <li>Demonstrated creativity and passion for food preparation and presentation.</li>
+                        <li>Strong knowledge of various cuisines, cooking techniques, and flavor profiles.</li>
+                        <li>Ability to work in a fast-paced, high-pressure environment while maintaining composure and
+                            attention to detail.</li>
+                        <li>Excellent communication and leadership skills to effectively manage kitchen staff and
+                            coordinate with other team members.</li>
+                        <li>Understanding of food safety regulations and practices, with certification in food handling
+                            and sanitation preferred.</li>
+                        <li>Flexibility to work evenings, weekends, and holidays as required in the hospitality
+                            industry.</li>
+                    </ul>
+                    <h4>Good to Have</h4>
+                    <ul>
+                        <li>Additional certification or training in specialized cuisines or techniques, such as pastry
+                            arts, molecular gastronomy, or regional cuisine.</li>
+                        <li>Experience in recipe development, menu planning, or culinary innovation.</li>
+                        <li>Proficiency in food photography or social media marketing to enhance the presentation and
+                            promotion of culinary creations.</li>
+                        <li>Knowledge of dietary restrictions and alternative culinary practices, such as vegetarian,
+                            vegan, gluten-free, or sustainable cooking methods.</li>
+                        <li>Previous experience working in diverse culinary environments, such as fine dining
+                            restaurants, catering operations, or international cuisine establishments.</li>
+                        <li>Strong interpersonal skills to engage with customers, receive feedback, and tailor culinary
+                            experiences to individual preferences.</li>
+                        <li>Experience managing kitchen operations, including inventory control, budgeting, and cost
+                            analysis.</li>
+                        <li>Ability to mentor and develop junior kitchen staff, fostering a collaborative and
+                            growth-oriented work environment.</li>
+                    </ul>
+                    <h4>Working Days</h4>
+                    <ul>
+                        <li>Weekly: 5 days. </li>
+                        <li>Weekend: Saturday, Sunday </li>
+                    </ul>
+                    <h4>Please Apply using form below</h4>
+                    <form action="">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div>
+                                    <input type="text" class="inputfield w-100"
+                                        placeholder="Position Applied For Head Chef" disabled aria-autocomplete="list">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div>
+                                    <input type="text" class="inputfield w-100" placeholder="Name"
+                                        aria-autocomplete="list">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div>
+                                    <input type="email" class="inputfield w-100" placeholder="Email"
+                                        aria-autocomplete="list" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div>
+                                    <input type="text" class="inputfield w-100" placeholder="Mobile Number"
+                                        aria-autocomplete="list" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div>
+                                    <input type="text" class="inputfield w-100" placeholder="Year of Experience "
+                                        aria-autocomplete="list">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div>
+                                    <select name="" class="inputfield w-100 " id="education-label">
+                                        <option value="">SSc</option>
+                                        <option value="">Hsc</option>
+                                        <option value="">Intermediate</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="date" id="datepicker" class="inputfield w-100" placeholder="Date Of Birth">
+
+                            </div>
+                            <div class="col-lg-12">
+                                <textarea name="" id="" class="messagefield textareafield w-100" cols="30" rows="10"
+                                    placeholder="Describe Yourself"></textarea>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="uploadbox">
+                                    <span class="title">Upload CV</span>
+                                    <input type="file" name="" id="cv" hidden>
+                                    <label for="cv" class="customfile">
+                                        <span class="icon">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_6468_1820)">
+                                                    <path
+                                                        d="M12.3576 3.41064V-0.0390625H4.23065C3.17764 -0.0390625 2.30469 0.828705 2.30469 1.88156V18.0403C2.30469 19.0933 3.17764 19.9609 4.23065 19.9609H15.8286C16.8814 19.9609 17.7544 19.0932 17.7544 18.0403V5.62225H14.5744C13.347 5.62225 12.3576 4.63287 12.3576 3.41064ZM6.62216 9.86038L9.72275 6.53244C9.80209 6.44775 9.91318 6.40015 10.0348 6.40015C10.1566 6.40015 10.2623 6.44775 10.347 6.53244L13.4476 9.86038C13.6063 10.0298 13.5957 10.2995 13.4264 10.4584C13.347 10.5324 13.2411 10.5695 13.1407 10.5695C13.0295 10.5695 12.9132 10.5219 12.8285 10.4372L10.4529 7.89749V13.945C10.4529 14.1779 10.2625 14.3683 10.0296 14.3683C9.79675 14.3683 9.60632 14.1779 9.60632 13.945V7.89749L7.24121 10.4372C7.08252 10.6064 6.81259 10.6171 6.64337 10.4584C6.474 10.2995 6.46347 10.0351 6.62216 9.86038ZM14.8073 16.7334C14.8073 16.9662 14.6169 17.1567 14.384 17.1567H5.67505C5.4422 17.1567 5.25177 16.9662 5.25177 16.7334C5.25177 16.5006 5.4422 16.3101 5.67505 16.3101H14.3893C14.6222 16.3101 14.8073 16.5007 14.8073 16.7334Z"
+                                                        fill="#3C3C3D" />
+                                                    <path
+                                                        d="M14.5745 4.77573H17.1723L13.2041 0.611755V3.41068C13.2041 4.16736 13.8125 4.77573 14.5745 4.77573Z"
+                                                        fill="#3C3C3D" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_6468_1820">
+                                                        <rect width="20" height="20" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        <span class="text">Upload CV</span>
+
+                                    </label>
+                                    <span id="file-name"></span>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="button" class="btn-submit w-100">
+                                    <span class="text">Send</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- JOB DETAIL-SECTION-END -->
+
+    <!-- ================== FOOTER PART START================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-contaiener">
+                <div class="footer-col">
+                    <h4 class="title">Cooking Station</h4>
+                    <ul class="footerlist">
+                        <li class="footerlist-item">
+                            <a class="footerlist-link" href="#">Students</a>
+                        </li>
+                        <li class="footerlist-item">
+                            <a class="footerlist-link" href="#">Blogs</a>
+                        </li>
+                        <li class="footerlist-item">
+                            <a class="footerlist-link" href="#">Recipes</a>
+                        </li>
+                        <li class="footerlist-item">
+                            <a class="footerlist-link" href="#">Hero Discounts</a>
+                        </li>
+                        <li class="footerlist-item">
+                            <a class="footerlist-link" href="#">Act</a>
+                        </li>
+                        <li class="footerlist-item">
+                            <a class="footerlist-link" href="#">Delivery Options</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="title">Our Company</h4>
+                    <ul class="footerlist">
+                        <li class="footerlist-item">
+                            <a class="footerlist-link" href="about.html">About us</a>
+                        </li>
+                        <li class="footerlist-item">
+                            <a class="footerlist-link" href="career.html">Career</a>
+                        </li>
+                        <li class="footerlist-item">
+                            <a class="footerlist-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="footerlist-item">
+                            <a class="footerlist-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="footerlist-item">
+                            <a class="footerlist-link" href="career.html">Careers</a>
+                        </li>
+                        <li class="footerlist-item">
+                            <a class="footerlist-link" href="#">Press</a>
+                        </li>
+                        <li class="footerlist-item">
+                            <a class="footerlist-link" href="#">Sustainability</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="title">Work with us</h4>
+                    <ul class="footerlist">
+                        <li class="footerlist-item">
+                            <a class="footerlist-link" href="#">Partner</a>
+                        </li>
+                        <li class="footerlist-item">
+                            <a class="footerlist-link" href="#">Influencers</a>
+                        </li>
+                        <li class="footerlist-item">
+                            <a class="footerlist-link" href="#">Affiliates</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="title">Payment Methods</h4>
+                    <div class="payments">
+                        <img src="assets/images/payment-methods/mastercard.png" alt="" />
+                        <img src="assets/images/payment-methods/visa.png" alt="" />
+                        <img src="assets/images/payment-methods/paypal.png" alt="" />
+                        <img src="assets/images/payment-methods/image-removebg-preview (41) 1.png" alt="" />
+                        <img src="assets/images/payment-methods/ameriacn.png" alt="" />
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="title">Download Our App</h4>
+                    <p class="des text-center text-lg-start">
+                        Manage your deliveries from anywhere, anytime.
+                    </p>
+                    <div class="store-links d-flex align-items-center">
+                        <a href="#">
+                            <img src="assets/images/store/app-store.png" alt="" />
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/store/play-store.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="qr">
+                        <img src="assets/images/payment-methods/qr.png" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="copywrite">
+                <div class="row g-2 align-items-center">
+                    <div class="col-lg-5">
+                        <p class="copywrite-text">
+                            ©2024 Copyright Cooking Station. All Rights Reserved
+                        </p>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="copyright-menu">
+                            <a href="terms&condition.html">Terms & Conditions</a>
+                            <a href="">Privacy</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex justify-content-center justify-content-lg-end">
+                            <ul class="sociallist">
+                                <li>
+                                    <a href="https://web.facebook.com/cooking.station.service" class="socilalist-link"
+                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-custom-class="custom-tooltip" data-bs-title="Facebook" target="_blank">
+                                        <span class="icon-wrapper">
+                                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <rect y="0.0817871" width="18" height="18.122"
+                                                    fill="url(#pattern0_698_453)" />
+                                                <defs>
+                                                    <pattern id="pattern0_698_453"
+                                                        patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                        <use xlink:href="#image0_698_453"
+                                                            transform="matrix(0.00786544 0 0 0.0078125 -0.0033884 0)" />
+                                                    </pattern>
+                                                    <image id="image0_698_453" width="128" height="128"
+                                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACAEAQAAAA5p3UDAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAAGAAAABgAPBrQs8AAAAHdElNRQfmBhISOy/xWJ30AAAEGElEQVR42u3dv2tTURjG8efEViFVtKUo/qBiW4SOiojgj0kEnVoQ6SJWEBxdCg4Kjv4PXZyEKl1UdHBQ0NXNwaGLdVAQQUiHREzP49ClhoBpzMl7ct7nA10KuXlP8s1Nk9zcAiIiIiIiIiIiIiIiUrJgPcAgIatVYNeu7V9wfT1Umk3r+dtRAC3IkRHw7Fng9GmEkyfBY8cQjh4FRke732qzCbx6BV67Fiq/flmvUVqQ1Sp54wb54gVZrzOVeP269VpbDVkPYIlxfBxhcRG4fRvYty/5FYapKes1t3IZAOPQEMKdO8CDB8CePf275qHsbu/sBkqNnJoCl5eBU6esZ8mBqwAYL14EVlYQ9u61niUXFesB+oXx6lWEly8B3flbuQiA8dIlhMePgZ07rWfJTfEBME5PIzx5oju/vaIDYBweBp4+7ctLvAFV9h+BYXEROHHCeoycFbsHIA8dAu7ft54jd8UGANy7B1Sr1lPkrsgAyNFRYGHBeo5BUGQAwM2bevR3ptAA5uasJxgUxQVAjo0BZ85YzzEoigsAuHw5x0/dNtVq1hO0KjCA8+etJ2iPBN+8sZ6iVaaPlP8xM5N2+xsb4OoqQq0GtntE12rAxsZfvwrfvgHPnoXKhw/Wt07xyO/f0xzP1WiQd+8y6tPEbJFjY8mO5+PsrPX65B8Yjx9Pc+e/f2+9tlTK+iMw7N6dZsOvX1svLZWyAmCqAL58sV5aKmUFEFK9/dtoWC8tlbICQCXNetjysq4ghQWQSIjReoRUFEBHtAfwjdoD+KanAOcYiv0avQLoREj06iIDxS6st3bssJ4gFQXQEe0BfGO5AWR5QAjj8PDm2TRGRrZ3wenpJGc9CrOz5ORkd4up1xE+fgzh7dsEk5WHnJwk19bSfa5v5eFD69u2nfx2bbx1C5iYsB6j9/L8okp+AYQjR6xHSOPAAWb4fkJ+ART7kiuEzZ+8ZBiA9JMCcE4BOKcAnFMAzikA5xSAcwrAOQXgnAJwTgE4pwCcUwDOKQDnMgwgvzNp9cbPnyHDL5hkGMC7d9YTpJHnSSYyPCh0eRkggQsXwPHxbV00HDwInDvX+5mePwc+ferusvU6sLoKrqwkuLFkK/LKlTQHdM7PW68tlQyfAqSfFIBzCsA5BeCcAnBOATinAJxTAM4pAOcUgHMKwDkF4JwCcE4BOKcAnFMAzikA5xSAcwrAOQXgnAJwTgE4pwCcUwDOKQDnFIBzCsA5BeCcAnBOATinAJxTAM4pAOcUgHMKwDkF4JwCcE4BOKcAnFMAzpUVAJvNNBtuNKyXlkpZAYS1tTQb/vzZemnSIcalpd6dIjZG8tEj6zWllN1/s+4Fxv37EQ4fBird7+H4+zfw9Wuo/PhhvR4REREREREREREREZFu/QFT0KrdMzKHxAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMi0wNi0xOFQxODo1OTo0NyswMDowMEAGdYoAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjItMDYtMThUMTg6NTk6NDcrMDA6MDAxW802AAAAAElFTkSuQmCC" />
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="socilalist-link" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-custom-class="custom-tooltip" data-bs-title="Twitter" target="_blank">
+                                        <span class="icon-wrapper">
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_698_456)">
+                                                    <path
+                                                        d="M16.8408 5.4457C16.8513 5.60502 16.8513 5.7651 16.8513 5.92593C16.8513 10.8393 13.1358 16.5046 6.34384 16.5046V16.5016C4.33759 16.5046 2.37259 15.9262 0.683594 14.8352C0.975344 14.8706 1.26859 14.888 1.56259 14.8888C3.22609 14.8903 4.84159 14.3285 6.14884 13.294C4.56859 13.2638 3.18259 12.2263 2.69884 10.7116C3.25234 10.8189 3.82234 10.797 4.36609 10.6482C2.64259 10.2979 1.40359 8.77335 1.40359 7.00344C1.40359 6.98758 1.40359 6.97172 1.40359 6.95662C1.91734 7.24506 2.49184 7.40439 3.07984 7.42175C1.45684 6.33066 0.955844 4.15753 1.93609 2.45859C3.81109 4.78123 6.57784 6.19323 9.54709 6.34349C9.24934 5.0523 9.65659 3.6992 10.6151 2.79083C12.1023 1.3826 14.4416 1.45509 15.8403 2.95242C16.6676 2.78857 17.4603 2.48276 18.1856 2.0501C17.9096 2.91089 17.3328 3.64181 16.5618 4.10694C17.2946 4.0186 18.0093 3.82152 18.6836 3.521C18.1878 4.26777 17.5638 4.91941 16.8408 5.4457Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_698_456">
+                                                        <rect width="18" height="18.122" fill="white"
+                                                            transform="translate(0.683594 0.081543)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/company/cooking-station/" class="socilalist-link"
+                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-custom-class="custom-tooltip" data-bs-title="Skype" target="_blank">
+                                        <span class="icon-wrapper">
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_698_460)">
+                                                    <path
+                                                        d="M9.40319 14.5965C6.41294 14.5965 5.04719 13.0629 5.04719 11.9379C5.04644 11.6698 5.15594 11.4131 5.34944 11.2281C5.54294 11.0439 5.80319 10.9472 6.06944 10.9623C7.34969 10.9623 7.01444 12.8953 9.40319 12.8953C10.6242 12.8953 11.3412 12.1553 11.3412 11.4599C11.3412 11.0423 11.1042 10.5651 10.2979 10.3741L7.63094 9.69678C5.48819 9.14784 5.11469 7.94877 5.11469 6.83577C5.11469 4.52673 7.21244 3.69086 9.21044 3.69086C11.0509 3.69086 13.2379 4.71399 13.2379 6.09881C13.2379 6.69533 12.7429 7.01473 12.1684 7.01473C11.0749 7.01473 11.2587 5.46907 9.05969 5.46907C7.96619 5.46907 7.39094 5.98555 7.39094 6.70741C7.39094 7.42927 8.24144 7.67392 8.98844 7.83852L10.9564 8.28629C13.1142 8.77558 13.6887 10.0494 13.6887 11.2696C13.6887 13.146 12.2457 14.5965 9.40094 14.5965M17.6592 10.6255C17.7447 10.1332 17.7874 9.63411 17.7867 9.13349C17.7972 6.62133 16.7007 4.23451 14.7934 2.61562C12.8862 0.99672 10.3639 0.31186 7.90619 0.746787C7.15094 0.308839 6.29444 0.0792943 5.42294 0.0815596C3.63419 0.0928858 1.98494 1.05788 1.09094 2.61788C0.196193 4.17788 0.190944 6.09806 1.07594 7.66335C0.582443 10.3952 1.44719 13.1973 3.39194 15.1658C5.33669 17.1343 8.11544 18.0208 10.8312 17.5383C11.5857 17.9755 12.4414 18.2051 13.3114 18.2035C15.0994 18.1922 16.7472 17.2272 17.6412 15.668C18.5352 14.1087 18.5427 12.1901 17.6592 10.6255Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_698_460">
+                                                        <rect width="18" height="18.122" fill="white"
+                                                            transform="translate(0.366211 0.081543)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/company/cooking-station/" class="socilalist-link"
+                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-custom-class="custom-tooltip" data-bs-title="Linkedin" target="_blank">
+                                        <span class="icon-wrapper">
+                                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <rect width="18" height="18.122" fill="url(#pattern0_698_466)" />
+                                                <defs>
+                                                    <pattern id="pattern0_698_466"
+                                                        patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                        <use xlink:href="#image0_698_466"
+                                                            transform="matrix(0.00786544 0 0 0.0078125 -0.00338835 0)" />
+                                                    </pattern>
+                                                    <image id="image0_698_466" width="128" height="128"
+                                                        xlink:href="data:image/png;base64,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" />
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- =================== Footer PART END=================== -->
+    <!-- =================== Footer PART END=================== -->
+
+    <!--  LOTTIE PLAYER JS -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- PRELOADER-JS -->
+    <script src="assets/js/loader/loader.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".hero-swiper", {
+            // Optional parameters
+
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "bullets",
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        const featuredSwiper = new Swiper(".featured-swiper", {
+            // Optional parameters
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "bullets",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1220: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: ".featured-swiper-next",
+                prevEl: ".featured-swiper-prev",
+            },
+        });
+    </script>
+    <!-- BOOTSTRAP JS -->
+    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- TOOLTIP JS -->
+    <script src="assets/js/tooltip/tooltip.js"></script>
+</body>
+
+</html>
