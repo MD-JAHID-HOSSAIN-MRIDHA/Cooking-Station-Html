@@ -64,6 +64,7 @@
       }
     }
   }
+
   .section-body {
     margin-top: 40px;
     @include breakpoint(mobile576) {
@@ -84,6 +85,7 @@
       .card {
         background: rgba(255, 227, 227, 0.33);
         max-width: 367px;
+        position: relative;
         .card-title {
           color: #303030;
           @include font($eczar, 20, 600, normal, 46);
@@ -92,6 +94,38 @@
         .card-text {
           @include font($nunito, 16, 400, normal, 24);
           color: #505050;
+        }
+        .review-price {
+          @include flex-between;
+          .price {
+            color: #0c8040;
+            @include font($montserrat, 24, 600, normal, normal);
+          }
+          .stars {
+            display: flex;
+            gap: 4px;
+          }
+        }
+        .discount-wrapper {
+          position: absolute;
+          top: 1rem;
+          @include flex-between;
+          width: 100%;
+          padding: 0px 10px;
+          .hart-btn {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #fff;
+          }
+          .discount {
+            background-color: #2a2821;
+            color: #fff;
+            @include flex-center;
+            @include font($montserrat, 20, 600, normal, normal);
+            padding: 0px 10px;
+            border-radius: 4px;
+          }
         }
         .add-cart-btn {
           @include flex-center;

@@ -11,14 +11,9 @@
     color: $primary;
     padding-right: 18px;
   }
-  .active {
-    color: $primary !important;
-    &::after {
-      width: 100% !important;
-    }
-  }
+
   .nav-link {
-    color: #808082 !important;
+    // color: #808082 !important;
     position: relative;
     padding: 3px 0 !important;
     margin: 4px 10px;
@@ -40,6 +35,12 @@
     }
     &:hover::after {
       width: 100%;
+    }
+  }
+  .active {
+    color: $primary !important;
+    &::after {
+      width: 100% !important;
     }
   }
 }
