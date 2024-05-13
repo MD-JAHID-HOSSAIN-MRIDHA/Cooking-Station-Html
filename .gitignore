@@ -1,4 +1,4 @@
 .vscode
 node_modules
 .env
-assets/css/*
+# assets/css/*
