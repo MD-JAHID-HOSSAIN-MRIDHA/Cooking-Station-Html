@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cooking Station Home</title>
+    <title>Contact</title>
     <!-- FAVICON  -->
     <link
       rel="shortcut icon"
@@ -33,6 +33,21 @@
   </head>
 
   <body>
+    <!-- PRELOADER-START -->
+    <div class="preloader" id="preloader">
+      <div class="h-full d-flex justify-content-center align-items-center">
+        <lottie-player
+          src="https://lottie.host/c590f155-6689-43cd-b9ce-43c78b999e12/UgKnebTk9F.json"
+          background="transparent"
+          speed="1"
+          style="width: 200px; height: 200px"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+    </div>
+    <!-- PRELOADER-END -->
+
     <!-- ================== HEADER PART START================== -->
 
     <header>
@@ -127,12 +142,40 @@
     </header>
     <!-- =================== HEADER PART END=================== -->
 
-    <!-- ========== HERO SECTION START ========= -->
+    <!-- CONTACT BANNER START -->
+    <!-- <section class="contact_us_sec">
+        <div class="container">
+            <div class="contact_us_container">
+                <div>
+                    <h1 class="banner_title">
+                        Cooking Station <br />
+                        <span class="fw-bold">Contact</span>
+                    </h1>
+                    <div class="under_line">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="226" height="26" viewBox="0 0 226 26"
+                            fill="none">
+                            <path
+                                d="M3 22.9039C54.1496 15.9099 105.148 6.84914 156.469 4.20614C176.85 3.15655 197.386 2.3823 217.774 3.68228C219.863 3.81553 225.295 3.58384 220.541 4.77028"
+                                stroke="#FFC107" stroke-width="6" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+
+                <figure class="about-thumb">
+                    <img src="assets/images/about/about_banner.png" alt="" class="w-100" />
+                </figure>
+            </div>
+        </div>
+    </section> -->
+
     <section class="banner">
       <div class="container">
         <div class="wrapper">
           <div class="banner-content">
-            <h2 class="hero-title">Menu</h2>
+            <h2 class="hero-title fw-medium">
+              Cooking Station <br />
+              <span class="fw-bold">Contact</span>
+            </h2>
             <p class="hero-des">
               There are many variations of passages of orem Ipsum available, but
               the majority have suffered alteration in some form, by cted
@@ -142,432 +185,190 @@
         </div>
       </div>
     </section>
-    <!-- ========== HERO SECTION END ========= -->
+    <!-- CONTACT BANNER END -->
 
-    <!-- MENUS -->
-    <section class="menu-section">
+    <!-- CONTACT INFO SECTION START -->
+    <section class="contact_info_sec">
       <div class="container">
-        <div class="wrapper">
-          <div class="section-header">
-            <h2 class="section-title">
-              Our Traditional Food Based on Location
-            </h2>
-            <ul class="nav nav-pills menu-tab" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link active"
-                  data-bs-toggle="tab"
-                  data-bs-target="#allCategory"
-                  type="button"
-                  role="tab"
-                  aria-controls="allCategory-tab"
-                  aria-selected="true"
-                >
-                  All Category
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="profile-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#basic"
-                  type="button"
-                  role="tab"
-                  aria-controls="profile-tab-pane"
-                  aria-selected="false"
-                >
-                  Basic
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="profile-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#premium"
-                  type="button"
-                  role="tab"
-                  aria-controls="premium"
-                  aria-selected="false"
-                >
-                  Premium
-                </button>
-              </li>
-              
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="contact-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#corporate"
-                  type="button"
-                  role="tab"
-                  aria-controls="corporate"
-                  aria-selected="false"
-                >
-                  Corporate
-                </button>
-              </li>
-            </ul>
+        <div class="section-top">
+          <h2 class="title main_title">Talk with our contact team</h2>
+        </div>
+        <div class="contact_info_container">
+
+           <!-- contact details -->
+           <div class="contact_details">
+            <h4 class="sub-title">
+              send message
+            </h4>
+            <h3 class="title">
+              Find us Here
+            </h3>
+            <p class="des">
+              There are many variations of passages of orem Ipsum available, but the majority have suffered alteration in some form, by cted ipsumlor sit amet, consectetur adipisicing elit, sed do usmod temp idunt ut et dolore magna aliqua ut enim ad minim.
+            </p>
           </div>
 
-          <div class="section-body">
-            <div class="tab-content" >
-              <div class="tab-pane fade show active" id="allCategory" role="tabpanel" aria-labelledby="allCategory-tab" tabindex="0">
-                <div class="menu-cat-wrapper">
-                  <div class="card" >
-                    <img src="assets/images/menu/menu-card-bg.png" class="card-img-top" alt="">
-                    <div class="discount-wrapper">
-                      <div class="discount">
-                        20% off
-                      </div>
-                      <button class="hart-btn">
-                        <img src="assets/images/icons/hart.png" alt="">
-                      </button>
-                    </div>
-                    <div class="card-body">
-                      <div class="review-price">
-                        <span class="price">TK 120</span>
-                        <div class="stars">
-                          <figure>
-                            <img src="assets/images/icons/star.jpg" alt="star-icon"/>
-                          </figure>
-                          <figure>
-                            <img src="assets/images/icons/star.jpg" alt="star-icon"/>
-                          </figure>
-                          <figure>
-                            <img src="assets/images/icons/star.jpg" alt="star-icon"/>
-                          </figure>
-                        </div>
-                      </div>
-                      <h5 class="card-title">Chicken Curry</h5>
-                      <p class="card-text">There are many variations of passages of orem Ipsum available, but the majority have suffered alteration in some</p>
-                      <a href="#" class="add-cart-btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
-                    </div>
-                  </div>
-                  <div class="card" >
-                    <img src="assets/images/menu/menu-card-bg.png" class="card-img-top" alt="">
-                    <div class="discount-wrapper">
-                      <div class="discount">
-                        20% off
-                      </div>
-                      <button class="hart-btn">
-                        <img src="assets/images/icons/hart.png" alt="">
-                      </button>
-                    </div>
-                    <div class="card-body">
-                      <div class="review-price">
-                        <span class="price">TK 120</span>
-                        <div class="stars">
-                          <figure>
-                            <img src="assets/images/icons/star.jpg" alt="star-icon"/>
-                          </figure>
-                          <figure>
-                            <img src="assets/images/icons/star.jpg" alt="star-icon"/>
-                          </figure>
-                          <figure>
-                            <img src="assets/images/icons/star.jpg" alt="star-icon"/>
-                          </figure>
-                        </div>
-                      </div>
-                      <h5 class="card-title">Chicken Curry</h5>
-                      <p class="card-text">There are many variations of passages of orem Ipsum available, but the majority have suffered alteration in some</p>
-                      <a href="#" class="add-cart-btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
-                    </div>
-                  </div>
-                  <div class="card" >
-                    <img src="assets/images/menu/menu-card-bg.png" class="card-img-top" alt="">
-                    <div class="discount-wrapper">
-                      <div class="discount">
-                        20% off
-                      </div>
-                      <button class="hart-btn">
-                        <img src="assets/images/icons/hart.png" alt="">
-                      </button>
-                    </div>
-                    <div class="card-body">
-                      <div class="review-price">
-                        <span class="price">TK 120</span>
-                        <div class="stars">
-                          <figure>
-                            <img src="assets/images/icons/star.jpg" alt="star-icon"/>
-                          </figure>
-                          <figure>
-                            <img src="assets/images/icons/star.jpg" alt="star-icon"/>
-                          </figure>
-                          <figure>
-                            <img src="assets/images/icons/star.jpg" alt="star-icon"/>
-                          </figure>
-                        </div>
-                      </div>
-                      <h5 class="card-title">Chicken Curry</h5>
-                      <p class="card-text">There are many variations of passages of orem Ipsum available, but the majority have suffered alteration in some</p>
-                      <a href="#" class="add-cart-btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
-                    </div>
-                  </div>
-                
-                </div>
-              </div>
-              <div class="tab-pane fade" id="basic" role="tabpanel" aria-labelledby="basic-tab" tabindex="0">
-                <div class="menu-cat-wrapper">
-                  <div class="card" >
-                    <img src="assets/images/menu/menu-card-bg.png" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <h5 class="card-title">Chicken Curry</h5>
-                      <p class="card-text">There are many variations of passages of orem Ipsum available, but the majority have suffered alteration in some</p>
-                      <a href="#" class="add-cart-btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
-                    </div>
-                  </div>
-                  <div class="card" >
-                    <img src="assets/images/menu/menu-card-bg.png" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <h5 class="card-title">Chicken Curry</h5>
-                      <p class="card-text">There are many variations of passages of orem Ipsum available, but the majority have suffered alteration in some</p>
-                      <a href="#" class="add-cart-btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
-                    </div>
-                  </div>
-                  <div class="card" >
-                    <img src="assets/images/menu/menu-card-bg.png" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <h5 class="card-title">Chicken Curry</h5>
-                      <p class="card-text">There are many variations of passages of orem Ipsum available, but the majority have suffered alteration in some</p>
-                      <a href="#" class="add-cart-btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="premium" role="tabpanel" aria-labelledby="premium-tab" tabindex="0">
-                <ul class="nav nav-pills menu-tab" id="myTab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link active"
-                      data-bs-toggle="tab"
-                      data-bs-target="#allPremium"
-                      type="button"
-                      role="tab"
-                      aria-controls="allPremium-tab"
-                      aria-selected="true"
-                    >
-                      All
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link"
-                      id="profile-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#basic-premium"
-                      type="button"
-                      role="tab"
-                      aria-controls="profile-tab-pane"
-                      aria-selected="false"
-                    >
-                      Basic
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link"
-                      id="profile-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#nutrition"
-                      type="button"
-                      role="tab"
-                      aria-controls="premium"
-                      aria-selected="false"
-                    >
-                      Nutrition
-                    </button>
-                  </li>
-                  
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link"
-                      id="contact-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#diet"
-                      type="button"
-                      role="tab"
-                      aria-controls="diet"
-                      aria-selected="false"
-                    >
-                      Diet
-                    </button>
-                  </li>
-                </ul>
-                <div class="menu-cat-wrapper">
-                  <div class="card" >
-                    <img src="assets/images/menu/menu-card-bg.png" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <h5 class="card-title">Chicken Curry</h5>
-                      <p class="card-text">There are many variations of passages of orem Ipsum available, but the majority have suffered alteration in some</p>
-                      <a href="#" class="add-cart-btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
-                    </div>
-                  </div>
-                  <div class="card" >
-                    <img src="assets/images/menu/menu-card-bg.png" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <h5 class="card-title">Chicken Curry</h5>
-                      <p class="card-text">There are many variations of passages of orem Ipsum available, but the majority have suffered alteration in some</p>
-                      <a href="#" class="add-cart-btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
-                    </div>
-                  </div>
-                  <div class="card" >
-                    <img src="assets/images/menu/menu-card-bg.png" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <h5 class="card-title">Chicken Curry</h5>
-                      <p class="card-text">There are many variations of passages of orem Ipsum available, but the majority have suffered alteration in some</p>
-                      <a href="#" class="add-cart-btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="corporate" role="tabpanel" aria-labelledby="corporate-tab" tabindex="0">
-                <div class="menu-cat-wrapper">
-                  <div class="card" >
-                    <img src="assets/images/menu/menu-card-bg.png" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <h5 class="card-title">Chicken Curry</h5>
-                      <p class="card-text">There are many variations of passages of orem Ipsum available, but the majority have suffered alteration in some</p>
-                      <a href="#" class="add-cart-btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
-                    </div>
-                  </div>
-                  <div class="card" >
-                    <img src="assets/images/menu/menu-card-bg.png" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <h5 class="card-title">Chicken Curry</h5>
-                      <p class="card-text">There are many variations of passages of orem Ipsum available, but the majority have suffered alteration in some</p>
-                      <a href="#" class="add-cart-btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
-                    </div>
-                  </div>
-                  <div class="card" >
-                    <img src="assets/images/menu/menu-card-bg.png" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <h5 class="card-title">Chicken Curry</h5>
-                      <p class="card-text">There are many variations of passages of orem Ipsum available, but the majority have suffered alteration in some</p>
-                      <a href="#" class="add-cart-btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <!-- contact form -->
+          <form class="row contact_form">
+            <div class="col-md-6">
+              <label for="name" class="form-label">Name *</label>
+              <input
+                type="email"
+                class="form-control"
+                id="name"
+                placeholder="Nishi"
+              />
             </div>
-          </div>
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Phone Number *</label>
+              <input
+                type="number"
+                placeholder="+880"
+                class="form-control"
+                id="phone"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label"> Email *</label>
+              <input
+                type="email"
+                placeholder="Info@gmail.com"
+                class="form-control"
+                id="email"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="address" class="form-label">Address *</label>
+              <input
+                type="text"
+                class="form-control"
+                id="address"
+                placeholder="Banasree"
+              />
+            </div>
+
+            <div class="col-12">
+              <label for="message" class="form-label"
+                >What would you like to discuss? *</label
+              >
+              <textarea
+                class="form-control"
+                id="message"
+                rows="3"
+                placeholder="Type your message here.."
+              ></textarea>
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="cs_btn">Submit</button>
+            </div>
+          </form>
+
+         
         </div>
       </div>
     </section>
+    <!-- CONTACT INFO SECTION END -->
 
     <!-- ================== FOOTER PART START================== -->
     <footer>
       <div class="container">
-        <div class="row g-4">
-          <div class="col-sm-6 col-lg-2">
-            <div class="footer-col">
-              <h4 class="title">Cooking Station</h4>
-              <ul class="footerlist">
-                <li class="footerlist-item">
-                  <a class="footerlist-link" href="#">Students</a>
-                </li>
-                <li class="footerlist-item">
-                  <a class="footerlist-link" href="#">Blogs</a>
-                </li>
-                <li class="footerlist-item">
-                  <a class="footerlist-link" href="#">Recipes</a>
-                </li>
-                <li class="footerlist-item">
-                  <a class="footerlist-link" href="#">Hero Discounts</a>
-                </li>
-                <li class="footerlist-item">
-                  <a class="footerlist-link" href="#">Act</a>
-                </li>
-                <li class="footerlist-item">
-                  <a class="footerlist-link" href="#">Delivery Options</a>
-                </li>
-              </ul>
+        <div class="footer-contaiener">
+          <div class="footer-col">
+            <h4 class="title">Cooking Station</h4>
+            <ul class="footerlist">
+              <li class="footerlist-item">
+                <a class="footerlist-link" href="#">Students</a>
+              </li>
+              <li class="footerlist-item">
+                <a class="footerlist-link" href="#">Blogs</a>
+              </li>
+              <li class="footerlist-item">
+                <a class="footerlist-link" href="#">Recipes</a>
+              </li>
+              <li class="footerlist-item">
+                <a class="footerlist-link" href="#">Hero Discounts</a>
+              </li>
+              <li class="footerlist-item">
+                <a class="footerlist-link" href="#">Act</a>
+              </li>
+              <li class="footerlist-item">
+                <a class="footerlist-link" href="#">Delivery Options</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="title">Our Company</h4>
+            <ul class="footerlist">
+              <li class="footerlist-item">
+                <a class="footerlist-link" href="about.html">About us</a>
+              </li>
+              <li class="footerlist-item">
+                <a class="footerlist-link" href="career.html">Career</a>
+              </li>
+              <li class="footerlist-item">
+                <a class="footerlist-link" href="faq.html">FAQ</a>
+              </li>
+              <li class="footerlist-item">
+                <a class="footerlist-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="footerlist-item">
+                <a class="footerlist-link" href="career.html">Careers</a>
+              </li>
+              <li class="footerlist-item">
+                <a class="footerlist-link" href="#">Press</a>
+              </li>
+              <li class="footerlist-item">
+                <a class="footerlist-link" href="#">Sustainability</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="title">Work with us</h4>
+            <ul class="footerlist">
+              <li class="footerlist-item">
+                <a class="footerlist-link" href="#">Partner</a>
+              </li>
+              <li class="footerlist-item">
+                <a class="footerlist-link" href="#">Influencers</a>
+              </li>
+              <li class="footerlist-item">
+                <a class="footerlist-link" href="#">Affiliates</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="title">Payment Methods</h4>
+            <div class="payments">
+              <img src="assets/images/payment-methods/mastercard.png" alt="" />
+              <img src="assets/images/payment-methods/visa.png" alt="" />
+              <img src="assets/images/payment-methods/paypal.png" alt="" />
+              <img
+                src="assets/images/payment-methods/image-removebg-preview (41) 1.png"
+                alt=""
+              />
+              <img src="assets/images/payment-methods/ameriacn.png" alt="" />
             </div>
           </div>
-          <div class="col-sm-6 col-lg-2">
-            <div class="footer-col">
-              <h4 class="title">Our Company</h4>
-              <ul class="footerlist">
-                <li class="footerlist-item">
-                  <a class="footerlist-link" href="about.html">About us</a>
-                </li>
-                <li class="footerlist-item">
-                  <a class="footerlist-link" href="career.html">Career</a>
-                </li>
-                <li class="footerlist-item">
-                  <a class="footerlist-link" href="faq.html">FAQ</a>
-                </li>
-                <li class="footerlist-item">
-                  <a class="footerlist-link" href="contact.html">Contact Us</a>
-                </li>
-                <li class="footerlist-item">
-                  <a class="footerlist-link" href="career.html">Careers</a>
-                </li>
-                <li class="footerlist-item">
-                  <a class="footerlist-link" href="#">Press</a>
-                </li>
-                <li class="footerlist-item">
-                  <a class="footerlist-link" href="#">Sustainability</a>
-                </li>
-              </ul>
+          <div class="footer-col">
+            <h4 class="title">Download Our App</h4>
+            <p class="des text-center text-lg-start">
+              Manage your deliveries from anywhere, anytime.
+            </p>
+            <div class="store-links d-flex align-items-center">
+              <a href="#">
+                <img src="assets/images/store/app-store.png" alt="" />
+              </a>
+              <a href="#">
+                <img src="assets/images/store/play-store.png" alt="" />
+              </a>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-2">
-            <div class="footer-col">
-              <h4 class="title">Work with us</h4>
-              <ul class="footerlist">
-                <li class="footerlist-item">
-                  <a class="footerlist-link" href="#">Partner</a>
-                </li>
-                <li class="footerlist-item">
-                  <a class="footerlist-link" href="#">Influencers</a>
-                </li>
-                <li class="footerlist-item">
-                  <a class="footerlist-link" href="#">Affiliates</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="footer-col">
-              <h4 class="title">Payment Methods</h4>
-              <div class="payments">
-                <img
-                  src="assets/images/payment-methods/mastercard.png"
-                  alt=""
-                />
-                <img src="assets/images/payment-methods/visa.png" alt="" />
-                <img src="assets/images/payment-methods/paypal.png" alt="" />
-                <img
-                  src="assets/images/payment-methods/image-removebg-preview (41) 1.png"
-                  alt=""
-                />
-                <img src="assets/images/payment-methods/ameriacn.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-lg-3">
-            <div class="footer-col">
-              <h4 class="title">Download Our App</h4>
-              <p class="des text-center text-lg-start">
-                Manage your deliveries from anywhere, anytime.
-              </p>
-              <div class="store-links d-flex align-items-center">
-                <a href="#">
-                  <img src="assets/images/store/app-store.png" alt="" />
-                </a>
-                <a href="#">
-                  <img src="assets/images/store/play-store.png" alt="" />
-                </a>
-              </div>
-              <div class="qr">
-                <img src="assets/images/payment-methods/qr.png" alt="" />
-              </div>
+            <div class="qr">
+              <img src="assets/images/payment-methods/qr.png" alt="" />
             </div>
           </div>
         </div>
+
         <div class="copywrite">
           <div class="row g-2 align-items-center">
             <div class="col-lg-5">
@@ -763,10 +564,62 @@
       </div>
     </footer>
     <!-- =================== Footer PART END=================== -->
-
+    <!--  LOTTIE PLAYER JS -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- PRELOADER-JS -->
+    <script src="assets/js/loader/loader.js"></script>
     <!-- swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".hero-swiper", {
+        // Optional parameters
 
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets",
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      const featuredSwiper = new Swiper(".featured-swiper", {
+        // Optional parameters
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1220: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: ".featured-swiper-next",
+          prevEl: ".featured-swiper-prev",
+        },
+      });
+    </script>
     <!-- BOOTSTRAP JS -->
     <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- TOOLTIP JS -->

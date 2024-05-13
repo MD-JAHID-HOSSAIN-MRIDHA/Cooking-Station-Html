@@ -2,15 +2,15 @@
 @use "../partials" as *;
 
 .banner {
-  background-color: $black-300;
-  background-image: url("../../assets/images/menu/menu-hero-bg.png");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url("../../assets/images/menu/background-menu.jpg");
   background-blend-mode: overlay;
   clip-path: path(
     "M1524 528.824V-20H1043.22H691.147H321.069H-3V475.23C160.142 545.137 322.791 659.765 681.736 559.824C1017.21 466.418 1198.73 635.606 1440 559.824Z"
   );
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
   height: 688px;
   .wrapper {
     @include flex-center;
@@ -32,6 +32,28 @@
 }
 
 .menu-section {
+  position: relative;
+  .menu-tab {
+    margin: auto;
+    // justify-content: space-between;
+    border: 1px solid $primary;
+    border-radius: 8px;
+    padding: 4px;
+    li {
+      flex: 1;
+      button {
+        color: $primary;
+        width: 100%;
+        svg {
+          width: 14px;
+        }
+      }
+      button.active {
+        color: #fff;
+        background-color: $primary;
+      }
+    }
+  }
   .section-header {
     max-width: 589px;
     margin: auto;
@@ -41,27 +63,6 @@
       font-size: clamp(28px, 6vw, 48px);
       text-align: center;
       margin-bottom: 24px;
-    }
-    .menu-tab {
-      margin: auto;
-      // justify-content: space-between;
-      border: 1px solid $primary;
-      border-radius: 8px;
-      padding: 4px;
-      li {
-        flex: 1;
-        button {
-          color: $primary;
-          width: 100%;
-          svg {
-            width: 14px;
-          }
-        }
-        button.active {
-          color: #fff;
-          background-color: $primary;
-        }
-      }
     }
   }
 
@@ -150,6 +151,13 @@
           }
         }
       }
+    }
+    .menu-tab {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      // top: 25%;
+      top: 196px;
     }
   }
 }
