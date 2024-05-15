@@ -733,6 +733,77 @@ button:focus,
   font-weight: 400;
   line-height: 150%;
 }
+.eventcard {
+  position: relative;
+  padding: 3.75rem;
+  margin-top: 50px;
+}
+@media screen and (min-width: 62rem) {
+  .eventcard {
+    padding-top: 89px;
+    padding-left: 97px;
+  }
+}
+.eventcard::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  border: 2px solid #ffc107;
+  transform: rotate(-3deg);
+  background: #eceaea;
+  transition: transform 350ms ease-in-out;
+}
+.eventcard::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  right: 10px;
+  border: 2px solid #ffc107;
+  transform: rotate(-5deg);
+  left: -30px;
+  background: #eceaea;
+  top: 10px;
+  transition: transform 350ms ease-in-out;
+}
+.eventcard .content {
+  position: relative;
+  z-index: 1;
+}
+.eventcard .content h3 {
+  color: #0c8040;
+  font-family: "Eczar", serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.28px;
+}
+.eventcard .content p {
+  color: #646464;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 133.333% */
+  margin-top: 5px;
+}
+.eventcard:not([disabled]):hover::after {
+  transform: rotate(-10deg);
+}
+.eventcard:not([disabled]):hover::before {
+  transform: rotate(-3deg);
+}
+
+.eventemagecard img {
+  width: 100%;
+  height: 100%;
+  border: 6px solid #ffc107;
+  transform: rotate(3deg);
+  transition: all 350ms ease-in-out;
+}
+.eventemagecard img:not([disabled]):hover {
+  transform: rotate(-3deg);
+}
 .navbar .offcanvas {
   min-height: 0 !important;
 }
@@ -1926,40 +1997,40 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   height: 0.6875rem;
 }
 
-.contact_info_sec {
+.contact_form_sec {
   padding: 3.75rem 0;
 }
 @media screen and (min-width: 62rem) {
-  .contact_info_sec {
+  .contact_form_sec {
     padding-top: 6.875rem 0;
   }
 }
-.contact_info_sec .contact_info_container {
+.contact_form_sec .contact_info_container {
   display: flex;
   flex-direction: column;
   gap: 80px;
   padding-top: 50px;
 }
 @media screen and (min-width: 62rem) {
-  .contact_info_sec .contact_info_container {
+  .contact_form_sec .contact_info_container {
     flex-direction: row;
   }
 }
-.contact_info_sec .contact_info_container .contact_form {
+.contact_form_sec .contact_info_container .contact_form {
   row-gap: 35px;
   border: 1px solid #fff;
   box-shadow: 0px 0px 8px 4px rgba(249, 249, 249, 0.98);
   background-color: #fff;
   padding: 46px;
 }
-.contact_info_sec .contact_info_container .contact_form #message {
+.contact_form_sec .contact_info_container .contact_form #message {
   resize: vertical;
 }
-.contact_info_sec .contact_details {
+.contact_form_sec .contact_details {
   max-width: 355px;
   margin-top: 73px;
 }
-.contact_info_sec .contact_details .title {
+.contact_form_sec .contact_details .title {
   font-family: "Eczar", serif;
   font-size: 2.25rem;
   font-weight: 500;
@@ -1967,7 +2038,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   line-height: 2;
 }
 @media screen and (min-width: 36rem) {
-  .contact_info_sec .contact_details .title {
+  .contact_form_sec .contact_details .title {
     font-family: "Eczar", serif;
     font-size: 3rem;
     font-weight: 600;
@@ -1976,14 +2047,14 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     color: #02061a;
   }
 }
-.contact_info_sec .contact_details .title .sub-title {
+.contact_form_sec .contact_details .title .sub-title {
   font-family: "Nunito", sans-serif;
   font-size: 1rem;
   font-weight: 500;
   font-style: normal;
   line-height: 1.5;
 }
-.contact_info_sec .contact_details .title .des {
+.contact_form_sec .contact_details .title .des {
   font-family: "Nunito", sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -1994,6 +2065,67 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .hero-title-contact {
   font-weight: 500 !important;
+}
+
+.contact_info .section-top {
+  margin: 90px 0px;
+}
+.contact_info .section-top .section-title {
+  font-family: "Eczar", serif;
+  font-size: 2.25rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 2;
+}
+@media screen and (min-width: 36rem) {
+  .contact_info .section-top .section-title {
+    font-family: "Eczar", serif;
+    font-size: 3rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.5;
+    color: #02061a;
+  }
+}
+.contact_info .wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+.contact_info .wrapper > div {
+  flex: 1;
+}
+.contact_info .wrapper .map {
+  width: 555px;
+  height: 336px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: rgba(2, 6, 26, 0.2);
+}
+.contact_info .wrapper .map iframe {
+  width: 100%;
+  height: 100%;
+}
+.contact_info .wrapper .contact_details {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+.contact_info .wrapper .contact_details .title {
+  color: #02061a;
+  font-family: "Eczar", serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 33.6px */
+}
+.contact_info .wrapper .contact_details p {
+  color: #02061a;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
 }
 
 .h-full {

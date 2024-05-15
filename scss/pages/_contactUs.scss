@@ -1,7 +1,7 @@
 @use "../global" as *;
 @use "../partials" as *;
 
-.contact_info_sec {
+.contact_form_sec {
   padding: size(60) 0;
   @include breakpoint(tab992) {
     padding-top: size(110) 0;
@@ -13,7 +13,6 @@
     @include breakpoint(tab992) {
       flex-direction: row;
     }
-
     gap: 80px;
     padding-top: 50px;
     .contact_form {
@@ -48,4 +47,57 @@
 }
 .hero-title-contact {
   font-weight: 500 !important;
+}
+.contact_info {
+  .section-top {
+    margin: 90px 0px;
+    .section-title {
+      @include font($eczar, 36, 500, normal, 72);
+      @include breakpoint(mobile576) {
+        @include font($eczar, 48, 600, normal, 72);
+        color: #02061a;
+      }
+    }
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    & > div {
+      flex: 1;
+    }
+
+    .map {
+      width: 555px;
+      height: 336px;
+      flex-shrink: 0;
+      border-radius: 8px;
+      background: rgba(2, 6, 26, 0.2);
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .contact_details {
+      display: flex;
+      flex-direction: column;
+      gap: 34px;
+      .title {
+        color: #02061a;
+        font-family: $eczar;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; /* 33.6px */
+      }
+      p {
+        color: #02061a;
+        font-family: $nunito;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+      }
+    }
+  }
 }
