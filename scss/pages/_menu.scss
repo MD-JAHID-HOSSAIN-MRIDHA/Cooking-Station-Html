@@ -71,7 +71,18 @@
     @include breakpoint(mobile576) {
       margin-top: 70px;
     }
-    .menu-cat-wrapper {
+   
+    .menu-tab {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      // top: 25%;
+      top: 196px;
+    }
+  } 
+  
+}
+ .menu-cat-wrapper {
       display: grid;
       // grid-template-columns: repeat(2, 1fr);
       gap: 38px;
@@ -152,12 +163,3 @@
         }
       }
     }
-    .menu-tab {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      // top: 25%;
-      top: 196px;
-    }
-  }
-}
