@@ -928,6 +928,8 @@ button:focus,
   flex-direction: column;
   align-items: center;
   gap: 2.25rem;
+  height: 100%;
+  justify-content: space-between;
 }
 .pricingpagecard .day {
   color: #040415;
@@ -954,6 +956,7 @@ button:focus,
   gap: 1rem;
   text-align: center;
   align-items: center;
+  flex-grow: 1;
 }
 .pricingpagecard .facility li {
   color: #6E6E6F;

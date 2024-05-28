@@ -473,6 +473,8 @@
   @include flex-column;
   align-items: center;
   gap: size(36);
+  height: 100%;
+  justify-content: space-between;
   .day {
     color: #040415;
     font-family: Montserrat;
@@ -493,6 +495,7 @@
      gap: size(16);
      text-align: center;
      align-items: center;
+     flex-grow: 1;
      li {
       color: #6E6E6F;
       font-family: Nunito;
