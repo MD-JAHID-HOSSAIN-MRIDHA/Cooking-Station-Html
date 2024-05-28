@@ -1,0 +1,24 @@
+@use "../global" as *;
+@use "../partials" as *;
+
+.corporate-thumb {
+    @include wh100;
+    height: auto;
+    img {
+        @include wh100;
+    }
+}
+.corporate-info {
+     background-color: #FFE69A;
+     border-radius: 6px;
+     padding: 60px;
+     top: -100px;
+     margin-inline: 20px;
+    @include flex-column;
+    align-items: center;
+     position: relative;
+     gap: size(40);
+     @include breakpoint(tab992) {
+        margin-inline: 70px;
+     }
+}

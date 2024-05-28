@@ -4946,22 +4946,29 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     margin-top: 70px;
   }
 }
-.menu-section .section-body .menu-cat-wrapper {
+.menu-section .section-body .menu-tab {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 196px;
+}
+
+.menu-cat-wrapper {
   display: grid;
   gap: 38px;
   justify-content: center;
 }
 @media screen and (min-width: 64rem) {
-  .menu-section .section-body .menu-cat-wrapper {
+  .menu-cat-wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.menu-section .section-body .menu-cat-wrapper .card {
+.menu-cat-wrapper .card {
   background: rgba(255, 227, 227, 0.33);
   max-width: 367px;
   position: relative;
 }
-.menu-section .section-body .menu-cat-wrapper .card .card-title {
+.menu-cat-wrapper .card .card-title {
   color: #303030;
   font-family: "Eczar", serif;
   font-size: 1.25rem;
@@ -4970,7 +4977,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   line-height: 2.3;
   margin-bottom: 0 !important;
 }
-.menu-section .section-body .menu-cat-wrapper .card .card-text {
+.menu-cat-wrapper .card .card-text {
   font-family: "Nunito", sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -4978,11 +4985,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   line-height: 1.5;
   color: #505050;
 }
-.menu-section .section-body .menu-cat-wrapper .card .review-price {
+.menu-cat-wrapper .card .review-price {
   display: flex;
   justify-content: space-between;
 }
-.menu-section .section-body .menu-cat-wrapper .card .review-price .price {
+.menu-cat-wrapper .card .review-price .price {
   color: #0c8040;
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
@@ -4990,11 +4997,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   font-style: normal;
   line-height: calc(normal / 24);
 }
-.menu-section .section-body .menu-cat-wrapper .card .review-price .stars {
+.menu-cat-wrapper .card .review-price .stars {
   display: flex;
   gap: 4px;
 }
-.menu-section .section-body .menu-cat-wrapper .card .discount-wrapper {
+.menu-cat-wrapper .card .discount-wrapper {
   position: absolute;
   top: 1rem;
   display: flex;
@@ -5002,13 +5009,13 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 100%;
   padding: 0px 10px;
 }
-.menu-section .section-body .menu-cat-wrapper .card .discount-wrapper .hart-btn {
+.menu-cat-wrapper .card .discount-wrapper .hart-btn {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background-color: #fff;
 }
-.menu-section .section-body .menu-cat-wrapper .card .discount-wrapper .discount {
+.menu-cat-wrapper .card .discount-wrapper .discount {
   background-color: #2a2821;
   color: #fff;
   display: flex;
@@ -5022,7 +5029,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   padding: 0px 10px;
   border-radius: 4px;
 }
-.menu-section .section-body .menu-cat-wrapper .card .add-cart-btn {
+.menu-cat-wrapper .card .add-cart-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5042,15 +5049,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   gap: 8px;
   margin-top: 1rem;
 }
-.menu-section .section-body .menu-cat-wrapper .card .add-cart-btn:not([disabled]):hover {
+.menu-cat-wrapper .card .add-cart-btn:not([disabled]):hover {
   background-color: hsl(147, 83%, 27%);
   color: white;
-}
-.menu-section .section-body .menu-tab {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 196px;
 }
 
 .aboutpackage {
@@ -5093,6 +5094,34 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   font-style: normal;
   font-weight: 400;
   line-height: 28px; /* 155.556% */
+}
+
+.corporate-thumb {
+  width: 100%;
+  height: 100%;
+  height: auto;
+}
+.corporate-thumb img {
+  width: 100%;
+  height: 100%;
+}
+
+.corporate-info {
+  background-color: #FFE69A;
+  border-radius: 6px;
+  padding: 60px;
+  top: -100px;
+  margin-inline: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 2.5rem;
+}
+@media screen and (min-width: 62rem) {
+  .corporate-info {
+    margin-inline: 70px;
+  }
 }
 
 @keyframes rotating {
