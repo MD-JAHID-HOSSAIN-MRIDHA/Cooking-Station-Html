@@ -39,6 +39,22 @@ h3 {
 }
 
 .pricingpackage {
+      padding: 50px size(0);
+    @include breakpoint(tab992) {
+        padding: size(100) size(0)
+    } 
+    .section-title {
+        color: #0C8040;
+        font-family: Eczar;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 48px; /* 120% */
+        letter-spacing: 0.4px;
+        text-align: center;
+        margin: 10px 0;
+        margin-bottom: 20px;
+    }
     .nav-tabs {
         border: none;
         width: max-content;
