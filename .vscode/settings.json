@@ -1,0 +1,16 @@
+{
+  "liveSassCompile.settings.compileOnWatch": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".min.css",
+      // "extensionName": ".css",
+      // "savePath": "/public/assets/css"
+      "savePath": "/assets/css"
+      // "savePath": "/css"
+      // "savePath": "/static/assets/css"
+      // "savePath": "src/css"
+    }
+  ]
+}
