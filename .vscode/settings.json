@@ -4,7 +4,7 @@
   "liveSassCompile.settings.formats": [
     {
       "format": "expanded",
-      "extensionName": ".min.css",
+      "extensionName": ".css",
       // "extensionName": ".css",
       // "savePath": "/public/assets/css"
       "savePath": "/assets/css"
