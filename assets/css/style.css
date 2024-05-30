@@ -2351,6 +2351,45 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   height: 0.6875rem;
 }
 
+.about-banner {
+  padding-block: 200px;
+  background-color: #FFF6E9;
+  padding-bottom: 10px;
+}
+.about-banner .leftcontent h1 {
+  color: #0C8040;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px;
+}
+@media screen and (min-width: 36rem) {
+  .about-banner .leftcontent h1 {
+    font-size: 52px;
+    line-height: 72px;
+  }
+}
+.about-banner .leftcontent h1 span {
+  color: #0C8040;
+  font-family: Montserrat;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px;
+}
+.about-banner .rightcontent {
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+}
+.about-banner .rightcontent img {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
 .contact_form_sec {
   padding: 3.75rem 0;
 }
