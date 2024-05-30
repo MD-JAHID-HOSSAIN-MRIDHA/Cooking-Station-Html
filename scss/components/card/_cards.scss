@@ -361,6 +361,7 @@
   .blog-thumb {
     overflow: hidden;
     @include w100;
+    max-height: 200px;
     img {
       @include wh100;
       object-fit: cover;
