@@ -1,13 +1,16 @@
 @use "../global" as *;
 @use "../partials" as *;
 .checkout {
-  margin-top: size(120);
+  margin-top: size(20);
   padding: size(100) size(0);
   .section-top {
     @include flex-column;
-    padding-bottom: size(150);
+    padding-bottom: size(70);
+    svg {
+      width: 18rem;
+    }
     span {
-      margin-top: size(-24);
+      margin-top: size(-14);
     }
   }
   .left-col {
@@ -55,14 +58,14 @@
       gap: size(14);
       .title {
         color: #111;
-        leading-trim: both;
-        text-edge: cap;
         font-family: Eczar;
         font-size: 24px;
         font-style: normal;
         font-weight: 500;
-        line-height: 30px;
-        text-align: center;
+        // line-height: 30px;
+        display: flex;
+        align-items: center;
+        // text-align: center;
       }
       .line {
         height: size(1);
@@ -86,34 +89,32 @@
       }
       .single-bill {
         @include flex-between;
-        padding:  size(10) size(20);
-        @include border(solid, 1, #e5e5e5);
-        @include radius(35);
+        padding: size(10) size(20);
+        border-bottom: 1px solid #e5e5e5;
+        // @include radius(35);
         .name {
-            color: #111;
-            leading-trim: both;
-            text-edge: cap;
-            font-family: Nunito;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 26px; /* 185.714% */
+          color: #111;
+          leading-trim: both;
+          text-edge: cap;
+          font-family: Nunito;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 26px; /* 185.714% */
         }
         .value {
-            color: #696868;
-            leading-trim: both;
-            text-edge: cap;
-            font-family: Nunito;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 26px; /* 185.714% */
+          color: #696868;
+          leading-trim: both;
+          text-edge: cap;
+          font-family: Nunito;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 26px; /* 185.714% */
         }
         &.last {
-            background: rgba(241, 240, 240, 0.55);
+          background: rgba(241, 240, 240, 0.55);
         }
-       
-
       }
       .confirm-ordr-btn {
         background-color: $primary;
@@ -122,9 +123,9 @@
         @include radius(5);
         margin-top: size(20);
         &:hover {
-            background-color:hsl(147, 83%, 17%)
+          background-color: hsl(147, 83%, 17%);
         }
-    }
+      }
     }
   }
 }
