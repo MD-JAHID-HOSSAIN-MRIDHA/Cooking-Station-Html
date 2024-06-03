@@ -1254,6 +1254,7 @@ footer .payment-info-container {
   justify-content: center;
   flex-direction: column;
   gap: 10px;
+  min-height: 100px;
   align-items: center;
   margin-top: 2rem;
   justify-content: center;

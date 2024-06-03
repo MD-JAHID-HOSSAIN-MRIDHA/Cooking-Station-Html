@@ -115,6 +115,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     gap: 10px;
+    min-height: 100px;
     @include breakpoint(tab992) {
       display: grid;
       grid-template-columns: 100px max-content 100px;
