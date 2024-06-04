@@ -4058,7 +4058,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 .checkout .left-col .inputbox {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: flex-start;
   gap: 0.75rem;
   margin-top: 1.25rem;
 }
@@ -4068,7 +4069,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   text-edge: cap;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 26px;
 }
 .checkout .left-col .inputbox input {
@@ -4079,6 +4080,35 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 .checkout .left-col .inputbox input:focus {
   border-color: hsl(147, 83%, 27%);
+}
+.checkout .left-col .inputbox .edit-info {
+  color: #0c8040;
+  font-family: "Nunito", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 216.667% */
+}
+.checkout .left-col .method .payments {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+}
+.checkout .left-col .method .payments img {
+  max-width: 4rem;
+  display: block;
+  transition: all 350ms ease-in-out;
+}
+.checkout .left-col .method .payments img:not([disabled]):hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+@media screen and (min-width: 62rem) {
+  .checkout .left-col .method .payments {
+    justify-content: flex-start;
+  }
 }
 .checkout .right-col {
   border: solid 0.0625rem #e5e5e5;

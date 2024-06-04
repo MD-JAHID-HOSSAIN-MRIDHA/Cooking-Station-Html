@@ -25,7 +25,7 @@
       line-height: 30px;
     }
     .inputbox {
-      @include flex-column;
+      @include flex-start;
       gap: size(12);
       margin-top: size(20);
 
@@ -35,7 +35,7 @@
         text-edge: cap;
         font-size: 16px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 26px;
       }
       input {
@@ -45,6 +45,35 @@
         @include transitionsall;
         &:focus {
           border-color: $primary;
+        }
+      }
+      .edit-info {
+        color: #0c8040;
+        font-family: $nunito;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; /* 216.667% */
+      }
+    }
+    .method {
+      .payments {
+        display: flex;
+        flex-wrap: wrap;
+        gap: size(10);
+        align-items: center;
+        justify-content: center;
+        img {
+          max-width: 4rem;
+          display: block;
+          @include transitionsall;
+          @include hover {
+            filter: grayscale(100%);
+            transform: scale(1.1);
+          }
+        }
+        @include breakpoint(tab992) {
+          justify-content: flex-start;
         }
       }
     }
