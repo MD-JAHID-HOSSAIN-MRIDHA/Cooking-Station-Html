@@ -35,6 +35,43 @@
     @include wh100;
   }
 }
+.about-banner {
+  padding-top: 100px;
+  background-color: #fff6e9;
+  padding-bottom: 70px;
+  .leftcontent {
+    h1 {
+      color: #0c8040;
+      font-family: Montserrat;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 50px;
+      @include breakpoint(mobile576) {
+        font-size: 52px;
+        line-height: 72px;
+      }
+      span {
+        color: #0c8040;
+        font-family: Montserrat;
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 72px;
+      }
+    }
+  }
+  .rightcontent {
+    max-height: 400px;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    img {
+      @include wh100;
+      margin: auto;
+    }
+  }
+}
 
 // mission section
 .mission_sec {

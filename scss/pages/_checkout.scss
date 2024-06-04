@@ -1,5 +1,6 @@
 @use "../global" as *;
 @use "../partials" as *;
+@use "../utilities" as *;
 .checkout {
   margin-top: size(20);
   padding: size(100) size(0);
@@ -57,10 +58,18 @@
       }
     }
     .method {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 26px;
+      padding: 16px;
+      border: 2px solid $primary;
+      align-items: center;
+      border-radius: 4px;
+      margin-bottom: 30px;
       .payments {
         display: flex;
         flex-wrap: wrap;
-        gap: size(10);
+        // gap: size(10);
         align-items: center;
         justify-content: center;
         img {
@@ -75,6 +84,22 @@
         @include breakpoint(tab992) {
           justify-content: flex-start;
         }
+      }
+    }
+    .payment-info {
+      .card-number {
+        position: relative;
+        margin-bottom: 28px;
+        .visa {
+          position: absolute;
+          right: 10px;
+          top: 46%;
+          width: 50px;
+        }
+      }
+      .info {
+        width: 30px;
+        height: 30px;
       }
     }
   }
