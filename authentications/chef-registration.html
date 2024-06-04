@@ -128,7 +128,7 @@
               />
             </div>
 
-            <div class="inputbox">
+            <!-- <div class="inputbox">
               <label for="nid_passport" class="inputlabel">
                 NID or Passport
               </label>
@@ -239,6 +239,85 @@
                   >
                 </div>
               </div>
+            </div> -->
+            <div class="inputbox">
+              <label for="nid_passport" class="inputlabel">
+                NID or Passport
+              </label>
+              <div class="p-0">
+                <input
+                  type="file"
+                  id="nid_passport"
+                  class="inputfield"
+                  accept=".pdf, .jpg, .png"
+                  hidden
+                />
+                <label for="nid_passport" class="upload_button">
+                  <img
+                    src="../assets/icons/NID.svg"
+                    alt=""
+                    class="upload_file_image"
+                  />
+                  <div class="upload_icon_container">
+                    <span class="upload_icon">
+                      <i class="fa-solid fa-upload"></i>
+                    </span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div class="inputbox">
+              <span class="inputlabel"> Food Safety Certification </span>
+
+              <div class="p-0">
+                <input
+                  type="file"
+                  id="food_safety_cirtificate"
+                  class="inputfield"
+                  accept=".pdf, .jpg, .png"
+                  hidden
+                />
+                <label for="food_safety_cirtificate" class="upload_button">
+                  <img
+                    src="../assets/icons/cirtificate.svg"
+                    alt=""
+                    class="upload_file_image"
+                  />
+                  <div class="upload_icon_container">
+                    <span class="upload_icon">
+                      <i class="fa-solid fa-upload"></i>
+                    </span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div class="inputbox">
+              <label class="inputlabel">
+                Any Other Experience or Certification
+              </label>
+              <div class="p-0">
+                <input
+                  type="file"
+                  id="others_cirtificate"
+                  class="inputfield"
+                  accept=".pdf, .jpg, .png"
+                  hidden
+                />
+                <label for="others_cirtificate" class="upload_button">
+                  <img
+                    src="../assets/icons/cirtificate.svg"
+                    alt=""
+                    class="upload_file_image"
+                  />
+                  <div class="upload_icon_container">
+                    <span class="upload_icon">
+                      <i class="fa-solid fa-upload"></i>
+                    </span>
+                  </div>
+                </label>
+              </div>
             </div>
 
             <div class="agreebox">
@@ -315,7 +394,6 @@
         },
       });
 
-  
       // }
       const fileInputs = (function () {
         const allInput = document.querySelectorAll("input");
