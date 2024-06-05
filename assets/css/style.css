@@ -4442,7 +4442,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   line-height: 30px;
 }
 .blog .right-content .icon {
-  align-self: flex-end;
+  position: absolute;
+  right: 10px;
 }
 .blog .right-content .recent-blog .recentblog-title {
   color: #0c8040;
@@ -4582,7 +4583,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #c2ffdd;
 }
 .blog-pagination .pagination-numbers li.active::after {
-  background-color: #79BF99;
+  background-color: #79bf99;
 }
 
 .popular-tags {
@@ -4594,7 +4595,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 .popular-tags .popular-tag {
   padding: 0.5rem 2.1875rem;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   text-align: center;
   font-family: Nunito;
   font-size: 15px;

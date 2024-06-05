@@ -33,7 +33,9 @@
       line-height: 30px;
     }
     .icon {
-      align-self: flex-end;
+      // align-self: flex-end;
+      position: absolute;
+      right: 10px;
     }
 
     .recent-blog {
@@ -43,7 +45,7 @@
         font-size: 28px;
         font-style: normal;
         font-weight: 600;
-        line-height: 30px; 
+        line-height: 30px;
         margin-top: 30px;
       }
     }
@@ -105,7 +107,7 @@
   align-items: center;
   gap: 10px;
   @include breakpoint(tab992) {
-    flex-direction: row
+    flex-direction: row;
   }
   .prev,
   .next {
@@ -159,7 +161,7 @@
       &.active {
         background: #c2ffdd;
         &::after {
-          background-color: #79BF99;
+          background-color: #79bf99;
         }
       }
     }
@@ -169,14 +171,13 @@
   @include flex;
   gap: size(10);
   flex-wrap: wrap;
-   margin-top: 60px;
-   justify-content: flex-start;
+  margin-top: 60px;
+  justify-content: flex-start;
 
   .popular-tag {
     padding: size(8) size(35);
-    background-color: #F4F4F4;
-   
-  
+    background-color: #f4f4f4;
+
     text-align: center;
     font-family: Nunito;
     font-size: 15px;
@@ -187,7 +188,7 @@
     cursor: pointer;
     &.active {
       background-color: #0c8040;
-        color: #fff !important; 
+      color: #fff !important;
     }
   }
 }
