@@ -4,9 +4,10 @@
 .checkout {
   margin-top: size(20);
   padding: size(100) size(0);
+
   .section-top {
     @include flex-column;
-    padding-bottom: size(70);
+    // padding-bottom: size(70);
     svg {
       width: 18rem;
     }
@@ -181,5 +182,67 @@
         }
       }
     }
+  }
+}
+.step-wrapper {
+  border-radius: 8px;
+  background: #fff;
+  // box-shadow: 0px 1px 3px 0px rgba(17, 24, 39, 0.09);
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: size(70);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-direction: column;
+  @include breakpoint(mobile768) {
+    flex-direction: row;
+    align-items: center;
+    padding: 29px 70px;
+  }
+  .line {
+    height: 4px;
+    background-color: #cdcdd0;
+    margin: 0 10px;
+  }
+  .active-line {
+    background-color: $primary;
+  }
+  .step-btn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #64748b;
+    font-family: $nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    .step-count {
+      display: flex;
+      width: 32px;
+      // padding: 11.2px 0px 11.2px 0px;
+      height: 32px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 80px;
+      background: #cbd5e1;
+      color: #64748b;
+      font-family: $nunito;
+      font-size: 14.4px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+  .active-step {
+    .step-count {
+      border: 3px solid $primary;
+      border-radius: 50%;
+      color: $primary;
+      background-color: transparent;
+    }
+    color: #1e293b;
+    font-weight: 600;
   }
 }

@@ -4075,7 +4075,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .checkout .section-top {
   display: flex;
   flex-direction: column;
-  padding-bottom: 4.375rem;
 }
 .checkout .section-top svg {
   width: 18rem;
@@ -4247,6 +4246,69 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 .checkout .right-col .billing-box .confirm-ordr-btn:hover {
   background-color: hsl(147, 83%, 17%);
+}
+
+.step-wrapper {
+  border-radius: 8px;
+  background: #fff;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 4.375rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-direction: column;
+}
+@media screen and (min-width: 48rem) {
+  .step-wrapper {
+    flex-direction: row;
+    align-items: center;
+    padding: 29px 70px;
+  }
+}
+.step-wrapper .line {
+  height: 4px;
+  background-color: #cdcdd0;
+  margin: 0 10px;
+}
+.step-wrapper .active-line {
+  background-color: hsl(147, 83%, 27%);
+}
+.step-wrapper .step-btn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #64748b;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.step-wrapper .step-btn .step-count {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+  background: #cbd5e1;
+  color: #64748b;
+  font-family: "Nunito", sans-serif;
+  font-size: 14.4px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.step-wrapper .active-step {
+  color: #1e293b;
+  font-weight: 600;
+}
+.step-wrapper .active-step .step-count {
+  border: 3px solid hsl(147, 83%, 27%);
+  border-radius: 50%;
+  color: hsl(147, 83%, 27%);
+  background-color: transparent;
 }
 
 .terms_banner_sec {
