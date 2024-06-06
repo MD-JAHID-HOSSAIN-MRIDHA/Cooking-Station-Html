@@ -98,7 +98,10 @@
               <div class="d-flex justify-content-between w-100">
                 <ul class="navbar-nav mx-auto mb-2 mt-lg-2">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html"
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="index.html"
                       >Home</a
                     >
                   </li>
@@ -173,25 +176,23 @@
         <button class="step-btn active-step">
           <!-- <span class="step-count">1</span> -->
           <span class="icon">
-            <img src="assets/icons/check-mark.png" alt="">
+            <img src="assets/icons/check-mark.png" alt="" />
           </span>
           Select plan
         </button>
-        <div class="flex-1 line d-none d-xl-block active-line">
-        </div>
+        <div class="flex-1 line d-none d-xl-block active-line"></div>
         <button class="step-btn active-step">
           <span class="step-count">2</span>
           Checkout
         </button>
-        <div class="flex-1 line d-none d-xl-block">
-        </div>
+        <div class="flex-1 line d-none d-xl-block"></div>
         <button class="step-btn">
           <span class="step-count">3</span>
           Payment
         </button>
       </div>
       <div class="container">
-        <div class="row justify-content-between">
+        <div class="row justify-content-between align-items-center">
           <div class="col-lg-6">
             <div class="left-col">
               <h5 class="title">Billing Address</h5>
@@ -211,8 +212,6 @@
                 <!-- <input type="text" id="name" /> -->
                 <button class="edit-info">Edit</button>
               </div>
-
-              
             </div>
           </div>
           <div class="col-lg-5">
@@ -255,6 +254,20 @@
                 <div class="single-bill">
                   <p class="name">Total Meal</p>
                   <p class="value">60</p>
+                </div>
+                <div class="single-bill align-items-end">
+                  <p id="couponLabel" class="name">
+                    Discount
+                    <button class="text-black text-decoration-underline"
+                      >(coupon number)</button
+                    >
+                  </p>
+                  <div class="d-flex gap-2 d-none">
+                    <button id="couponCloseBtn" class="btn-close border p-3"></button>
+                    <input type="number" class="form-control w-50" />
+                    <button class="btn btn-outline-success">Apply</button>
+                  </div>
+                  <p class="value">-0</p>
                 </div>
                 <div class="single-bill last">
                   <p class="name">Total Bill</p>
@@ -366,7 +379,7 @@
         </div>
 
         <div class="my-5">
-          <img src="assets/images/sslcommerz-banner.png" alt="">
+          <img src="assets/images/sslcommerz-banner.png" alt="" />
         </div>
 
         <!-- <div class="payment-info-container">
@@ -627,53 +640,16 @@
     <!-- swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      const swiper = new Swiper(".hero-swiper", {
-        // Optional parameters
-
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          type: "bullets",
-        },
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-
-      const featuredSwiper = new Swiper(".featured-swiper", {
-        // Optional parameters
-        slidesPerView: 1,
-        spaceBetween: 10,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          type: "bullets",
-        },
-        breakpoints: {
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          992: {
-            slidesPerView: 3,
-            spaceBetween: 40,
-          },
-          1220: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-        },
-        // Navigation arrows
-        navigation: {
-          nextEl: ".featured-swiper-next",
-          prevEl: ".featured-swiper-prev",
-        },
+      const couponLabel = document.getElementById("couponLabel")
+      const couponBtn = document.getElementById("couponCloseBtn")
+      console.log(couponLabel, couponBtn);
+      couponBtn.addEventListener('click', ()=> {
+        couponLabel.style.display = "block"
+        couponBtn.parentElement.classList.add("d-none")
+      })
+      couponLabel.addEventListener('click', ()=> {
+        couponLabel.style.display = "none"
+        couponBtn.parentElement.classList.remove("d-none")
       });
     </script>
     <!-- BOOTSTRAP JS -->

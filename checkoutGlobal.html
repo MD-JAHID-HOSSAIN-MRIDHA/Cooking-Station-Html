@@ -328,9 +328,19 @@
                   <p class="name">Daily Meals</p>
                   <p class="value">2</p>
                 </div>
-                <div class="single-bill">
-                  <p class="name">Total Meal</p>
-                  <p class="value">60</p>
+                <div class="single-bill align-items-end">
+                  <p id="couponLabel" class="name">
+                    Discount
+                    <button class="text-black text-decoration-underline"
+                      >(coupon number)</button
+                    >
+                  </p>
+                  <div class="d-flex gap-2 d-none">
+                    <button id="couponCloseBtn" class="btn-close border p-3"></button>
+                    <input type="number" class="form-control w-50" />
+                    <button class="btn btn-outline-success">Apply</button>
+                  </div>
+                  <p class="value">-0</p>
                 </div>
                 <div class="single-bill last">
                   <p class="name">Total Bill</p>
@@ -750,6 +760,19 @@
           nextEl: ".featured-swiper-next",
           prevEl: ".featured-swiper-prev",
         },
+      });
+    </script>
+     <script>
+      const couponLabel = document.getElementById("couponLabel")
+      const couponBtn = document.getElementById("couponCloseBtn")
+      console.log(couponLabel, couponBtn);
+      couponBtn.addEventListener('click', ()=> {
+        couponLabel.style.display = "block"
+        couponBtn.parentElement.classList.add("d-none")
+      })
+      couponLabel.addEventListener('click', ()=> {
+        couponLabel.style.display = "none"
+        couponBtn.parentElement.classList.remove("d-none")
       });
     </script>
     <!-- BOOTSTRAP JS -->
