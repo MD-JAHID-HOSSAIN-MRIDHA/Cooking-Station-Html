@@ -2439,7 +2439,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .about-banner {
   padding-top: 100px;
   background-color: #fff6e9;
-  padding-bottom: 70px;
+  padding-bottom: 30px;
 }
 .about-banner .leftcontent h1 {
   color: #0c8040;
@@ -2468,6 +2468,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 100%;
   overflow: hidden;
   display: block;
+  border-radius: 8px;
 }
 .about-banner .rightcontent img {
   width: 100%;
@@ -2521,6 +2522,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-size: cover;
   background-position: center;
   height: 392px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 .mission_sec .mission_container .video-main .waves-block {
   position: relative;

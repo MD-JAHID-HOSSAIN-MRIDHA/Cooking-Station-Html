@@ -38,7 +38,7 @@
 .about-banner {
   padding-top: 100px;
   background-color: #fff6e9;
-  padding-bottom: 70px;
+  padding-bottom: 30px;
   .leftcontent {
     h1 {
       color: #0c8040;
@@ -66,6 +66,7 @@
     width: 100%;
     overflow: hidden;
     display: block;
+    border-radius: 8px;
     img {
       @include wh100;
       margin: auto;
@@ -78,6 +79,7 @@
   padding: size(55) 0;
   background-color: #f9f9f9;
   margin-top: size(50);
+
   @include breakpoint(tab992) {
     margin-top: size(139);
   }
@@ -120,6 +122,8 @@
       background-size: cover;
       background-position: center;
       height: 392px;
+      border-radius: 8px;
+      overflow: hidden;
       .waves-block {
         position: relative;
         width: 150px;
