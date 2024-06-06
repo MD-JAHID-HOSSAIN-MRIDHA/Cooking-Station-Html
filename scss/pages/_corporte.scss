@@ -2,23 +2,32 @@
 @use "../partials" as *;
 
 .corporate-thumb {
+  @include wh100;
+  height: auto;
+  img {
     @include wh100;
-    height: auto;
-    img {
-        @include wh100;
-    }
+  }
 }
-.corporate-info {
-     background-color: #FFE69A;
-     border-radius: 6px;
-     padding: 60px;
-     top: -100px;
-     margin-inline: 20px;
+.corporate-content-wrapper {
+  position: relative;
+  margin-bottom: 5rem;
+  .corporate-info {
+    background-color: rgba(#ffe69a, 0.9);
+    border-radius: 6px;
+    padding: 60px;
+    width: 80%;
+    //   top: -100px;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%) !important;
+    // left: 50%;
+    // transform: translateX(-50%);
     @include flex-column;
     align-items: center;
-     position: relative;
-     gap: size(40);
-     @include breakpoint(tab992) {
-        margin-inline: 70px;
-     }
+    gap: size(40);
+    // @include breakpoint(tab992) {
+    //   margin-inline: 70px;
+    // }
+  }
 }
