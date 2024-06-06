@@ -1939,10 +1939,10 @@ table tr td {
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
-    height: 24rem;
+    height: 35rem;
   }
   .how_work_sec .section_body > :nth-child(odd)::after {
-    top: 11rem;
+    top: 17rem !important;
     left: 6rem;
   }
   .how_work_sec .section_body > :nth-child(even) {
@@ -1960,16 +1960,24 @@ table tr td {
   }
 }
 .how_work_sec .section_body .step_card {
-  width: 147px;
-  aspect-ratio: 1;
-  background-color: rgba(249, 213, 86, 0.82);
-  border-radius: 100%;
-  text-overflow: clip;
-  padding-left: 2.1875rem;
   position: relative;
 }
 .how_work_sec .section_body .step_card figure {
-  transform: translateY(-1rem);
+  display: flex;
+  justify-content: center;
+}
+.how_work_sec .section_body .step_card .content {
+  width: 200px;
+  aspect-ratio: 1;
+  text-overflow: clip;
+  background-color: rgba(249, 213, 86, 0.82);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 8px;
 }
 .how_work_sec .section_body .step_card .step {
   font-family: "Eczar", serif;
@@ -1979,14 +1987,6 @@ table tr td {
   line-height: 1.3333333333;
   color: hsl(147, 83%, 27%);
 }
-.how_work_sec .section_body .step_card .step_des {
-  width: 316px;
-}
-.how_work_sec .section_body .step_card .step_plan {
-  font-size: 1.2rem;
-  margin-left: -1.4rem;
-}
-
 .whychoose {
   padding: 2.5rem 0rem;
 }
