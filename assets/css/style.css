@@ -2655,21 +2655,26 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 150px;
+  gap: 40px;
   flex-wrap: wrap;
   padding-top: 60px;
 }
+.difference_sec .difference_container figure {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
 .difference_sec .difference_container .difference {
   background-color: rgba(249, 213, 86, 0.82);
-  width: 251px;
-  height: 251px;
+  width: 350px;
+  aspect-ratio: 1;
   text-align: center;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 14px;
-  padding-top: 23px;
+  padding: 23px;
 }
 .difference_sec .difference_container .difference .title {
   font-family: "Eczar", serif;
@@ -5146,10 +5151,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .corporate-content-wrapper {
   position: relative;
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
 }
 .corporate-content-wrapper .corporate-info {
-  background-color: rgba(255, 230, 154, 0.9);
+  background-color: #ffe69a;
   border-radius: 6px;
   padding: 60px;
   width: 80%;
