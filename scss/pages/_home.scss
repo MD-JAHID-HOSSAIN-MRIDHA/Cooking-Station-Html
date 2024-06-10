@@ -300,9 +300,6 @@
         left: -53px;
         top: 165px;
       }
-      figure {
-        margin-right: 2.5rem;
-      }
     }
 
     & > :nth-child(odd) {
@@ -317,10 +314,10 @@
       flex-direction: row;
       justify-content: space-between;
       margin: 0;
-      height: 35rem;
+      height: 32rem;
       & > :nth-child(odd) {
         &::after {
-          top: 17rem !important;
+          top: 14rem !important;
           left: 6rem;
         }
       }
@@ -333,17 +330,17 @@
           left: 48px;
           top: -182px;
         }
-        figure {
-          margin-right: 2.5rem;
-        }
+        // figure {
+        //   margin-right: 2.5rem;
+        // }
       }
     }
     .step_card {
       position: relative;
-      figure {
-        display: flex;
-        justify-content: center;
-      }
+      // figure {
+      //   display: flex;
+      //   justify-content: center;
+      // }
       .content {
         width: 200px;
         aspect-ratio: 1;

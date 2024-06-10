@@ -1923,9 +1923,6 @@ table tr td {
   left: -53px;
   top: 165px;
 }
-.how_work_sec .section_body > :nth-child(even) figure {
-  margin-right: 2.5rem;
-}
 .how_work_sec .section_body > :nth-child(odd) {
   align-self: start;
 }
@@ -1939,10 +1936,10 @@ table tr td {
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
-    height: 35rem;
+    height: 32rem;
   }
   .how_work_sec .section_body > :nth-child(odd)::after {
-    top: 17rem !important;
+    top: 14rem !important;
     left: 6rem;
   }
   .how_work_sec .section_body > :nth-child(even) {
@@ -1955,16 +1952,9 @@ table tr td {
     left: 48px;
     top: -182px;
   }
-  .how_work_sec .section_body > :nth-child(even) figure {
-    margin-right: 2.5rem;
-  }
 }
 .how_work_sec .section_body .step_card {
   position: relative;
-}
-.how_work_sec .section_body .step_card figure {
-  display: flex;
-  justify-content: center;
 }
 .how_work_sec .section_body .step_card .content {
   width: 200px;
