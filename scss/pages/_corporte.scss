@@ -31,3 +31,13 @@
     // }
   }
 }
+.menu-list {
+  position: relative;
+  input {
+    padding-left: 4rem;
+  }
+  span.text-muted {
+    position: absolute;
+    left: 0;
+  }
+}

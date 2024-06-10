@@ -1040,6 +1040,11 @@ input[type=search]::-webkit-search-results-decoration:focus {
   outline: none;
 }
 
+.form-check-input:checked {
+  background-color: hsl(147, 83%, 27%);
+  border-color: hsl(147, 83%, 27%);
+}
+
 .offcanvas {
   background: hsl(0, 0%, 100%);
   min-height: 100vh;
@@ -5156,6 +5161,17 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
+}
+
+.menu-list {
+  position: relative;
+}
+.menu-list input {
+  padding-left: 4rem;
+}
+.menu-list span.text-muted {
+  position: absolute;
+  left: 0;
 }
 
 @keyframes rotating {

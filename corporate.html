@@ -503,46 +503,32 @@
             </div>
             <div class="inputbox d-flex flex-column gap-2 mt-2">
               <label for="numberInput" class="inputlabel"
-                >Do u prefer our menu or customized if customized then a field
-                appears for writing customization menus.</label
+                >Do you prefer our specially designed corporate menus?</label
               >
-              <div class="border rounded p-2">
+              <div>
                 <div class="form-check">
-                  <input
-                    class="form-check-input shadow-none"
-                    type="radio"
-                    name="preference"
-                    id="menuOption1"
-                    value="1"
-                  />
-                  <label class="form-check-label" for="menuOption1">
-                    Option 1
+                  <input onchange="handleMenu('yes')" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Yes
                   </label>
                 </div>
                 <div class="form-check">
-                  <input
-                    class="form-check-input shadow-none"
-                    type="radio"
-                    name="preference"
-                    id="menuOption2"
-                    value="2"
-                  />
-                  <label class="form-check-label" for="menuOption2">
-                    Option 2
+                  <input onchange="handleMenu('no')" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    No
                   </label>
                 </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input shadow-none"
-                    type="radio"
-                    name="preference"
-                    id="menuOption3"
-                    value="3"
-                  />
-                  <label class="form-check-label" for="menuOption3">
-                    Option 3
-                  </label>
+              </div>
+              <div id="menu-list" class="border p-3 rounded-3 d-none">
+                <div class="menu-list">
+                  <input type="text" name="menu" id="" tabindex="1" >
+                  <span class="text-muted">Menu 1:</span>
                 </div>
+                <div class="menu-list">
+                  <input type="text" name="menu" id="" tabindex="2" >
+                  <span class="text-muted">Menu 2:</span>
+                </div>
+                
               </div>
               <div class="d-flex mt-4 mb-4">
                 <a href="/pakages" class="cs_btn">Submit </a>
@@ -971,6 +957,37 @@
             numberInput.value = max;
           }
         });
+    </script>
+
+    <script>
+      const menuList = document.getElementById("menu-list")
+      menuList.addEventListener("keyup",(event)=> {
+        console.log(event.key);
+        if(event.key === "ArrowUp"){
+          const dataInd = event.target.getAttribute("tabindex")
+          const prevInd = parseInt(dataInd) - 1;
+          const prevInp = document.querySelector(`input[tabindex="${prevInd}"]`)
+          if(prevInp){
+            prevInp.focus()
+          }
+        }
+        if(event.key == "Enter" || event.key === "ArrowDown") {
+         const dataInd = event.target.getAttribute("tabindex")
+         const nextInd = parseInt(dataInd) + 1;
+         const nextInp = document.querySelector(`input[tabindex="${nextInd}"]`)
+         if(nextInp){
+           nextInp.focus()
+         }
+        }
+      })
+      function handleMenu(event) {
+        if(event === "yes"){
+          menuList.classList.add("d-none");
+        }
+        if(event === "no"){
+          menuList.classList.remove("d-none");
+        }
+      }
     </script>
 
     <!-- BOOTSTRAP JS -->
