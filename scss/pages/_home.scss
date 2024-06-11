@@ -96,6 +96,18 @@
   @include breakpoint(tab992) {
     align-items: center;
   }
+  .o {
+    display: inline-block;
+    width: 38px;
+    height: 112px;
+    transform: rotate(-90deg);
+    border-radius: 40px;
+    border: 6px solid #0c8040;
+    margin: 0px 40px;
+    position: relative;
+    top: 40px;
+    margin-left: 40px;
+  }
 }
 
 // about section
