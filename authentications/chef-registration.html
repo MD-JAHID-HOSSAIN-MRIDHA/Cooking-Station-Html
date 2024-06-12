@@ -136,7 +136,9 @@
               />
             </div>
             <div class="inputbox">
-              <label for="fullName" class="inputlabel"> How many people can you serve daily?</label>
+              <label for="fullName" class="inputlabel">
+                How many people can you serve daily?</label
+              >
               <input
                 type="number"
                 id="fullName"
@@ -429,8 +431,31 @@
           const file = e.target.files[0];
           if (file) {
             const parent = e.target.parentElement;
-            const display = parent.children[2];
-            display.innerText = file.name;
+            const img = parent.querySelector("img.upload_file_image");
+            const reader = new FileReader();
+
+            reader.onloadend = () => {
+              if (file.type === "application/pdf") {
+                img.style.display = "none";
+                const object = document.createElement("embed");
+                // object.data = reader.result;
+                // object.type='application/pdf'
+                object.src = reader.result;
+                object.style.width = "100%";
+                object.style.height = "100%";
+                // parent.appendChild(object);
+              } else {
+                img.style.display = "block";
+                const iframe = parent.querySelector("object")
+                if(iframe){
+                  parent.removeChild(iframe)
+                }
+                img.src = reader.result;
+              }
+          
+            };
+
+            reader.readAsDataURL(file);
           }
         });
       });
