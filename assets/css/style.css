@@ -3437,6 +3437,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  margin: 1rem auto;
 }
 .authentications .right-content .authenticationheader .logo img {
   width: 100%;
@@ -3883,6 +3884,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 100%;
   cursor: pointer;
   position: relative;
+  aspect-ratio: 1/0.6;
   border-radius: 10px;
   overflow: hidden;
   border: 2px solid rgba(82, 82, 82, 0.28);

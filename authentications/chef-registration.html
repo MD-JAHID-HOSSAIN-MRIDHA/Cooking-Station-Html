@@ -65,13 +65,14 @@
       </div>
 
       <div class="right-content order-0">
-        <header class="authenticationheader">
-          <a href="../index.html" class="logo">
-            <img src="../assets/images/Logo.svg" alt="logo" />
-          </a>
-        </header>
+        
 
         <div class="authentic">
+          <header class="authenticationheader">
+            <a href="../index.html" class="logo">
+              <img src="../assets/images/Logo.svg" alt="logo" />
+            </a>
+          </header>
           <h4 class="welcome-title mb-2">Before we get started...</h4>
 
           <p class="welcome-text">
@@ -416,43 +417,40 @@
 
       // }
       const fileInputs = (function () {
-        const allInput = document.querySelectorAll("input");
-        const storeFileInput = [];
-        allInput.forEach((inp) => {
-          if (inp.type === "file") {
-            storeFileInput.push(inp);
-          }
-        });
-        return storeFileInput;
+        const allInput = document.querySelectorAll("input[type='file']");
+        return Array.from(allInput);
       })();
 
       fileInputs.forEach((inp) => {
         inp.addEventListener("change", (e) => {
           const file = e.target.files[0];
           if (file) {
-            const parent = e.target.parentElement;
+            const parent = document.querySelector(".upload_button");
             const img = parent.querySelector("img.upload_file_image");
             const reader = new FileReader();
 
             reader.onloadend = () => {
+              // Remove existing iframe if present
+              const existingIframe = parent.querySelector("iframe");
+              if (existingIframe) {
+                parent.removeChild(existingIframe);
+              }
+
               if (file.type === "application/pdf") {
                 img.style.display = "none";
-                const object = document.createElement("embed");
-                // object.data = reader.result;
-                // object.type='application/pdf'
-                object.src = reader.result;
-                object.style.width = "100%";
-                object.style.height = "100%";
-                // parent.appendChild(object);
+                const iframe = document.createElement("iframe");
+                iframe.src = reader.result + "#toolbar=0&navpanes=0&scrollbar=0";
+                iframe.style.width = "100%";
+                iframe.style.height = "100%";
+                parent.appendChild(iframe);
               } else {
                 img.style.display = "block";
-                const iframe = parent.querySelector("object")
-                if(iframe){
-                  parent.removeChild(iframe)
+                const existingIframe = parent.querySelector("iframe");
+                if (existingIframe) {
+                  parent.removeChild(existingIframe);
                 }
                 img.src = reader.result;
               }
-          
             };
 
             reader.readAsDataURL(file);
