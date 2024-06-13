@@ -5053,12 +5053,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 .aboutpackage {
-  padding: 50px 0rem;
-}
-@media screen and (min-width: 62rem) {
-  .aboutpackage {
-    padding: 6.25rem 0rem;
-  }
+  padding: 10px 0rem;
 }
 
 .leftcol {
@@ -5078,7 +5073,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   }
 }
 .leftcol h3 {
-  color: #0C8040;
+  color: #0c8040;
   font-family: Eczar;
   font-size: 40px;
   font-style: normal;
@@ -5103,7 +5098,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   }
 }
 .pricingpackage .section-title {
-  color: #0C8040;
+  color: #0c8040;
   font-family: Eczar;
   font-size: 40px;
   font-style: normal;
@@ -5139,9 +5134,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .pricingpackage .nav-tabs .nav-link.active {
   color: #000;
   border-radius: 29.5px;
-  background: #0C8040;
+  background: #0c8040;
   color: #fff;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: Montserrat;
   font-size: 14px;
