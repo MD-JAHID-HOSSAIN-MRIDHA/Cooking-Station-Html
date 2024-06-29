@@ -12,5 +12,6 @@
       // "savePath": "/static/assets/css"
       // "savePath": "src/css"
     }
-  ]
+  ],
+  "liveServer.settings.port": 5501
 }

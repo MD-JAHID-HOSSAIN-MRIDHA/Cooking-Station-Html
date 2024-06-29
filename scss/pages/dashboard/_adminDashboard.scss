@@ -1,0 +1,40 @@
+@use "../../global" as *;
+@use "../../partials" as *;
+
+.admin-side-bar {
+  background-color: white;
+  height: 100vh;
+  padding: 0px 24px;
+  .logo {
+    height: 60px;
+  }
+  .nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 60px);
+    padding: 2rem 0px;
+  }
+  .nav {
+    .nav-link {
+      display: flex;
+      gap: 16px;
+      color: #202224;
+      font-family: $nunito;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 0.3px;
+      padding: 15px 15px;
+      border-radius: 10px;
+      .icon {
+        width: 20px;
+      }
+    }
+    .active {
+      background-color: #4880ff;
+      color: white;
+    }
+  }
+}
